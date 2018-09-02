@@ -13,5 +13,5 @@ Classification에서 **Numeric Encoding을 사용시 다음과 같은 문제가 
 예를 들어 온도에 비례하여 때 꽃에 물을 몇 번 줄 것인가의 문제라면 온도가 높을수록 물을 많이 뿌려야 하니 이때 출력값이 크게 나올수록 물을 많이 뿌리도록 하는 시스템이라고 가정했을 경우 출력값의 크기가 의미를 갖을 수 있습니다.
  Numeric Encoding이 적절할 수 있습니다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODYwNjI5NjNdfQ==
+eyJoaXN0b3J5IjpbLTcwMjAyMzUxMiwtMTI4NjA2Mjk2M119
 -->
