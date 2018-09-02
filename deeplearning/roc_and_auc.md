@@ -12,7 +12,8 @@ x축(1-특이도), y축(민감도)
 - False Positive: 실제 False인 것을 True라고 예측
 - False Negative: 실제 True인 것을 False라고 예측
 - True Negative: 실제 False인 것을 False라고 예측
-- $True Positive Rate ={ㅆㄱ \over x}$ is via the Euler integral
+- $True Positive Rate ={True Positives \over True Positives~ + ~False Negative}$ 
+- $False Positive Rate ={False Positives \over False Positives~ + ~True Negative}$ 
 
 
 ## AUC(Area Under Curve)
@@ -33,5 +34,6 @@ Order | 1 | 2 | 3 | 4 | 5
 위의 표를 보면 data set을 5개로 나누어서 첫 번째 경우 첫 번째 Test set으로 나머지 네 개 data set은 Train set으로 나누어서 성능을 확인하는 방법이다.
 이런 식으로 5 번 반복을 하며 5개의 성능을 비교 분석한다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMDM4NTAwOCwtMTQwMDcwODI2MF19
+eyJoaXN0b3J5IjpbLTE1Nzg3NzkxNjYsLTE0MDA3MDgyNjBdfQ
+==
 -->
