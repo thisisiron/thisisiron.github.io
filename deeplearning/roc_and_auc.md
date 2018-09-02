@@ -10,11 +10,16 @@ x축(1-특이도), y축(민감도)
 ROC curve 아래 면적을 구한 값을 일컫는 용어.
 
 ## 5-fold Cross Validation
-순서 | 내용
-1 fold | test train train train train
-Item | Value
--------- | -----
+
+Order | 1 | 2 | 3 | 4 | 5
+----- | ----- | ----- | ----- | ----- | -----
+1 fold | test | train | train | train | train
+2 fold | train | test | train | train | train
+3 fold | train | train | test | train | train
+4 fold | train | train | train | test | train
+5 fold | train | train | train | train | test
+
+위의 표를 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDIwOTQ4NTEsLTE0MDA3MDgyNjBdfQ
-==
+eyJoaXN0b3J5IjpbMjI4NzUzODI2LC0xNDAwNzA4MjYwXX0=
 -->
