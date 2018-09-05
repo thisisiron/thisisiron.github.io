@@ -33,7 +33,3 @@ Order | 1 | 2 | 3 | 4 | 5
 
 위의 표를 보면 data set을 5개로 나누어서 첫 번째 경우 첫 번째 Test set으로 나머지 네 개 data set은 Train set으로 나누어서 성능을 확인하는 방법이다.
 이런 식으로 5 번 반복을 하며 5개의 성능을 비교 분석한다.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Nzg3NzkxNjYsLTE0MDA3MDgyNjBdfQ
-==
--->
