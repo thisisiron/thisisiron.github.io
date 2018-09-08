@@ -5,6 +5,7 @@
 - False Negative: 실제 True인 것을 False라고 예측
 - True Negative: 실제 False인 것을 False라고 예측
 
+**Example**
 ![](https://t1.daumcdn.net/cfile/tistory/99EFFA3359E629C82B)
 이미지 출처: http://bcho.tistory.com/1206
 
