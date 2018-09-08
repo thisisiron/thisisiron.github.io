@@ -1,24 +1,27 @@
+## Confusion Matrix
+![confusion matrix](https://github.com/thisisiron/blogger/blob/master/images/confusion_matrix.PNG)
+- True Positive: 실제 True인 것을 True라고 예측
+- False Positive: 실제 False인 것을 True라고 예측
+- False Negative: 실제 True인 것을 False라고 예측
+- True Negative: 실제 False인 것을 False라고 예측
+
+
+![TPR](https://github.com/thisisiron/blogger/blob/master/images/TPR.PNG)
+![FPR](https://github.com/thisisiron/blogger/blob/master/images/FPR.PNG)
+
+
 ## ROC(Receiver Operating Characteristic)
 
-![](https://keep.google.com/u/0/media/v2/1sAEEuaY09h79A3xi4GWXuX3vvPIZP5RBGlwB2zB4JK38c8EXO_GnGvfB8Qlp7Pc/1CTCG0q_dAxAJjaqIAMRnSAcwo5gOPLRXTDcrcvRT2EAJxNZSCFc4fpn3VUUywt8?accept=image/gif,image/jpeg,image/jpg,image/png,image/webp,audio/aac&sz=395)  
+![](https://github.com/thisisiron/blogger/blob/master/images/ROC.png)  
 x축(1-특이도), y축(민감도)
 - 민감도와 특이도가 어떤 관계를 갖고 있는지를 표현한 그래프  
 - Classification의 성능을 평가에 사용되는 그래프
 - True Positive Rate(Sensitivity)와 False Positive Rate(1-Specifity)로 구성
 
 
-
-- True Positive: 실제 True인 것을 True라고 예측
-- False Positive: 실제 False인 것을 True라고 예측
-- False Negative: 실제 True인 것을 False라고 예측
-- True Negative: 실제 False인 것을 False라고 예측
-- $True Positive Rate ={True Positives \over True Positives~ + ~False Negative}$ 
-- $False Positive Rate ={False Positives \over False Positives~ + ~True Negative}$ 
-
-
 ## AUC(Area Under Curve)
 
-![](https://keep.google.com/u/0/media/v2/1HdvQbc3UlJRlqw-vdTAoJuAcVFM6a8VHJ4hrhPjEjb4ipTa3C1U3dn4232BJB4g/1xeYvjXAnc8rr7YlD9HLIdKIXeSLHKCxrKzdvZpRN5XwTQsO8nDf15zBH44wIaw?accept=image/gif,image/jpeg,image/jpg,image/png,image/webp,audio/aac&sz=405)  
+![](https://github.com/thisisiron/blogger/blob/master/images/AUC.png)  
 ROC curve 아래 면적을 구한 값을 일컫는 용어.
 
 ## 5-fold Cross Validation
