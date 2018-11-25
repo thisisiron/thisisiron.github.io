@@ -8,16 +8,19 @@ E-mail: kimiron518@gmail.com
 ## Education
 Computer Engineering, MyongJi Univ.
 
-## Project
+## Projects
 
 [jessi](https://github.com/thisisiron/jessi) (2016.10 ~ 2016.12)
-- Java을 이용해서 레시피를 보여주는
+- Java을 이용해서 레시피를 보여주는 프로그램
+
 
 [GraphicsEditor](https://github.com/thisisiron/GraphicsEditor) (2017.10 ~ 2017.12)
 - Java Swing을 이용하여 축소형 그림판 (Design Pattern 적용)
 
+
 [ionicChat](https://github.com/thisisiron/ionicChat) (2017.11 ~ 2017.12)
 - Ionic 프레임워크를 사용하여 만든 Chatting 하이브리드 Application
+
 
 ## Certificate
 <img src="https://github.com/thisisiron/blogger/blob/master/images/BigdataCertificate.PNG" width="400">
