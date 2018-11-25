@@ -46,6 +46,44 @@ positive라고 분류한 데이터 중에서 실제 positive 비율을 의미
 
 ![](https://latex.codecogs.com/gif.latex?FNR%20%3D%20%5Cfrac%7BFN%7D%7BFN%20&plus;%20TP%7D)
 
+### Trading Off Precision and Recall
+Cancer 분류를 예시로 든다면, (Logistic Regression 0 <= h(x) <= 1)
+```
+Predict 1 h(x) >= 0.5
+Predict 0 h(x) < 0.5
+```
+Cancer인지 아닌지 확실히 판단하는 것이 중요할 경우 (환자에게 Cancer이라고 알려준다면 충격받는 것을 고려)
+-> h(x) 범위를 수정한다. Threshold(0.5보다 큰 0.7, 0.9 값으로)을 높게 잡도록한다.
+-> 이럴 경우 Higher Precision, Lower Recall이 된다.
+
+Cancer 경우를 놓치고 싶지 않다면 (환자가 미리 Cancer에 대해 대비하도록 하는 것을 고려)
+-> h(x) 범위를 수정한다. Threshold(0.5보다 작은 0.3, 0.1 값으로)을 낮게 잡도록한다.
+-> 이럴 경우 Lower Precision, Higher Recall이 된다.
+
+
+### F1 Score
+
+| Type | Precision(P) | Recall(R) | Averge | F1 Score |
+|---|----|----|----|----|
+|algo.1 | 0.5 | 0.4 | 0.45 | 0.444 |
+|algo.2 | 0.7 | 0.1 | 0.4 | 0.175 |
+|algo.3 | 0.02 | 1.0 | 0.51 | 0.0392 |
+
+Algo.3에서 P가 1이라면 모든 경우에서 y=1이라고 예측하고 있는 것이다.
+하지만 Average 값을 보게 되면 값이 높게 측정되어 있다.
+Average로 평가하는 것은 좋은 방법이 아니다.
+
+- Average
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7BP&plus;R%7D%7B2%7D)
+
+- F1 Score (F score)
+![](https://latex.codecogs.com/gif.latex?2%20*%20%5Cfrac%7BPR%7D%7BP&plus;R%7D)
+
+F1가 크다면 P와 R도 클 것이다.
+P = 0 or R = 0 -> Fscore = 0
+P = 1 and R = 1 -> Fscore = 1
+
+
 ## ROC(Receiver Operating Characteristic)
 
 ![](https://github.com/thisisiron/blogger/blob/master/images/ROC.png)  
