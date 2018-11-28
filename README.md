@@ -23,27 +23,43 @@ Computer Engineering, MyongJi Univ.
 <br></br>
 
 [FirstDay](https://github.com/thisisiron/FirstDay) (2018.04 ~ 2018.06)
+- 커플 D-Day 계산 어플리케이션
 <br></br>
 
 [kaggle-toxic-comment](https://github.com/thisisiron/kaggle-toxic-comment) (2018.05 ~ 2018.06)
+- Tensorflow으로 구현
+- CNN과 FCN의 조합으로 구성된 모델
+- Kaggle 대회 참가
 <br></br>
 
 [nodejs-mysql-passport](https://github.com/thisisiron/nodejs-mysql-passport) (2018.06 ~ 2018.07)
+- 웹 프로젝트 진행을 위해 기본 베이스 모델 설계
+- Node.js와 MySQL을 연결
+- Login 이후 Session 유지를 위해 Passport 추가
 <br></br>
 
 [samsung-ai-challenge-2018](https://github.com/thisisiron/samsung-ai-challenge-2018) (2018.08 ~ 2018.09)
+- Keras로 구현
+- Output 결과 예측 값에 따라 각기 다른 모델을 구현
 <br></br>
 
 [bigcontest-champion-2018](https://github.com/thisisiron/bigcontest-champion-2018) (2018.09 ~ 2018.09)
+- Keras, Scikit learn로 구현
+- NN, K-means, Random Forest 등 다양한 모델을 사용 후 Output 값 비교
 <br></br>
 
-Coursera-Machine-Learning (2018.11 ~ 2018.11) Private
+Coursera-Machine-Learning (2018.11 ~ 2018.11) - Private Storage
+- Coursera의 Machine Learning(Andrew NG) 강의 과제
 <br></br>
 
 [Clothes_Category_Classification](https://github.com/thisisiron/Clothes_Category_Classification) (2018.11 ~ 2018.11)
+- 무신사에서 상품 정보를 크롤링한 데이터 사용
+- 상품명은 CNN과 FCN의 조합으로 이루어진 모델에 Input값으로 넣고 나머지 Feature들은 Encdoing 후 FCN에 Input값을 넣고 마지막 Layer에 concentrate함.
 <br></br>
 
 [neural-style-transfer-app](https://github.com/thisisiron/neural-style-transfer-app) (2018.11 ~ 2018.11)
+- 이미지를 특정 화풍으로 변환시키는 어플리케이션
+- Frontend는 Android, Backend는 Django 사용
 <br></br>
 
 
