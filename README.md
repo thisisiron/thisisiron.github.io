@@ -38,6 +38,10 @@ Computer Engineering, MyongJi Univ.
 - Login 이후 Session 유지를 위해 Passport 추가
 <br></br>
 
+Cafe With (2018.07 ~ 2018.09) Private Storage
+- 리액트 네이티브로 구현
+- AWS 서버에 Node.js(Express)을 이용하여 구현한 웹 서버 로드하여 사용
+
 [samsung-ai-challenge-2018](https://github.com/thisisiron/samsung-ai-challenge-2018) (2018.08 ~ 2018.09)
 - Keras로 구현
 - Output 결과 예측 값에 따라 각기 다른 모델을 구현
@@ -50,6 +54,7 @@ Computer Engineering, MyongJi Univ.
 
 Coursera-Machine-Learning (2018.11 ~ 2018.11) - Private Storage
 - Coursera의 Machine Learning(Andrew NG) 강의 과제
+- Otave로 구현
 <br></br>
 
 [Clothes_Category_Classification](https://github.com/thisisiron/Clothes_Category_Classification) (2018.11 ~ 2018.11)
