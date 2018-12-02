@@ -18,9 +18,19 @@ Computer Engineering, MyongJi Univ.
 - Java Swing을 이용하여 축소형 그림판 (Design Pattern 적용)
 <br></br>
 
+[DBDesign](https://github.com/wlsgussla123/DBDesign) (2017.11 ~ 2017.12)
+- 데이터베이스 설계 프로젝트
+- 문서 작성, ERwin 사용하여 DB 설계
+- Frontend: Vue.js
+- Backend: Spring, MyBatis, MySQL
+
 [ionicChat](https://github.com/thisisiron/ionicChat) (2017.11 ~ 2017.12)
 - Ionic 프레임워크를 사용하여 만든 Chatting 하이브리드 Application
 <br></br>
+
+[AR-FUNiture](https://github.com/hyuk22/AR-FUNiture) (2018.04 ~ 2018.06)
+- AR 가구 렌더링 프로젝트
+- React, AR.js 사용
 
 [FirstDay](https://github.com/thisisiron/FirstDay) (2018.04 ~ 2018.06)
 - 커플 D-Day 계산 어플리케이션
@@ -38,7 +48,7 @@ Computer Engineering, MyongJi Univ.
 - Login 이후 Session 유지를 위해 Passport 추가
 <br></br>
 
-Cafe With (2018.07 ~ 2018.09) Private Storage
+Cafe With (2018.07 ~ 2018.09) - Private Storage
 - 리액트 네이티브로 구현
 - AWS 서버에 Node.js(Express)을 이용하여 구현한 웹 서버 로드하여 사용
 
@@ -74,7 +84,7 @@ Coursera-Machine-Learning (2018.11 ~ 2018.11) - Private Storage
 <img src="https://github.com/thisisiron/blogger/blob/master/images/MLCertificate.PNG" width="400">
 
 
-## Reference
+## Help
 codecogs: https://www.codecogs.com/latex/eqneditor.php
 
 GIF Maker: https://imgflip.com/gif-maker
