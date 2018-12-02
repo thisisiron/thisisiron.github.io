@@ -81,6 +81,11 @@ Coursera-Machine-Learning (2018.11 ~ 2018.11) - Private Storage
 <br></br>
 
 
+## Experience
+[Data Privacy 2018 winter (Seminar)](http://hmcl.mju.ac.kr/doku.php?id=lab:labmain)
+
+[Blockchain PKI 2018 winter (Seminar)](http://hmcl.mju.ac.kr/doku.php?id=lab:labmain)
+
 
 ## Certificate
 <img src="https://github.com/thisisiron/blogger/blob/master/images/BigdataCertificate.PNG" width="400">
