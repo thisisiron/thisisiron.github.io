@@ -23,6 +23,7 @@ Computer Engineering, MyongJi Univ.
 - 문서 작성, ERwin 사용하여 DB 설계
 - Frontend: Vue.js
 - Backend: Spring, MyBatis, MySQL
+<br></br>
 
 [ionicChat](https://github.com/thisisiron/ionicChat) (2017.11 ~ 2017.12)
 - Ionic 프레임워크를 사용하여 만든 Chatting 하이브리드 Application
@@ -31,6 +32,7 @@ Computer Engineering, MyongJi Univ.
 [AR-FUNiture](https://github.com/hyuk22/AR-FUNiture) (2018.04 ~ 2018.06)
 - AR 가구 렌더링 프로젝트
 - React, AR.js 사용
+<br></br>
 
 [FirstDay](https://github.com/thisisiron/FirstDay) (2018.04 ~ 2018.06)
 - 커플 D-Day 계산 어플리케이션
@@ -51,6 +53,7 @@ Computer Engineering, MyongJi Univ.
 Cafe With (2018.07 ~ 2018.09) - Private Storage
 - 리액트 네이티브로 구현
 - AWS 서버에 Node.js(Express)을 이용하여 구현한 웹 서버 로드하여 사용
+<br></br>
 
 [samsung-ai-challenge-2018](https://github.com/thisisiron/samsung-ai-challenge-2018) (2018.08 ~ 2018.09)
 - Keras로 구현
