@@ -9,6 +9,7 @@ E-mail: kimiron518@gmail.com
 Computer Engineering, MyongJi Univ.
 
 ## Projects
+해당 프로젝트 명을 누르면 해당 스토리지로 이동.
 
 [jessi](https://github.com/thisisiron/jessi) (2016.10 ~ 2016.12)
 - Java을 이용해서 레시피를 보여주는 프로그램
