@@ -11,10 +11,6 @@ Computer Engineering, MyongJi Univ.
 ## Projects
 ###### 해당 프로젝트 명을 누르면 해당 스토리지로 이동.
 
-[jessi](https://github.com/thisisiron/jessi) (2016.10 ~ 2016.12)
-- Java을 이용해서 레시피를 보여주는 프로그램
-<br></br>
-
 [GraphicsEditor](https://github.com/thisisiron/GraphicsEditor) (2017.10 ~ 2017.12)
 - Java Swing을 이용하여 축소형 그림판 (Design Pattern 적용)
 <br></br>
@@ -40,9 +36,9 @@ Computer Engineering, MyongJi Univ.
 <br></br>
 
 [kaggle-toxic-comment](https://github.com/thisisiron/kaggle-toxic-comment) (2018.05 ~ 2018.06)
+- 악성 댓글 분류 (Kaggle 대회)
 - Tensorflow으로 구현
 - CNN과 FCN의 조합으로 구성된 모델
-- Kaggle 대회 참가
 <br></br>
 
 [nodejs-mysql-passport](https://github.com/thisisiron/nodejs-mysql-passport) (2018.06 ~ 2018.07)
