@@ -57,11 +57,13 @@ Cafe With (2018.07 ~ 2018.09) - Private Storage
 <br></br>
 
 [samsung-ai-challenge-2018](https://github.com/thisisiron/samsung-ai-challenge-2018) (2018.08 ~ 2018.09)
+- Samsung Data Challenge 참가
 - Keras로 구현
 - Output 결과 예측 값에 따라 각기 다른 모델을 구현
 <br></br>
 
 [bigcontest-champion-2018](https://github.com/thisisiron/bigcontest-champion-2018) (2018.09 ~ 2018.09)
+- Bigcontest 챔피언스 리그 참가
 - Keras, Scikit learn로 구현
 - NN, K-means, Random Forest 등 다양한 모델을 사용 후 Output 값 비교
 <br></br>
