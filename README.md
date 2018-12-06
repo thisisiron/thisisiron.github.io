@@ -87,10 +87,13 @@ Coursera-Machine-Learning (2018.11 ~ 2018.11) - Private Storage
 
 [Blockchain PKI 2018 winter (Seminar)](http://hmcl.mju.ac.kr/doku.php?id=lab:labmain)
 
+K-Hackathon(2018.08) 참가
+
 
 ## Certificate
 <img src="https://github.com/thisisiron/blogger/blob/master/images/BigdataCertificate.PNG" width="400">
 <img src="https://github.com/thisisiron/blogger/blob/master/images/MLCertificate.PNG" width="400">
+<img src="https://github.com/thisisiron/blogger/blob/master/images/NNandDL.PNG" width="400">
 
 
 ## Help
