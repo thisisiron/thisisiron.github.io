@@ -29,18 +29,20 @@ print(word_to_idx)
 OrderedDict([('like', 1), ('the', 0), ('country', 7)])
 ```
 
-1차원 배열을 파라미터로 전달했을 경우
+1차원 배열을 파라미터로 전달했을 경우 ([1,0,7] 전달)
 ```
-tf.nn.embedding_lookup(tf_embedding, list(word_to_idx.values())).eval(session=tf.Session())
+>>> tf.nn.embedding_lookup(tf_embedding, list(word_to_idx.values())).eval(session=tf.Session())
 array([[ 0.36807999,  0.20834   , -0.22318999,  0.046283  ,  0.20097999,
          0.27515   , -0.77126998, -0.76804   ],
        [ 0.41800001,  0.24968   , -0.41242   ,  0.1217    ,  0.34527001,
         -0.044457  , -0.49687999, -0.17862   ],
        [-0.13530999,  0.15485001, -0.07309   ,  0.034013  , -0.054457  ,
         -0.20541   , -0.60086   , -0.22407   ]], dtype=float32)
+>>> tf.nn.embedding_lookup(tf_embedding, list(word_to_idx.values())).eval(session=tf.Session()).shape
+(3, 8)
 ```
 
-2차원 배열을 파라미터로 전달했을 경우
+2차원 배열을 파라미터로 전달했을 경우 (Shape (2, 2) 전달)
 ```
 >>> tf.nn.embedding_lookup(tf_embedding, [[0,2],[0,1]]).eval(session=tf.Session())
 array([[[ 0.418   ,  0.24968 , -0.41242 ,  0.1217  ,  0.34527 ,
@@ -52,6 +54,8 @@ array([[[ 0.418   ,  0.24968 , -0.41242 ,  0.1217  ,  0.34527 ,
          -0.044457, -0.49688 , -0.17862 ],
         [ 0.36808 ,  0.20834 , -0.22319 ,  0.046283,  0.20098 ,
           0.27515 , -0.77127 , -0.76804 ]]], dtype=float32)
+>>> tf.nn.embedding_lookup(tf_embedding, [[0,2],[0,1]]).eval(session=tf.Session()).shape       
+(2, 2, 8)
 ```
 
 reference: https://stackoverflow.com/questions/34870614/what-does-tf-nn-embedding-lookup-function-do
