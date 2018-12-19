@@ -1,6 +1,6 @@
 main:
-  - title: "Quick-Start Guide"
-    url: /temp/
+  - title: "About"
+    url: /pages/about.md
   - title: "Posts"
     url: /year-archive/
   - title: "Categories"
@@ -9,7 +9,3 @@ main:
     url: /tags/
   - title: "Pages"
     url: /page-archive/
-  - title: "Collections"
-    url: /collection-archive/
-  - title: "External Link"
-    url: https://google.com
