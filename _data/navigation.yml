@@ -1,6 +1,6 @@
 main:
   - title: "About"
-    url: /pages/about.md
+    url: /about/
   - title: "Posts"
     url: /year-archive/
   - title: "Categories"
