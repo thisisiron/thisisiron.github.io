@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "This is Iron"
 title_separator          : "-"
 name                     : "Eon Kim"
-description              : "An amazing website."
+description              : "Machine Learning Developer"
 url                      : "https://thisisiron.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "thisisiron/thisisiron.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -105,13 +105,13 @@ analytics:
 author:
   name             : "Eon Kim"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
+  bio              : "Developer"
   location         : "Seoul, South Korea"
   email            : kimiron518@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:kimiron518@gmail.com
+      # url: mailto:kimiron518@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
