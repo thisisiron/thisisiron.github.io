@@ -1,3 +1,6 @@
+---
+categories: MachineLearning
+---
 One-Hot Encoding은 주로 Classification문제에 가장 적합한 encoding방법입니다.
 
 Classification에서 **Numeric Encoding을 사용시 다음과 같은 문제가 발생**합니다.

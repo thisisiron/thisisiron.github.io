@@ -1,3 +1,7 @@
+---
+title: "Tensorflow Convert"
+categories: tensorflow
+---
 # Tensorflow Convert
 
 ## tf.pad(tensor, paddings, mode='CONSTANT', name=None)
