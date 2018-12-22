@@ -279,6 +279,49 @@ compress_html:
 
 # Defaults
 defaults:
+
+  # _posts/MachineLearning
+  - scope:
+      path: "_posts/MachineLearning"
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      comments: # true
+      share: true
+      search: true
+      related: true
+      sidebar:
+        nav: sidebar-machineLearning
+
+  # _posts/Tensorflow
+  - scope:
+      path: "_posts/Tensorflow"
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      comments: # true
+      share: true
+      search: true
+      related: true
+      sidebar:
+        nav: sidebar-tensorflow
+
+  # _posts/Tensorflow
+  - scope:
+      path: "_posts/Review"
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      comments: # true
+      share: true
+      search: true
+      related: true
+      sidebar:
+        nav: sidebar-review
+        
   # _posts
   - scope:
       path: ""
