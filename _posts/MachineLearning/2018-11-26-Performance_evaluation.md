@@ -1,8 +1,8 @@
 ---
-categories: MachineLearning
+categories: Machine Learning
 ---
 ## Confusion Matrix
-![confusion matrix](https://github.com/thisisiron/blogger/blob/master/images/confusion_matrix.PNG)
+![confusion matrix](/assets/images/confusion_matrix.PNG)
 - True Positive: 실제 True인 것을 True라고 예측
 - False Positive: 실제 False인 것을 True라고 예측
 - False Negative: 실제 True인 것을 False라고 예측
