@@ -1,3 +1,6 @@
+---
+categories: MachineLearning
+---
 ## Confusion Matrix
 ![confusion matrix](https://github.com/thisisiron/blogger/blob/master/images/confusion_matrix.PNG)
 - True Positive: 실제 True인 것을 True라고 예측
