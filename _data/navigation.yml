@@ -1,11 +1,7 @@
 main:
   - title: "About"
     url: /about/
-  - title: "tag"
-    url: /tags/
   - title: "Category"
     url: /categories/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  # - title: "tag"
+  #   url: /tags/
