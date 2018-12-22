@@ -1,4 +1,5 @@
 main:
+<<<<<<< HEAD
   - title: "Archive"
     url: /year-archive/
   - title: "tag"
@@ -9,3 +10,19 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+=======
+  - title: "Quick-Start Guide"
+    url: /docs/quick-start-guide/
+  - title: "Posts"
+    url: /year-archive/
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+  - title: "Pages"
+    url: /page-archive/
+  - title: "Collections"
+    url: /collection-archive/
+  - title: "External Link"
+    url: https://google.com
+>>>>>>> cafe81a4dd9fa1e74d8ecf0e806434b51dfd1c14
