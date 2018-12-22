@@ -2,6 +2,7 @@
 permalink: /about/
 title: "About"
 excerpt: "About Me"
+author_profile: true
 toc: true
 ---
 
