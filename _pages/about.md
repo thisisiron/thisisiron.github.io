@@ -1,8 +1,8 @@
 ---
 permalink: /about/
 title: "About"
-last_modified_at: 2018-12-23T14:49:33-05:00
 toc: true
+author_profile: true
 ---
 
 ## Who am I?
