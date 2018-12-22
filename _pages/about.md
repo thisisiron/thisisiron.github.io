@@ -1,8 +1,8 @@
 ---
 permalink: /about/
 title: "About"
+excerpt: "About Me"
 toc: true
-author_profile: true
 ---
 
 ## Who am I?
