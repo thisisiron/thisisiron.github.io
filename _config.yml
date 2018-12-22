@@ -107,7 +107,7 @@ author:
   avatar           : "/assets/images/profile_image.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Machine Learning Developer"
   location         : "Seoul, South Korea"
-  email            :
+  email            : "kimiron518@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
