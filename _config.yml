@@ -107,11 +107,11 @@ author:
   avatar           : "/assets/images/profile_image.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Machine Learning Developer"
   location         : "Seoul, South Korea"
-  email            : "kimiron518@gmail.com"
+  email            : 
   links:
-    - label: "Email"
+    - label: "kimiron518@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
+      url: mailto:kimiron518@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
