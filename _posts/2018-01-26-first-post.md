@@ -1,7 +1,7 @@
 ---
-title: "Welcome to Jekyll!"
+title: "Welcome!"
 date: 2018-12-23
 categories: Story
 ---
 
-Hello World!
+Hello World! This is first post.
