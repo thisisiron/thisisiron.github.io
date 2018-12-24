@@ -27,7 +27,7 @@ Nomalization은 조금 더 근본적인 변화를 줍니다. Normalization의 �
 
 일반적인 경우, 기계학습 또는 통계 기법을 사용하려는 경우에만 데이터를 Normalization한다.
 
-![Normalization](/../../assets/images/nomalization.png)
+![Normalization](/../../assets/images/normalization.png)
 
 
 ### Reference
