@@ -14,7 +14,8 @@ E-mail: kimiron518@gmail.com
 Computer Engineering, MyongJi Univ.
 
 ## Projects
-###### 해당 프로젝트 명을 누르면 해당 스토리지로 이동.
+<sub>해당 프로젝트 명을 누르면 해당 스토리지로 이동.</sub>
+<br><br>
 
 [GraphicsEditor](https://github.com/thisisiron/GraphicsEditor) (2017.10 ~ 2017.12)
 - Java Swing을 이용하여 축소형 그림판 (Design Pattern 적용)
