@@ -6,7 +6,11 @@ categories: Story
 ```
 Hello World!
 ```
-Hi! My name is Eon Kim. This is first post. I'm intrested in Machine Learning. 
+Hi! My name is Eon Kim. 
+
+This is first post. 
+
+I'm intrested in Machine Learning. 
 
 So, I will mainly post about machine learning.
 
