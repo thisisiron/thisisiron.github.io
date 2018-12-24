@@ -15,7 +15,7 @@ Computer Engineering, MyongJi Univ.
 
 ## Projects
 <sub>해당 프로젝트 명을 누르면 해당 스토리지로 이동.</sub>
-<br><br>
+<br>
 
 [GraphicsEditor](https://github.com/thisisiron/GraphicsEditor) (2017.10 ~ 2017.12)
 - Java Swing을 이용하여 축소형 그림판 (Design Pattern 적용)
@@ -29,12 +29,14 @@ Computer Engineering, MyongJi Univ.
 <br><br>
 
 [ionicChat](https://github.com/thisisiron/ionicChat) (2017.11 ~ 2017.12)
-- Ionic 프레임워크를 사용하여 만든 Chatting 하이브리드 Application
+- Ionic 프레임워크를 사용하여 만든 Chatting Hybrid Application
+- Openchatting Room, Online/Offline 확인, 안 읽은 메세지 카운트 등 기능 구현
 <br><br>
 
 [AR-FUNiture](https://github.com/hyuk22/AR-FUNiture) (2018.04 ~ 2018.06)
 - AR 가구 렌더링 프로젝트
 - React, AR.js 사용
+- Firebase을 이용하여 User 데이터 저장과 웹 호스팅
 <br><br>
 
 [FirstDay](https://github.com/thisisiron/FirstDay) (2018.04 ~ 2018.06)
@@ -43,25 +45,25 @@ Computer Engineering, MyongJi Univ.
 
 [kaggle-toxic-comment](https://github.com/thisisiron/kaggle-toxic-comment) (2018.05 ~ 2018.06)
 - 악성 댓글 분류 (Kaggle 대회)
-- Tensorflow으로 구현
-- CNN과 FCN의 조합으로 구성된 모델
+- Tensorflow로 구현
+- CNN을 이용한 Classification
 <br><br>
 
 [nodejs-mysql-passport](https://github.com/thisisiron/nodejs-mysql-passport) (2018.06 ~ 2018.07)
-- 웹 프로젝트 진행을 위해 기본 베이스 모델 설계
+- 웹 프로젝트 진행을 위한 기본 베이스 모델 설계
 - Node.js와 MySQL을 연결
 - Login 이후 Session 유지를 위해 Passport 추가
 <br><br>
 
 Cafe With (2018.07 ~ 2018.09) - Private Storage
-- 리액트 네이티브로 구현
+- React Native로 구현
 - AWS 서버에 Node.js(Express)을 이용하여 구현한 웹 서버 로드하여 사용
 <br><br>
 
 [samsung-ai-challenge-2018](https://github.com/thisisiron/samsung-ai-challenge-2018) (2018.08 ~ 2018.09)
 - Samsung Data Challenge 참가
 - Keras로 구현
-- Output 결과 예측 값에 따라 각기 다른 모델을 구현
+- 빈칸을 파악하여 해당 Output 결과 예측 값에 따른 모델 구현 
 <br><br>
 
 [bigcontest-champion-2018](https://github.com/thisisiron/bigcontest-champion-2018) (2018.09 ~ 2018.09)
@@ -77,7 +79,7 @@ Coursera-Machine-Learning (2018.11 ~ 2018.11) - Private Storage
 
 [Clothes_Category_Classification](https://github.com/thisisiron/Clothes_Category_Classification) (2018.11 ~ 2018.11)
 - 무신사에서 상품 정보를 크롤링한 데이터 사용
-- 상품명은 CNN과 FCN의 조합으로 이루어진 모델에 Input값으로 넣고 나머지 Feature들은 Encdoing 후 Neural Network에 Input값을 넣고 마지막 Layer에 concentrate함.
+- 상품명은 CNN Classification 사용 후 Input값으로 넣고 나머지 Feature들은 Encdoing 후 Neural Network에 Input값을 넣고 마지막 Layer에 Concentrate 사용
 <br><br>
 
 [neural-style-transfer-app](https://github.com/thisisiron/neural-style-transfer-app) (2018.11 ~ 2018.11)
@@ -112,5 +114,3 @@ codecogs: https://www.codecogs.com/latex/eqneditor.php
 GIF Maker: https://imgflip.com/gif-maker
 
 markdown hint: https://gist.github.com/ihoneymon/652be052a0727ad59601
-
-blogger: https://iconicorca.blogspot.com/
