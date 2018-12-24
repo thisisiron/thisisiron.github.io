@@ -1,5 +1,5 @@
 ---
-categories: Machine Learning
+categories: MachineLearning
 ---
 ## Confusion Matrix
 ![confusion matrix](/assets/images/confusion_matrix.PNG)

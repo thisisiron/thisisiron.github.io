@@ -1,5 +1,5 @@
 ---
-categories: Machine Learning
+categories: MachineLearning
 ---
 One-Hot Encoding은 주로 Classification문제에 가장 적합한 encoding방법입니다.
 

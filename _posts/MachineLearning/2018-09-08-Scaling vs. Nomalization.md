@@ -1,5 +1,5 @@
 ---
-categories: Machine Learning
+categories: MachineLearning
 ---
 # Scaling vs. Nomalization 두 개의 차이점은 무엇일까?
 Scaling과 Nomalization이 혼동되는 이유는 때때로 두 용어를 서로 바꾸어서 사용되기 때문입니다.
