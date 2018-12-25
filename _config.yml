@@ -291,6 +291,7 @@ defaults:
       share: true
       search: true
       related: true
+      read_time: false
       sidebar:
         nav: sidebar-machineLearning
 
@@ -305,6 +306,7 @@ defaults:
       share: true
       search: true
       related: true
+      read_time: false
       sidebar:
         nav: sidebar-machineLearning
 
@@ -319,6 +321,7 @@ defaults:
       share: true
       search: true
       related: true
+      read_time: false
       sidebar:
         nav: sidebar-tensorflow
 
@@ -333,6 +336,7 @@ defaults:
       share: true
       search: true
       related: true
+      read_time: false
       sidebar:
         nav: sidebar-review
         
@@ -343,7 +347,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
       share: true
       related: true
