@@ -5,6 +5,8 @@ excerpt: "About Me"
 toc: true
 ---
 
+<p align="center"><img src="/assets/images/iron_mark.jpg" width="200"></p>
+
 ## Who am I?
 Name: 김이언 (Eon Kim)
 
@@ -66,23 +68,23 @@ Cafe With (2018.07 ~ 2018.09) - Private Storage
 - 빈칸을 파악하여 해당 Output 결과 예측 값에 따른 모델 구현 
 <br><br>
 
-[bigcontest-champion-2018](https://github.com/thisisiron/bigcontest-champion-2018) (2018.09 ~ 2018.09)
+[bigcontest-champion-2018](https://github.com/thisisiron/bigcontest-champion-2018) (2018.09)
 - Bigcontest 챔피언스 리그 참가
 - Keras, Scikit learn로 구현
 - NN, K-means, Random Forest 등 다양한 모델을 사용 후 Output 값 비교
 <br><br>
 
-Coursera-Machine-Learning (2018.11 ~ 2018.11) - Private Storage
+Coursera-Machine-Learning (2018.11) - Private Storage
 - Coursera의 Machine Learning(Andrew NG) 강의 과제
 - Otave로 구현
 <br><br>
 
-[Clothes_Category_Classification](https://github.com/thisisiron/Clothes_Category_Classification) (2018.11 ~ 2018.11)
+[Clothes_Category_Classification](https://github.com/thisisiron/Clothes_Category_Classification) (2018.11)
 - 무신사에서 상품 정보를 크롤링한 데이터 사용
 - 상품명은 CNN Classification 사용 후 Input값으로 넣고 나머지 Feature들은 Encdoing 후 Neural Network에 Input값을 넣고 마지막 Layer에 Concentrate 사용
 <br><br>
 
-[neural-style-transfer-app](https://github.com/thisisiron/neural-style-transfer-app) (2018.11 ~ 2018.11)
+[neural-style-transfer-app](https://github.com/thisisiron/neural-style-transfer-app) (2018.11)
 - 이미지를 특정 화풍으로 변환시키는 어플리케이션
 - Frontend는 Android, Backend는 Django 사용
 <br><br>
