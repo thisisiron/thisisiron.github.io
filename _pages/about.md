@@ -91,9 +91,9 @@ Coursera-Machine-Learning (2018.11) - Private Storage
 
 
 ## Experience
-[Data Privacy 2018 winter (Seminar)](http://hmcl.mju.ac.kr/doku.php?id=lab:labmain)
+[Data Privacy Seminar 2018 winter](http://hmcl.mju.ac.kr/doku.php?id=lab:labmain) (2018.01 ~ 2018.02)
 
-[Blockchain PKI 2018 winter (Seminar)](http://hmcl.mju.ac.kr/doku.php?id=lab:labmain)
+[Blockchain PKI Seminar 2018 winter](http://hmcl.mju.ac.kr/doku.php?id=lab:labmain) (2018.01 ~ 2018.02)
 
 K-Hackathon (2018.08)
 
