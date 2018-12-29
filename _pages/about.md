@@ -108,6 +108,7 @@ Naver NLP Challenge (2018.12)
 <img src="/assets/images/BigdataCertificate.PNG" width="400">
 <img src="/assets/images/MLCertificate.PNG" width="400">
 <img src="/assets/images/NNandDL.PNG" width="400">
+<img src="/assets/images/Structuring_ML_Projects.PNG" width="400">
 
 
 ## Help
