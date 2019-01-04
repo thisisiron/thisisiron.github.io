@@ -1,4 +1,5 @@
 ---
+title: "Transfer Learning"
 categories: MachineLearning
 ---
 ## 정의
@@ -30,7 +31,8 @@ categories: MachineLearning
 **Quadrant 4.** <br>
  적은 데이터를 갖고 있지만 pre-trained model의 데이터와 유사한 경우<br>
 
-<img src="/assets/images/Size_Similarity_matrix.png">
+<img src="/assets/images/size_similarity_matrix.png">
+
 위의 4가지 상황에 따른 각각의 해결 방법이 존재한다.<br>
 **Quadrant 1.** <br>
 전체 모델을 학습시킬 수 있고 너가 원하는 것은 무엇이든 가능하다. 데이터가 비슷하지 않더라도 실제로는 pre-trained model의 초기 설정을 이용하는 것이 유용할 수 있다. 모델 구조를 사용할 수 있고 학습된 가중치를 사용할 수 있다.<br>

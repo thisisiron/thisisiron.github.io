@@ -1,4 +1,5 @@
 ---
+title: "Machine Learning Type"
 categories: MachineLearning
 ---
 ### Supervised Learning (지도학습)
