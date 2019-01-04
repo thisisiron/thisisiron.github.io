@@ -31,7 +31,7 @@ categories: MachineLearning
 **Quadrant 4.** <br>
  적은 데이터를 갖고 있지만 pre-trained model의 데이터와 유사한 경우<br>
 
-<img src="/assets/images/size_similarity_matrix.png">
+<img src="/assets/images/size_similarity_matrix.PNG">
 
 위의 4가지 상황에 따른 각각의 해결 방법이 존재한다.<br>
 **Quadrant 1.** <br>
