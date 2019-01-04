@@ -113,6 +113,6 @@ Naver NLP Challenge (2018.12)
 
 
 ## Help
-codecogs: https://www.codecogs.com/latex/eqneditor.php
+[codecogs](https://www.codecogs.com/latex/eqneditor.php)
 
-GIF Maker: https://imgflip.com/gif-maker
+[GIF Maker](https://imgflip.com/gif-maker)
