@@ -20,21 +20,21 @@ categories: MachineLearning
 2. 기존 모델 중 일부만 Freeze(동결)하고 이외의 것은 재학습시키거나 새로운 Hidden Layer을 추가할 수 있다.
 
 ### 그러면 어떻게 사용할까?
-아래 그림과 같이 4가지 상황이 있다.
-**Quadrant 1.** 많은 데이터를 갖고 있지만 pre-trained model의 데이터와는 다른 경우
-**Quadrant 2.** 많은 데이터를 갖고 있고 pre-trained model의 데이터와 유사한 경우
-**Quadrant 3.** 적은 데이터를 갖고 있지만 pre-trained model의 데이터와는 다른 경우
-**Quadrant 4.** 적은 데이터를 갖고 있지만 pre-trained model의 데이터와 유사한 경우
+아래 그림과 같이 4가지 상황이 있다.<br>
+**Quadrant 1.** 많은 데이터를 갖고 있지만 pre-trained model의 데이터와는 다른 경우<br>
+**Quadrant 2.** 많은 데이터를 갖고 있고 pre-trained model의 데이터와 유사한 경우<br>
+**Quadrant 3.** 적은 데이터를 갖고 있지만 pre-trained model의 데이터와는 다른 경우<br>
+**Quadrant 4.** 적은 데이터를 갖고 있지만 pre-trained model의 데이터와 유사한 경우<br>
 <img src="/assets/images/Size-Similarity matrix.png">
-위의 4가지 상황에 따른 각각의 해결 방법이 존재한다.
+위의 4가지 상황에 따른 각각의 해결 방법이 존재한다.<br>
 **Quadrant 1.** 
-전체 모델을 학습시킬 수 있고 너가 원하는 것은 무엇이든 가능하다. 데이터가 비슷하지 않더라도 실제로는 pre-trained model의 초기 설정을 이용하는 것이 유용할 수 있다. 모델 구조를 사용할 수 있고 학습된 가중치를 사용할 수 있다.
+전체 모델을 학습시킬 수 있고 너가 원하는 것은 무엇이든 가능하다. 데이터가 비슷하지 않더라도 실제로는 pre-trained model의 초기 설정을 이용하는 것이 유용할 수 있다. 모델 구조를 사용할 수 있고 학습된 가중치를 사용할 수 있다.<br>
 **Quadrant 2.** 
-pre-trained model을 적극 활용할 수 있다. 따라서 Output Layer 층 쪽의 Layers을 재학습을 할 수 있다.
+pre-trained model을 적극 활용할 수 있다. 따라서 Output Layer 층 쪽의 Layers을 재학습을 할 수 있다.<br>
 **Quadrant 3.** 
-가장 최악의 시나리오이다. freeze 층과 학습시킬 층의 balance을 찾는 것이 어렵다. 얕은 층을 이용한다면 학습이 제대로 안될 수도 있고 깊은 층을 이용하면 Overfit문제가 발생할 수 있다. data augmentation 기술을 고려해봐야한다.
+가장 최악의 시나리오이다. freeze 층과 학습시킬 층의 balance을 찾는 것이 어렵다. 얕은 층을 이용한다면 학습이 제대로 안될 수도 있고 깊은 층을 이용하면 Overfit문제가 발생할 수 있다. data augmentation 기술을 고려해봐야한다.<br>
 **Quadrant 4.** 
-이전 마지막 Output Layer을 제거하고 마지막에 원하는 목적인 Output Layer을 추가하여 새로운 Classifier을 만든다.
+이전 마지막 Output Layer을 제거하고 마지막에 원하는 목적인 Output Layer을 추가하여 새로운 Classifier을 만든다.<br>
 <img src="/assets/images/decision map transfer learning.png">
 
 #### Referebce
