@@ -13,7 +13,7 @@ categories: MachineLearning
 2. A와 B가 같은 Input을 가지는 경우 자주 사용
 3. A의 Low Level 특성이 B에게 유용할 때 자주 사용 -> A는 과일 분류, B는 사과 분류
 
-## 동결층과 학습층
+## 동결층(Freeze)과 학습층(Train)
 <img src="/assets/images/transfer_learning.jpg">
 <br><br>
 
@@ -44,7 +44,6 @@ pre-trained model을 적극 활용할 수 있다. 따라서 Output Layer 층 쪽
 이전 마지막 Output Layer을 제거하고 마지막에 원하는 목적인 Output Layer을 추가하여 새로운 Classifier을 만든다.<br>
 <img src="/assets/images/decision_map_transfer_learning.png">
 
-#### Referebce
-[Size-Similarity matrix and decision map](https://towardsdatascience.com/transfer-learning-from-pre-trained-models-f2393f124751)
-
+#### Reference
+[Size-Similarity matrix and decision map](https://towardsdatascience.com/transfer-learning-from-pre-trained-models-f2393f124751)<br>
 Coursera Deep Learning course - Andrew ng Professor
