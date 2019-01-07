@@ -10,7 +10,7 @@ categories: MachineLearning
 
 **Example**
 ![](https://t1.daumcdn.net/cfile/tistory/99EFFA3359E629C82B)
-이미지 출처: http://bcho.tistory.com/1206
+<sub>이미지 출처: <http://bcho.tistory.com/1206></sub>
 
 ### Accuracy
 대표적으로 사용되는 지표로, 전체 데이터 중에서 제대로 분류된 데이터 비율을 의미
@@ -102,7 +102,7 @@ x축(1-특이도), y축(민감도)
 ![](https://github.com/thisisiron/blogger/blob/master/images/AUC.png)  
 ROC curve 아래 면적을 구한 값을 일컫는 용어.
 
-## 5-fold Cross Validation
+## K-fold Cross Validation
 
 Order | 1 | 2 | 3 | 4 | 5
 ----- | ----- | ----- | ----- | ----- | -----
@@ -112,5 +112,5 @@ Order | 1 | 2 | 3 | 4 | 5
 4 fold | train | train | train | test | train
 5 fold | train | train | train | train | test
 
-위의 표를 보면 data set을 5개로 나누어서 첫 번째 경우 첫 번째 Test set으로 나머지 네 개 data set은 Train set으로 나누어서 성능을 확인하는 방법이다.
-이런 식으로 5 번 반복을 하며 5개의 성능을 비교 분석한다.
+K를 5라고 가정하고 위의 표를 보면 data set을 5개로 나누어서 첫 번째 경우 첫 번째 Test set으로 나머지 네 개 data set은 Train set으로 나누어서 성능을 확인하는 방법이다. 이런 식으로 5 번 반복을 하며 5개의 성능을 비교 분석한다.
+  즉, K개만큼 fold를 만들고 각각 fold 안에 test가 존재한다.
