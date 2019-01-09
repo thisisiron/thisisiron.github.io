@@ -17,6 +17,13 @@ categories: MachineLearning
 <img src="/assets/images/transfer_learning.jpg">
 <br><br>
 
+**동결층**
+- 이미 많은 데이터로 학습되어 있는 Layer
+
+**학습층**
+- 기존의 학습되어 있는 층을 초기 값으로 재학습하거나 새로 추가하여 학습할 Layer
+
+예시
 1. 기존의 모델을 그대로 사용하는 경우, 기존 모델을 Freeze(동결)하고 Softmax 가중치만 학습하게 된다.
 2. 기존 모델 중 일부만 Freeze(동결)하고 이외의 것은 재학습시키거나 새로운 Hidden Layer을 추가할 수 있다.
 
