@@ -1,5 +1,5 @@
 ---
-title: "Transfer Learning"
+title: "Transfer Learning(전이학습)"
 categories: MachineLearning
 ---
 ## 정의
