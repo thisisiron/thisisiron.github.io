@@ -6,8 +6,8 @@ categories: MachineLearning
 ## Description
 입력층에만 정규화하는 것이 아니라 Hidden Layer의 값도 정규화 하는 방식입니다. 여러 논쟁이 있지만 $$a^{[L]}$$이 아니라 보통 $$z^{[L]}$$을 Nomlaize합니다. 다음과 같이 작동합니다.
 
-1. $\mu = \frac{1}{m}\sum_{i}z^{i}$
-2. $\sigma ^2 = \frac{1}{m}\sum_{i}(z^{(i)} - \mu )^2$
+1. $\mu = \frac{1}{m}\sum_{i}z^{i}$ (평균)
+2. $\sigma ^2 = \frac{1}{m}\sum_{i}(z^{(i)} - \mu )^2$ (분산)
 3. $z^{(i)}_{norm} = \frac{z^{(i)}-\mu}{\sqrt{\sigma ^2 + \varepsilon }}$
 4. $\tilde{z}^{(i)} = \gamma z^{(i)}_{norm} + \beta$ 
 
@@ -20,6 +20,7 @@ categories: MachineLearning
 여기에서 사용하는 $\beta$는 Momtum에서 사용하는 $\beta$와 다릅니다. 물론 RMSProp에서의 $\beta$도 마찬가지로 다릅니다. 또한 $\gamma$와 $\beta$는 Adam, RMSProp, Gradient 등을 이용해 업데이트를 다음과 같이 진행할 수 있습니다. 
 
 $\beta^{[l]} = \beta^{[l]} - \alpha d\beta^{[l]}$
+
 $\gamma^{[l]} = \gamma^{[l]} - \alpha d\gamma^{[l]}$
 
 Batch Nomalization이 $z^{[l]}$의 평균을 0으로 만들기 때문에 $b^{[l]}$변수가 필요없어집니다. $\beta^{[l]}$가 그 역할을 대신하기 때문입니다. 결과적으로 $\beta^{[l]}$는 편향 변수를 결정하게 됩니다.
@@ -47,8 +48,8 @@ Mini-Batch를 사용하는 경우에는 각 해당되는 Mini-Batch의 평균과
 ※ 주의: 일반화를 목적으로 사용하기 보다 학습 속도를 올리는데 사용하고 큰 미니배치를 사용시 잡음이 줄어들게 되니 일반화 효과도 줄어들게 됩니다.
 
 ## Test에서 사용될 경우
-Test에서는 Batch가 존재하지 않기 때문에 평균과 분산을 계산할 수 없습니다. 따라서 학습 시에 사용된 Mini Batch의 지수 가중 이동 평균을 추정치로 사용합니다.
+한 번에 하나의 Mini-Batch을 처리하지만 Test에서는 Batch가 존재하지 않고 한 번에 샘플 하나씩을 처리하기 때문에 평균과 분산을 계산할 수 없습니다. 따라서 학습 시에 사용된 Mini Batch의 지수 가중 이동 평균(Exponentially Weighted Average)을 추정치로 사용합니다.
 
 
 ### Reference
-Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization - Andrew Ng
+Coursera: Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization (Andrew Ng)

@@ -25,4 +25,4 @@ High bias라고도 부르며, 모델이 데이터에 맞지 않는 것이다. �
 ### Solutions
 1. 고차원 모델을 사용하기
 
-#### Reference
+### Reference
