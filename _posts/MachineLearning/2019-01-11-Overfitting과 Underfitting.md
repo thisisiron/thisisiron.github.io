@@ -13,7 +13,11 @@ Appropriate | Overfitting |
 ----- | ----- | 
 <img src="/assets/images/appropriate_capacity.PNG"> | <img src="/assets/images/overfitting.PNG"> | 
 
+2차 함수로 충분히 표현가능하지만 3차함수로 표현하는 것과 같습니다. 이럴 경우 Train Data에 대해서는 적합할지 몰라도 Test Data와 같은 학습하지 않은 데이터에서는 정확한 결과를 도출하지 못 합니다.
+
 ### Solutions
+<sub>자세한 내용은 링크를 통해 확인할 수 있음</sub>
+
 1. 특성 수를 줄인다 -> 쓸만한 특성만 남겨두기, 하지만 feature을 버리면 문제에 포함된 정보도 같이 버리게 됩니다.
 2. Regularization -> 모든 특성을 남기되, 각각의 특성이 갖는 영향 규모를 줄이는 방법입니다.
 3. Dropout -> 사람의 망각과 같은 특성, 뉴런의 일부만을 사용하여 학습을 합니다.
@@ -24,12 +28,13 @@ Appropriate | Overfitting |
 ## Underfitting(언더피팅)
 
 ### Description
-**High bias**라고도 부르며, 모델이 데이터에 맞지 않는 것이다. 즉, 형편없는 결과(loss가 크다)가 도출됩니다.
-이번에도 시각적으로 예를 들면 다음과 같은 경우가 존재합니다.
+**High bias**라고도 부르며, 모델이 데이터에 맞지 않는 것이다. 즉, 형편없는 결과(loss가 크다)가 도출됩니다. 이번에도 시각적으로 예를 들면 다음과 같은 경우가 존재합니다.
 
 Appropriate | Underfitting | 
 ----- | ----- | 
 <img src="/assets/images/appropriate_capacity.PNG"> | <img src="/assets/images/underfitting.PNG"> | 
+
+2차 함수로 표현해야하는 것을 1차함수로만 표현했기 때문에 Train Data에서도 좋은 결과를 내놓지 못하게 됩니다. Train 결과에서도 Error가 크게 발생하게 됩니다.
 
 ### Solutions
 1. 고차원 모델을 사용하기 -> 현재 모델이 데이터를 잘 표현 못하는 것이므로 
@@ -42,3 +47,4 @@ Appropriate | Underfitting |
 표현 능력은 좋으나, Train Data를 Memorize할 가능성이 높습니다. 이 경우에는 Overfitting 문제가 발생합니다.
 
 ### Reference
+Coursera: Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization (Andrew Ng)
