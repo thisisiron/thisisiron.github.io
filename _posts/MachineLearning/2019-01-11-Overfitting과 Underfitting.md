@@ -11,7 +11,7 @@ categories: MachineLearning
 
 Appropriate | Overfitting | 
 ----- | ----- | 
-<img src="/assets/images/appropriate_capacity.PNG"> | <img src="/assets/images/overfitting.png"> | 
+<img src="/assets/images/appropriate_capacity.PNG"> | <img src="/assets/images/overfitting.PNG"> | 
 
 ### Solutions
 1. 특성 수를 줄인다 -> 쓸만한 특성만 남겨두기, 하지만 feature을 버리면 문제에 포함된 정보도 같이 버리게 됩니다.
@@ -29,7 +29,7 @@ Appropriate | Overfitting |
 
 Appropriate | Underfitting | 
 ----- | ----- | 
-<img src="/assets/images/appropriate_capacity.PNG"> | <img src="/assets/images/underfitting.png"> | 
+<img src="/assets/images/appropriate_capacity.PNG"> | <img src="/assets/images/underfitting.PNG"> | 
 
 ### Solutions
 1. 고차원 모델을 사용하기 -> 현재 모델이 데이터를 잘 표현 못하는 것이므로 
