@@ -53,4 +53,4 @@ pre-trained model을 적극 활용할 수 있습니다. 따라서 Output Layer �
 
 ### Reference
 [Size-Similarity matrix and decision map](https://towardsdatascience.com/transfer-learning-from-pre-trained-models-f2393f124751)<br>
-Coursera Deep Learning course - Andrew ng Professor
+Coursera: Deep Learning course (Andrew ng)
