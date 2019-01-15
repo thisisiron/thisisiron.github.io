@@ -5,6 +5,8 @@ categories: MachineLearning
 
 ## Last Layer Activation Function와 Loss Function 선택 방법
 다음은 Last Layer에 선택해야할 Activation 함수와 Loss 함수 선택할 기준을 보여주는 표입니다. 
+
+
 Promblem Type | Last Layer Activation | Loss Function | Example |
 -------- | ---------------------- | ------------- | ------ |
 Binary classification | sigmoid | binary_crossentropy | Dog vs cat, Sentiemnt analysis(pos/neg)
