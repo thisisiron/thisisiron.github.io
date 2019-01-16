@@ -8,6 +8,4 @@ A computer program is said to learn from experience E with respect to some class
 if its performance at tasks in T, as measured by P, improves with experience E.
 ```
 
-컴퓨터 프로그램이 어떤 Task(T)와 Performance(P)에 관하여 Experience(E)에서 학습하는 것은 Performance에 의해 평가되는 Task의 Performance가 Experience로부터 개선되는 것을 의미한다. 하지만 이 정의를 이용해 머신러닝에 대해 알지 못하는 사람에게 알려주는 경우는 거의 없을 것이다. 모르는 사람에게는 더 쉽고 이해하기 쉽게 설명하는 방법이 옳다고 생각하고 있고 굳이 어렵게 설명하는 것은 자신이 그것에 제대로 이해하지 못하거나 설명할 수 없다고 생각한다. 어떻게 하면 더 쉽게 이해시키고 의미를 전달할 수 있을지 고민하게 된다.
-
-작성 중....
+컴퓨터 프로그램이 어떤 Task(T)와 Performance(P)에 관하여 Experience(E)에서 학습하는 것은 Performance에 의해 평가되는 Task의 Performance가 Experience로부터 개선되는 것을 의미한다. 하지만 이 정의를 이용해 머신러닝에 대해 알지 못하는 사람에게 알려주는 경우는 거의 없을 것라고 생각한다. 모르는 사람에게는 더 쉽고 이해하기 쉽게 설명하는 방법이 옳다고 생각하고 있고 굳이 어렵게 설명하는 것은 자신이 그것에 제대로 이해하지 못하거나 설명할 수 없다고 생각한다. 아서 사무엘은 기계 학습을 "기계가 일일이 코드로 명시하지 않은 동작을 데이터로부터 학습하여 실행할 수 있도록 하는 알고리즘을 개발하는 연구 분야"라고 정의하였다. 위 정의보다 더 이해하기 쉽다고 생각하지만 비전공자들의 생각은 다를지도 모르겠다.

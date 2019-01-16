@@ -41,5 +41,5 @@ Multitask Learning는 다음과 같은 상황에 사용됩니다.
 - 모든 작업에 대해 큰 신경망을 훈련할 수 있어야 합니다.
 
 ### Reference
-[How to choose Last-layer activation and loss function](https://www.dlology.com/blog/how-to-choose-last-layer-activation-and-loss-function/)
+[How to choose Last-layer activation and loss function](https://www.dlology.com/blog/how-to-choose-last-layer-activation-and-loss-function/)<br>
 Coursera: Structuring Machine Learning Projects (Andrew Ng)
