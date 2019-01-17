@@ -37,7 +37,7 @@ $$
 
 다음 아래 그래프는 $y=0$일 때 그래프입니다. 마찬가지로 파란색 선은 $h_{\theta}(x)$입니다. 방금 전의 그래프와는 정반대의 상황입니다. 여기서는 $h_{\theta}(x)=0$ 일 때 Cost 값은 0이게 됩니다. $h_{\theta}(x)=1$ 경우에는 Cost 값은 $\infty$가 됩니다. 따로 따로 그래프를 보여줘서 그렇지만 생긴 것은 2차 함수와 비슷하게 생겼습니다. 즉, Logistic Regression Cost Funtion은 Convex(볼록)함수입니다. 항상 Global minimum 값만 갖게 됩니다. 이 점은 Linear Regression과 같습니다. Local minimum에 빠질 일이 없게 된 겁니다.
 
-<img src="/assets/images/logistic_1.PNG">
+<img src="/assets/images/logistic_2.PNG">
 
 처음 보여줬던 식을 통합해보면 다음과 같은 식이 만들어지게 됩니다.
 
