@@ -302,7 +302,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      comments: # true
+      comments: true
       share: true
       search: true
       related: true
