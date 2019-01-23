@@ -4,8 +4,9 @@ categories: MachineLearning
 ---
 ## Debugging a Learning Algorithm
 ### Large error가 발생했을 때 무엇을 해야할까?
+
 선택 사항 | 선택 기준 | 
------------- | -------- | 
+-------- | -------- | 
 Training Data을 더 모은다 | Fix high variance |
 Feature의 크기를 줄여본다 | Fix high variance |
 추가적으로 Feature 넣어본다 | Fix high bias |
@@ -22,6 +23,7 @@ $$
 \begin{align*}&
 d=1, \enspace h_{\theta}(x) = \theta_{0} + \theta_{1}x  \newline &
 d=2, \enspace h_{\theta}(x) = \theta_{0} + \theta_{1}x + \theta_{2}x^2 \newline &
+... \newline &
 d=10, \enspace h_{\theta}(x) = \theta_{0} + \theta_{1}x + ... +  \theta_{10}x^10
 \end{align*}
 $$
