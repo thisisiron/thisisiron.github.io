@@ -6,12 +6,12 @@ categories: MachineLearning
 ### Large error가 발생했을 때 무엇을 해야할까?
 선택 사항 | 선택 기준 | 
 ------------ | -------- | 
-Training Data을 더 모은다 | Fix high variance
-Feature의 크기를 줄여본다 | Fix high variance
-추가적으로 Feature 넣어본다 | Fix high bias
-Polynomial Feature을 추가한다 ($x_{1}^{2},x_{2}^{2},x_{1}x_{2},etc$) | Fix high bias
-Decreasing $\lambda$ | Fix high bias
-Increasing $\lambda$ | Fix high variance
+Training Data을 더 모은다 | Fix high variance |
+Feature의 크기를 줄여본다 | Fix high variance |
+추가적으로 Feature 넣어본다 | Fix high bias |
+Polynomial Feature을 추가한다 ($x_{1}^{2},x_{2}^{2},x_{1}x_{2},etc$) | Fix high bias |
+Decreasing $\lambda$ | Fix high bias |
+Increasing $\lambda$ | Fix high variance |
 
 위 선택사항을 무작위로 선택하는 것과 같은 시간을 낭비해서는 안 됩니다. 
 오른쪽 기준에 맞춰서 올바르게 선택을 해야 시간을 절약할 수 있습니다.

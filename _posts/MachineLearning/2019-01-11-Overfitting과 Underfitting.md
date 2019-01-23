@@ -32,19 +32,22 @@ Appropriate | Overfitting |
 
 Appropriate | Underfitting | 
 ----- | ----- | 
-<img src="/assets/images/appropriate_capacity.PNG"> | <img src="/assets/images/underfitting.PNG"> | 
+ | <img src="/assets/images/underfitting.PNG"> | 
 
 2차 함수로 표현해야하는 것을 1차함수로만 표현했기 때문에 Train Data에서도 좋은 결과를 내놓지 못하게 됩니다. Train 결과에서도 Error가 크게 발생하게 됩니다.
 
 ### Solutions
 1. 고차원 모델을 사용하기 -> 현재 모델이 데이터를 잘 표현 못하는 것이므로 
 
-## 모델의 선택
+## 모델의 Capacity
 ### Low Capacity
 일반화 능력은 좋으나, 학습 데이터를 충분히 표현하기 힘들 수 있습니다. 간단한 모델을 선택하면 일반화는 좋으나 Underfitting 문제가 발생합니다.
 
 ### High Capacity
 표현 능력은 좋으나, Train Data를 Memorize할 가능성이 높습니다. 이 경우에는 Overfitting 문제가 발생합니다.
 
+## Complexity
+
 ### Reference
-Coursera: Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization (Andrew Ng)
+Coursera: Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization (Andrew Ng)<br>
+[Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf)
