@@ -4,7 +4,7 @@ categories: MachineLearning
 ---
 ## Optimizer Map
 <img src="/assets/images/optimizer_map.png">
-
+<img src="/assets/images/GD_and_SGD.PNG">
 ## Momentum
 
 ## RMSProp
