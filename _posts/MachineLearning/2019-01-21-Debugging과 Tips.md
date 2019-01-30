@@ -44,7 +44,7 @@ $$
 **Multi-crop at test time**: 이미지를 여러 개로 크로핑하여 테스트 후 평균을 내는 방법<br>
 -> 하나의 네트워크로 실행이 가능하지만 여전히 실행시간이 느립니다.
 
-**Hand-Engineering**: 데이터가 부족한 경우, 직접 feature와 network architecture을 설계하고 시스템 요소를 만드는 방법
+**Hand-Engineering**: 데이터가 부족한 경우, 직접 feature와 network architecture을 설계하고 시스템 요소를 만드는 방법<br>
 -> 까다로운 작업이며 insight가 요구됩니다. 물론 데이터가 많다면 Hand-Engineering에 시간을 할애하는 것보다 학습시스템 구축에
 시간을 할애해야 합니다.
 
