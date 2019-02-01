@@ -16,7 +16,8 @@ Regression to arbitrary values | None | mse | Predict house price(an integer/flo
 Regression to values between 0 and 1 | sigmoid | mse or binary_crossentropy | Engine health assessment where 0 is broken, 1 is new
 
 ## Multitask Learning(다중 학습)
-추가적으로 Multitask Learning에 대해 소개하겠습니다. Andrew Ng 교수님 강의에서는 **한 신경망이 여러 작업을 동시에 할 수 있는 구조**로 정의하고 있습니다. Softmax함수를 사용하는 Multi-class single-label 구조와 비교하였습니다. Multi-class single-label 구조는 즉 하나의 Task만 가지는 것과 같습니다. 예를 들어 하나의 가방 사진을 주고 책, 가방, 옷, 거울 중에 어떤 분류에 속하는지 맞추는 것입니다. 결국 가방 하나의 Class로 분류하게 됩니다. Multitask Learning의 예를 들면 자율 주행 자동차를 위해 주행시 사물 인식 시스템을 개발한다고 가정하겠습니다. 그때 사람, 정지판, 신호등 등 여러 고려할 사항들이 있으며 그런 사물들을 모두 인식해야만 합니다. 이런 경우를 Multi Task를 가졌다고 여깁니다. 독립적으로 신경망을 구성하는 것보다 더 나은 성능을 보여주게 됩니다.
+추가적으로 Multitask Learning에 대해 소개하겠습니다. Andrew Ng 교수님 강의에서는 **한 신경망이 여러 작업을 동시에 할 수 있는 구조**로 정의하고 있습니다. Softmax함수를 사용하는 Multi-class single-label 구조와 비교하였습니다. Multi-class single-label 구조는 즉 하나의 Task만 가지는 것과 같습니다. <br>
+예를 들어 하나의 가방 사진을 주고 책, 가방, 옷, 거울 중에 어떤 분류에 속하는지 맞추는 것입니다. 결국 가방 하나의 Class로 분류하게 됩니다. Multitask Learning의 예를 들면 자율 주행 자동차를 위해 주행시 사물 인식 시스템을 개발한다고 가정하겠습니다. 그때 사람, 정지판, 신호등 등 여러 고려할 사항들이 있으며 그런 사물들을 모두 인식해야만 합니다. 이런 경우를 Multi Task를 가졌다고 여깁니다. 독립적으로 신경망을 구성하는 것보다 더 나은 성능을 보여주게 됩니다.
 
 ### 학습 방법
 $$Y = \begin{bmatrix}
