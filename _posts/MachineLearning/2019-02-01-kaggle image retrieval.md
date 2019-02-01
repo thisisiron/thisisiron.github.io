@@ -64,5 +64,8 @@ Query Expansion은 image retrieval problem의 기본적인 기술입니다. 상�
 이 경우에 query expansion는 우리가 A와 C 이미지를 매치시킬 수 있도록 도와줍니다. 이것은 우리에게 서서히 다른 관점을 가지거나 조명에 따라 달라지는 경우에도 도움을 주게 됩니다. 중간 이미지가 그들을 연결시킬 수 있도록 도와줍니다.
 
 
+## Things that didn’t work
+- **Local descriptors:**
+
 ### Reference
 [1st Place Solution Summary: CVSSP & Visual Atoms ](https://www.kaggle.com/c/landmark-retrieval-challenge/discussion/57855)<br>
