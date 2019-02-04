@@ -295,21 +295,6 @@ defaults:
       sidebar:
         nav: sidebar-machineLearning
 
-  # _posts/MachineLearning
-  - scope:
-      path: "_posts/MachineLearning/Hands-On Machine Learning"
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      comments: true
-      share: true
-      search: true
-      related: true
-      read_time: false
-      sidebar:
-        nav: sidebar-machineLearning
-
   # _posts/Tensorflow
   - scope:
       path: "_posts/Tensorflow"
@@ -325,7 +310,7 @@ defaults:
       sidebar:
         nav: sidebar-tensorflow
 
-  # _posts/Tensorflow
+  # _posts/Review
   - scope:
       path: "_posts/Review"
       type: posts
@@ -351,6 +336,7 @@ defaults:
       comments: true
       share: true
       related: true
+      
   # _pages
   - scope:
       path: "_pages"
