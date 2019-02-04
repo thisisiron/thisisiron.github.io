@@ -15,7 +15,69 @@ E-mail: kimiron518@gmail.com
 ## Education
 Computer Engineering, MyongJi Univ.
 
-## Projects
+## Project
+<sub>해당 프로젝트 명을 누르면 해당 스토리지로 이동.</sub>
+<br>
+
+[kaggle-toxic-comment](https://github.com/thisisiron/kaggle-toxic-comment) (2018.05 ~ 2018.06)
+- 악성 댓글 분류 (Kaggle 대회)
+- Tensorflow로 구현
+- CNN을 이용한 Classification
+<br><br>
+
+[samsung-ai-challenge-2018](https://github.com/thisisiron/samsung-ai-challenge-2018) (2018.08 ~ 2018.09)
+- Samsung Data Challenge 참가
+- Keras로 구현
+- 빈칸을 파악하여 해당 Output 결과 예측 값에 따른 모델 구현 
+<br><br>
+
+[bigcontest-champion-2018](https://github.com/thisisiron/bigcontest-champion-2018) (2018.09)
+- Bigcontest 챔피언스 리그 참가
+- Keras, Scikit learn로 구현
+- NN, K-means, Random Forest 등 다양한 모델을 사용 후 Output 값 비교
+<br><br>
+
+[naver_nlp_challenge](https://github.com/thisisiron/naver_nlp_challenge) (2018.12)
+- Naver NLP Challenge 참가
+- Tensorflow로 구현
+- CNN embedding 구현
+<br><br>
+
+[naver-ai-vision]() (2019.01 ~ 2019.02)
+- Naver Ai Hackathon
+- Keras로 구현
+
+
+## Experience
+[Data Privacy Seminar 2018 winter](http://hmcl.mju.ac.kr/doku.php?id=lab:labmain) (2018.01 ~ 2018.02)
+
+[Blockchain PKI Seminar 2018 winter](http://hmcl.mju.ac.kr/doku.php?id=lab:labmain) (2018.01 ~ 2018.02)
+
+K-Hackathon (2018.08)
+
+Samsung Data Challenge (2018.08)
+
+Bigcontest (2018.09)
+
+Naver NLP Challenge (2018.12)
+
+서울대학교 정보의학 해커톤 (2018.12)
+
+우정사업본부 빅데이터 2018 해커톤 (2018.12)
+
+Samsung SDS Algorithm 심화 교육 (2019.01)
+
+Naver Ai-Vision Hackathon (2019.01 ~ 2019.02)
+
+## Certificate
+<img src="/assets/images/BigdataCertificate.PNG" width="400">
+<img src="/assets/images/MLCertificate.PNG" width="400">
+<img src="/assets/images/NNandDL.PNG" width="400">
+<img src="/assets/images/Improving_DNN.PNG" width="400">
+<img src="/assets/images/Structuring_ML_Projects.PNG" width="400">
+
+
+## Toy Project
 <sub>해당 프로젝트 명을 누르면 해당 스토리지로 이동.</sub>
 <br>
 
@@ -45,12 +107,6 @@ Computer Engineering, MyongJi Univ.
 - 커플 D-Day 계산 어플리케이션
 <br><br>
 
-[kaggle-toxic-comment](https://github.com/thisisiron/kaggle-toxic-comment) (2018.05 ~ 2018.06)
-- 악성 댓글 분류 (Kaggle 대회)
-- Tensorflow로 구현
-- CNN을 이용한 Classification
-<br><br>
-
 [nodejs-mysql-passport](https://github.com/thisisiron/nodejs-mysql-passport) (2018.06 ~ 2018.07)
 - 웹 프로젝트 진행을 위한 기본 베이스 모델 설계
 - Node.js와 MySQL을 연결
@@ -60,18 +116,6 @@ Computer Engineering, MyongJi Univ.
 Cafe With (2018.07 ~ 2018.09) - Private Storage
 - React Native로 구현
 - AWS 서버에 Node.js(Express)을 이용하여 구현한 웹 서버 로드하여 사용
-<br><br>
-
-[samsung-ai-challenge-2018](https://github.com/thisisiron/samsung-ai-challenge-2018) (2018.08 ~ 2018.09)
-- Samsung Data Challenge 참가
-- Keras로 구현
-- 빈칸을 파악하여 해당 Output 결과 예측 값에 따른 모델 구현 
-<br><br>
-
-[bigcontest-champion-2018](https://github.com/thisisiron/bigcontest-champion-2018) (2018.09)
-- Bigcontest 챔피언스 리그 참가
-- Keras, Scikit learn로 구현
-- NN, K-means, Random Forest 등 다양한 모델을 사용 후 Output 값 비교
 <br><br>
 
 Coursera-Machine-Learning (2018.11) - Private Storage
@@ -89,28 +133,10 @@ Coursera-Machine-Learning (2018.11) - Private Storage
 - Frontend는 Android, Backend는 Django 사용
 <br><br>
 
-
-## Experience
-[Data Privacy Seminar 2018 winter](http://hmcl.mju.ac.kr/doku.php?id=lab:labmain) (2018.01 ~ 2018.02)
-
-[Blockchain PKI Seminar 2018 winter](http://hmcl.mju.ac.kr/doku.php?id=lab:labmain) (2018.01 ~ 2018.02)
-
-K-Hackathon (2018.08)
-
-Naver NLP Challenge (2018.12)
-
-서울대학교 정보의학 해커톤 (2018.12)
-
-우정사업본부 빅데이터 2018 해커톤 (2018.12)
-
-
-## Certificate
-<img src="/assets/images/BigdataCertificate.PNG" width="400">
-<img src="/assets/images/MLCertificate.PNG" width="400">
-<img src="/assets/images/NNandDL.PNG" width="400">
-<img src="/assets/images/Improving_DNN.PNG" width="400">
-<img src="/assets/images/Structuring_ML_Projects.PNG" width="400">
-
+[BoostCamp](https://github.com/thisisiron/BoostCamp) (2018.12)
+- 네이버 검색 API를 활용하여 영화정보를 검색하는 어플리케이션 제작
+- 사용자로부터 검색어를 입력받아 검색결과 목록을 표시
+<br><br>
 
 ## Help
 [codecogs](https://www.codecogs.com/latex/eqneditor.php)

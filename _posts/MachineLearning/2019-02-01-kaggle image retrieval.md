@@ -1,5 +1,5 @@
 ---
-title: "CNN 개요"
+title: "kaggle image retrieval"
 categories: MachineLearning
 ---
 
