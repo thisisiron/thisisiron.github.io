@@ -32,7 +32,7 @@ Appropriate | Overfitting |
 
 Appropriate | Underfitting | 
 ----- | ----- | 
- | <img src="/assets/images/underfitting.PNG"> | 
+<img src="/assets/images/appropriate_capacity.PNG"> | <img src="/assets/images/underfitting.PNG"> | 
 
 2차 함수로 표현해야하는 것을 1차함수로만 표현했기 때문에 Train Data에서도 좋은 결과를 내놓지 못하게 됩니다. Train 결과에서도 Error가 크게 발생하게 됩니다.
 

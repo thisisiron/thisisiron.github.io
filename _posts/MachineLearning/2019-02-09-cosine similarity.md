@@ -42,7 +42,8 @@ $\theta$는 $x$와 $y$ 벡터 사이의 각을 의미합니다. 다음과 같이
 ## The Cosine Distance
 Cosine Distance는 $x$와 $y$ 두 벡터의 각 차이를 측정한 것입니다. 그래프를 일단 보자면,
 
-- Cosine Similarity 그래프를 x축으로 뒤집습니다. 왜냐하면 유사한 벡터는 가깝고 다른 벡터는 멀리있길 원하기 때문입니다.
+- Cosine Similarity 그래프를 x축으로 뒤집습니다. 유사한 벡터는 가깝고 유사하지 않은 벡터는 멀리에 두기 위해서 입니다.<br>
+  즉, (0,0) 좌표와 가까이 있으면 유사한 벡터이고, 반대로 (3,2) 좌표에 가까이 있으면 유사하지 않은 벡터를 의미합니다.
 - 거리는 항상 양수이기 때문에 한 단위(+1)를 올렸습니다.
 
 <img src="/assets/images/cosine_distance.PNG"><br>
@@ -50,7 +51,7 @@ Cosine Distance는 $x$와 $y$ 두 벡터의 각 차이를 측정한 것입니다
 즉, $dist(x,y) = 1-\cos(\theta) = 1-sim(x,y)$ 식이 도출됩니다.
 
 ## Cosine Distance과 Euclidean Distance 관계
-Image Retrieval에서 Feature Vectors은 종종 unit vecotr을 얻기 위해 $L_{2}$ nomalized로 변환합니다.
+Image Retrieval에서 Feature Vectors은 종종 [unit vecotr](https://ko.wikipedia.org/wiki/%EB%8B%A8%EC%9C%84%EB%B2%A1%ED%84%B0)을 얻기 위해 $L_{2}$ nomalized로 변환합니다.
 Euclidean Distance식에서 $x$와 $y$ 두 벡터는 다음과 같이 변형할 수 있습니다.
 
 $$
