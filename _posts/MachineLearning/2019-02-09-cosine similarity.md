@@ -33,8 +33,8 @@ $$
 $\theta$는 $x$와 $y$ 벡터 사이의 각을 의미합니다. 다음과 같이 기하학적으로 생각해봅시다.
 
 1. $x$와 $y$와 같은 방향을 취하고 있을 경우 $\theta = 0$이 되고, $\cos(0)=1$이 됩니다.
-2. $x$와 $y$와 수직인 경우 $\theta = \frac{\pi}{2}$이 되고, $\cos(\frac{\pi}{2})=0}$이 됩니다.
-3. $x$와 $y$와 반대 방향을 취하고 있는 경우 $\theta = \pi$이 되고, $\cos(\pi)=-1}$이 됩니다.
+2. $x$와 $y$와 수직인 경우 $\theta = \frac{\pi}{2}$이 되고, $\cos(\frac{\pi}{2})=0$이 됩니다.
+3. $x$와 $y$와 반대 방향을 취하고 있는 경우 $\theta = \pi$이 되고, $\cos(\pi)=-1$이 됩니다.
 
 다음과 같은 그래프 형태를 보이게 됩니다.
 <img src="/assets/images/cosine.PNG"><br>
@@ -50,7 +50,7 @@ Cosine Distance는 $x$와 $y$ 두 벡터의 각 차이를 측정한 것입니다
 즉, $dist(x,y) = 1-\cos(\theta) = 1-sim(x,y)$ 식이 도출됩니다.
 
 ## Cosine Distance과 Euclidean Distance 관계
-Image Retrieval에서 Feature Vectors은 종종 unit vecotr을 얻기 위해 $L_{2}$ nomalized로 변환합니다.<br>
+Image Retrieval에서 Feature Vectors은 종종 unit vecotr을 얻기 위해 $L_{2}$ nomalized로 변환합니다.
 Euclidean Distance식에서 $x$와 $y$ 두 벡터는 다음과 같이 변형할 수 있습니다.
 
 $$
@@ -61,6 +61,25 @@ d_{euclid} &= \sqrt{\sum_{i=1}^{n}(x_i - y_i)^2} \\
   &= \sqrt{ 2(1 - x\cdot y) }\\
 \end{aligned}\end{equation}
 $$
+
+이전에 봤던 Cosine Distance을 떠올려보면, $\cos(\theta)$는 $[0,1]$의 범위를 갖고 다음과 같이 정의할 수 있습니다.
+
+$$
+\begin{equation}
+d_{cosine}(x, y) = 1 - x\cdot y \ .
+\end{equation}
+$$
+
+이제 위의 정의를 $d_{euclid}$에 적용해봅시다.
+
+$$
+\begin{equation}
+d_{euclid}(x, y) = \sqrt{ 2d_{cosine} }\ .
+\end{equation}
+$$
+
+두 측정 방법은 매우 연관성있다는 것을 알 수 있습니다. 두 이미지 사이의 Similarity(유사성)을 측정하기 위해 두 방법 중 하나를 선택하면 됩니다.
+
 
 ### Reference
 [Why is one minus cosine similarity equal to cosine distance?](https://www.quora.com/Why-is-one-minus-cosine-similarity-equal-to-cosine-distance)<br>
