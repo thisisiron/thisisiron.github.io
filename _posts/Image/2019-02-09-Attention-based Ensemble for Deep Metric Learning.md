@@ -78,14 +78,14 @@ d_{ensemble, (f_1,...,f_M)}(x_i,x_j) = \frac{1}{M}\sum_{m=1}^{M}d_Y(f_m(x_i),f_m
 $$
 
 고전적인 ensemble이외에도 두가지 embedding function을 고려해볼 수 있습니다. $s:X\rightarrow Z$ 와 $g:Z\rightarrow Y$ embedding function이 존재합니다. $X$는 미지의(unknown) metric function $d_X$을 가진 $N_X$ 차원의 공간에 있습니다. $Z$는 미지의(unknown) metric function $d_Z$을 가진 $N_Z$ 차원의 공간에 있습니다. $Y$는 알려진 metric function $d_Y$을 가진 $N_X$ 차원의 공간에 있습니다.<br>
-이 두 함수를 $b(x) = g(s(x)), \enspace x\inX$라는 하나의 함수로 합칠 수 있습니다. combined function은 $X$와 $Y$ metric space 사이에 있는 $b:X\rightarrow Y$입니다. 2가지 Case에 대해 알아보겠습니다.
-1. parameter sharing ensemble과 같이, 독립적으로 학습되는 다수의 $g$함수와 하나의 $s$함수를 가지고 다수의 embedding function $b_m:X\rightarrow Y$을 얻을 수 있습니다.
+이 두 함수를 $b(x) = g(s(x)), \enspace x\in X$라는 하나의 함수로 합칠 수 있습니다. combined function은 $X$와 $Y$ metric space 사이에 있는 $b:X\rightarrow Y$입니다. 2가지 Case에 대해 알아보겠습니다.
+- parameter sharing ensemble과 같이, 독립적으로 학습되는 다수의 $g$함수와 하나의 $s$함수를 가지고 다수의 embedding function $b_m:X\rightarrow Y$을 얻을 수 있습니다.
 
 $$
 b_m(x) = g_m(s(x))
 $$
 
-2. 다른 case에 대해 알아보면 다수의 $s$함수와 하나의 $g$함수로 이루어진 $b_m:X\rightarrow Y$을 얻을 수 있습니다.
+- 다른 case에 대해 알아보면 다수의 $s$함수와 하나의 $g$함수로 이루어진 $b_m:X\rightarrow Y$을 얻을 수 있습니다.
 
 $$
 b_m(x) = g(s_m(x))
@@ -94,7 +94,9 @@ $$
 $s_m$은 label을 보존하는 것뿐만 아니라 metric 정보도 보존하고 있습니다. 다른 말로하자면, label에 관한 point을 다수의 $s_m$을 이용해 $Z$ 공간 안에 다수의 지역으로 맵핑할 수 있습니다. 그리고 이것을 $Y$ 공간 안에 다수의 지역으로 맵핑할 수 있습니다.<br>
 예를 들어 classification의 ensemble이라고 한다면 $g$함수는 label의 분포를 추정하는 함수가 될 것입니다. 모든 $s_m$은 label 보존 함수일 것입니다. $s_m$의 output은 $g$함수의 input이기 때문입니다. 즉 $s_m$ 함수가 label 정보를 보존하고 있기 때문에 $g$함수에서 그것을 토대로 추정할 수 있게 되는 것입니다.
 
-$g:Z\rightarrow Y$에서 $Y$ 공간 안에 있는 $x$로부터 맵핑된 $y_m$들을 서로 멀어지게 한다면, $Z$ 공간 안에 있는 $x$로부터 맵핑된 $z_m$도 서로 멀어지게 됩니다.
+$g:Z\rightarrow Y$에서 $Y$ 공간 안에 있는 $x$로부터 맵핑된 $y_m$들을 서로 멀어지게 한다면, $Z$ 공간 안에 있는 $x$로부터 맵핑된 $z_m$도 서로 멀어지게 됩니다. 이 divergence constraint을 $z_m$에는 적용할 수 없습니다. 왜냐하면 Z는 미지의 공간이기 때문입니다. $Y$ 공간 안에 $y_m$에 divergence constraint을 적용하는 동안에 각각의 $b_m$을 학습합니다.
+
+고전적인 ensemble 모델이나 multihead ensemble은 divergence constraint을 적용하게 된다면 diversity을 유도할 필요가 없습니다. 왜냐하면 각각의 $f_m$과 $g_m$이 무작위로 $Y$ 공간 안에 서로 다른 metric을 구성하기 때문입니다.
 
 ### 3.3 Attention-based ensemble model
 주로 2 가지 부분으로 나누어 보면 Feature Extraction Module $F(x)$와 Attention Module $A(x)$로 볼 수 있습니다. Feature Extraction에서 일반적으로 Multi-layer perceptron model을 다음과 같이 가정합니다.
@@ -135,7 +137,7 @@ $$
 
 각 기호에 대해 설명드리겠습니다. 
 - $x_i$는 training sample을 의미
-- $d_Y$는 Y 공간 안의 metric
+- $d_Y$는 Y 공간 안의 metric 의미
 - $m_{div}$는 margin을 의미
 - $B_p(x_i),B_q(x_i)$는 다른 두 learner에게 embedded된 하나의 이미지의 feature embedding을 의미
 - 위 pair가 same label이면 positive pair, different label이면 negative pair 명명
@@ -184,10 +186,12 @@ $$
 
 
 전처리 관련 내용 정리입니다.
-
-
-
-
+- input image 사이즈: $224\times224$
+- 모든 training과 testing image을 확장할 때, aspect ratio 고정하고 padding을 넣어 256으로 확장
+- Training할 때 무작위로 crop하여 $224\times224$ 이미지를 만듬
+- 그러고 나서 무작위로 수평적 flip을 함
+- Testing할 때는 가운데를 crop함
+- channel-wise mean을 이미지들로부터 subtract함
 
 ## 5 Evaluation
 이 논문에서의 실험은 Image retrieval task 데이터셋을 이용했습니다. 자세한 데이터넷은 논문을 참고해주시기 바랍니다. 
@@ -210,9 +214,56 @@ Embedding size을 다르게 하면서 ABE-M 모델과 M-heads 모델을 비교�
 - ABE-1은 1-head 모델과 유사하게 작동
 - $ $ABE-$M^{512} $의 성능은 M이 증가할수록 증가함
 - 개개의 Learner의 Embedding Size는 줄어들더라도 M이 증가하게 되면 개개의 Learner의 성능도 증가
-- $ $ABE-$1^{64}, \>$ABE-$2^{128},\> $ABE-$4^{256},\> $ABE-$8^{512} $은 모두 같은 Embedding Size 64을 가짐
+- $ $ABE-$1^{64}, $ABE-$2^{128}, $ABE-$4^{256}, $ABE-$8^{512} $은 모두 같은 Embedding Size 64을 가짐
 
 ### 6.2 Effects of divergence loss
+<img src="/assets/images/paper1_table2.PNG"><br>
+위의 표를 보면 Div Loss을 사용하지 않은 경우 individual learner 성능과 유사하지만 Div Loss을 사용한 모델과 비교했을 경우 상당한 차이가 있음을 알 수 있습니다.
+
+<img src="/assets/images/paper1_fig5.PNG"><br>
+그래프를 보고 도출되는 것
+- Self Pair란 다른 learner로 처리된 Same image을 의미
+- Fig(a) 모든 Learner는 다양한 Embedding을 학습하도록 하여 Self pair의 cosine similarity의 감소 초래
+- Fib(b) 모든 Learner는 self pair의 cosine similarity가 1과 가깝도록 매우 유사한 Embedding Function으로 수렴<br>
+  즉, 모든 learner가 결국 유사한 attention masks을 학습하게 된다는 의미이며 이것은 모두가 유사한 Embedding이 되도록 만듭니다.
+
+<img src="/assets/images/paper1_fig6.PNG"><br>
+해당 그림을 보고 도출되는 것
+- 서로 다른 Learner가 같은 채널에서 다른 부분을 처리<br>
+  Ex. 350th Channel에서 learner 1은 차의 밑 부분, learner 2는 roof 부분 learner 3은 roof을 포함한 차의 윗 부분을 처리 중입니다.
+- 제안된 Loss가 성공적으로 다른 Leaners가 생산하는 attention mask을 다양화시키는 것을 확인
+- 맨 마지막 그림은 학습된 Embedding function이 좀 더 집중하고 있는 object area을 의미
+
+<img src="/assets/images/paper1_table3.PNG"><br>
+M-heads의 Divergence Loss 관련 내용 정리
+- Fig.5 (c)에서 self pair 관련 cosine similarities은 0에 가까이 있음
+- Fig.5 (d)에서 divergence loss는 cosine similarity에 영향을 미치지 못함
+- Table3을 보고 Divergence loss는 8-heads 모델에서 성능이 향상되지 않음
+- 위와 같은 내용의 원인은 3.2 세션에서 $G_m(\cdot)$이 무작위로 $Y$ 공간 안에 different metric spaces을 구성하기 때문이라고 가정
+
+### 6.3 Ablation study
+
+<img src="/assets/images/paper1_fig7.PNG"><br>
+Attention Module에서 Depth에 대한 Sensitivity
+- inception block의 수를 변화를 줌으로써 depth의 영향을 알아봄
+- element wise product 수행을 위해 attention module의 input dension과 attention mask의 크기가 같도록 해야함
+- 이 때문에 attention module에서 pooling layers는 모두 제거
+- Fig.7 (a) 기반으로 inception(4a)부터 inception(4e)까지의 5개 블록을 사용하기로 함
+
+Attention Module에서 Branching point에 대한 Sensitivity
+- attention module에서 branching point는 Spatial feature extractor $S(\cdot)$과 Global feature embedding function $G(\cdot)$을 나누는 것
+- Attention module의 block 수는 유지하고 branching point만 변경
+- Fig.7 (b)을 통해 *pool3*가 가장 좋은 성능을 보이는 point로 확인
+
+$\lambda_{div}$ Sensitivity
+- Fig.7 (c)을 보면 $\lambda_{div}$가 1일 때 가장 좋은 성능을 보여줌
+- 낮은 값인 경우에는 빠르게 성능을 저하시킴
+
+### 6.4 Comparison with state of the art
+state of the art 모델과 비교, 자세한 내용은 논문을 참고하시길 바라겠습니다.<br>
+<img src="/assets/images/paper1_table4.PNG"><br>
+<img src="/assets/images/paper1_table5.PNG"><br>
+
 
 ## 7 Conclusion
 이 논문에서 Deep metric learning에서 Ensemble의 새로운 Framework을 보여주었습니다. 
@@ -220,6 +271,7 @@ Embedding size을 다르게 하면서 ABE-M 모델과 M-heads 모델을 비교�
 - Divergence Loss는 각각의 learner가 Feature Embedding을 다양화하도록 만듬
 - Divergence Loss을 적용함으로써 Ensemble의 성능을 올림뿐만 아니라 개개의 learner의 성능도 향상
 
+해당 논문에서는 추가적인 보충 자료를 제공합니다. 여기서 따로 더이상 다루지 않겠습니다. 궁금하신 분은 아래 Reference에 기재되어있는 논문 링크를 따라 들어가면 논문 마지막에 보충자료가 첨부되어있습니다.
 
 ## Reference
 [Attention-based Ensemble for Deep Metric Learning](https://arxiv.org/abs/1804.00382)<br>
