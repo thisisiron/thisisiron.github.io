@@ -36,7 +36,7 @@ $\theta$는 $x$와 $y$ 벡터 사이의 각을 의미합니다. 다음과 같이
 2. $x$와 $y$와 수직인 경우 $\theta = \frac{\pi}{2}$이 되고, $\cos(\frac{\pi}{2})=0$이 됩니다.
 3. $x$와 $y$와 반대 방향을 취하고 있는 경우 $\theta = \pi$이 되고, $\cos(\pi)=-1$이 됩니다.
 
-다음과 같은 그래프 형태를 보이게 됩니다.
+다음과 같은 그래프 형태를 보이게 됩니다.<br>
 <img src="/assets/images/cosine.PNG"><br>
 
 ## The Cosine Distance
