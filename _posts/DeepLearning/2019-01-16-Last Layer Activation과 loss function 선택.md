@@ -1,6 +1,6 @@
 ---
 title: "Last Layer Activation과 Loss Function 선택"
-categories: MachineLearning
+categories: DeepLearning
 ---
 
 ## Last Layer Activation Function와 Loss Function 선택 방법

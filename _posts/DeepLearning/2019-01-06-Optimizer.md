@@ -1,6 +1,6 @@
 ---
 title: "Optimizer"
-categories: MachineLearning
+categories: DeepLearning
 ---
 ## Optimizer Map
 <img src="/assets/images/optimizer_map.png">

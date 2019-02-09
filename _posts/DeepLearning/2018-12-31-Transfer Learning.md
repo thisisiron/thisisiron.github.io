@@ -1,6 +1,6 @@
 ---
 title: "Transfer Learning(전이학습)"
-categories: MachineLearning
+categories: DeepLearning
 ---
 ## 정의
 - 습득한 지식을 저장하고 다른 관련 문제에 적용하는 방법

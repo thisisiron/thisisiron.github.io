@@ -1,6 +1,6 @@
 ---
 title: "End-to-End Learning이란"
-categories: MachineLearning
+categories: DeepLearning
 ---
 
 ## End-to-End Learning는 무엇일까?
