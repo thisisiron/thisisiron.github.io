@@ -1,5 +1,5 @@
 ---
-title: "About cosine similarity"
+title: "About similarity"
 categories: MachineLearning
 ---
 
