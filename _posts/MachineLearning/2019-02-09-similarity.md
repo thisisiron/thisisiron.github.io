@@ -1,5 +1,5 @@
 ---
-title: "About similarity"
+title: "Deep Learning에서 Similarity"
 categories: MachineLearning
 ---
 
