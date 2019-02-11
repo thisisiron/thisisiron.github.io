@@ -33,7 +33,7 @@ $$
 그 선택된 Model은 그 Test에 맞춰져 있기 때문입니다. Test Set에서 d=5일 때 가장 좋은 결과를 냈다고 해서 그 모델을
 선택하게 되면 그 모델(d=5)은 단지 Test Set에 좋은 결과를 낸 것입니다.
 
-<!-- <img src="/assets/images/multiple_filters.PNG"> -->
+Cross Validation(=Dev-Set)을 구성하여 여기서 가장 좋게 나온 Model을 선택하면 됩니다.
 
 ## Tips on Benchmarks or Compettions
 아래의 방법들은 실제 서비스할 때는 거의 사용하지 않습니다. 비용이 많이 들기 때문입니다. 하지만 Benchmark나 Compettion에서
