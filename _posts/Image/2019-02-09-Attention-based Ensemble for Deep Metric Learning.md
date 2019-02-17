@@ -52,12 +52,10 @@ Attention Mechanism은 많은 컴퓨터 비전 문제에서 사용되었습니�
 $f: X\rightarrow Y$은 isometric embedding function가 되는 것입니다. $X$는 미지의(unknown) metric function $d_X$을 가진 $N_X$ 차원의 공간에 있습니다. $Y$는 알려진 metric function $d_Y$을 가진 $N_X$ 차원의 공간에 있습니다. 예를 들어 $Y$는 Euclidean distance 혹은 angular distance을 가진 Euclidean 공간에 있다고 할 수 있습니다.<br>
 우리의 목적은 $D = \{(x(1), x(2), d_X (x(1), x(2)))|x(1), x(2) \in  X \}$에서 $f$을 추정하는 것입니다. 예를 들어 $D_C = \{(x, c)|x \in  X, c \in  C\}$($C$는 label을 의미)라는 데이터 셋에서 **contrastive metric constraint**는 다음과 같이 정의할 수 있습니다. $m_c$는 arbitrary margin을 의미합니다. 
 
-$$
-\begin{equation}
-d_X(x_i,x_j)=0, \quad $if \; c_i=c_j \\
-d_X(x_i,x_j)>m_c, \quad $if \; c_i \neq c_j \\
-\end{equation}
-$$
+
+$d_X(x_i,x_j)=0, \quad$ if $\; c_i=c_j$<br>
+$d_X(x_i,x_j)>m_c, \quad$ if $\; c_i \neq c_j$
+
 
 다음으로 $(x_i, c_i),\> (x_j, c_j), \> (x_k, c_k) \in D_C$에서 **triplet metric constraint**는 다음과 같이 정의할 수 있습니다. $m_t$는 margin을 의미합니다.
 
