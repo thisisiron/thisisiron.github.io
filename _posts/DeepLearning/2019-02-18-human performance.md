@@ -21,7 +21,7 @@ categories: DeepLearning
 2. Human 성능보다 낮은 경우 특정 방법을 이용해서 쉽게 높일 수 있지만 반대의 경우는 힘듬
 
 ## Avoidable Bias
-| | Case1 | Case2 |
+| Type | Case1 | Case2 |
 -------- | ---------------------- | ------------- | 
 |Humans | 1% | 7.5% |
 |Training Error | 8% | 8% |
