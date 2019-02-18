@@ -54,7 +54,7 @@ $f: X\rightarrow Y$은 isometric embedding function가 되는 것입니다. $X$�
 
 
 $d_X(x_i,x_j)=0, \quad$ if $\; c_i=c_j$<br>
-$d_X(x_i,x_j)>m_c, \quad$ if $\; c_i \neq c_j$
+$d_X(x_i,x_j)>m_c, \quad$ if $\; c_i \neq c_j$<br>
 
 
 다음으로 $(x_i, c_i),\> (x_j, c_j), \> (x_k, c_k) \in D_C$에서 **triplet metric constraint**는 다음과 같이 정의할 수 있습니다. $m_t$는 margin을 의미합니다.
