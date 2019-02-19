@@ -14,7 +14,8 @@ categories: MachineLearning
 활성화 함수에 전달할 때 $$ z^{(i)} $$ 대신에 $$ \tilde{z}^{(i)} $$을 사용하세요. $z^{(i)}_{norm}$은 모든 $z$들의 평균이 0, 표준편차가 1이 되도록 만듭니다. 4번식에서 다양한 분포를 가질 수 있도록 $\gamma$와 $\beta$를 사용합니다. 이 점이 입력층에서 정규화하는 것과 차이점이라고 볼 수 있습니다. 즉, Hidden Unit의 평균과 분산이 0(평균)과 1(분산)로 고정되는 것을 원치않습니다. $\gamma$와 $\beta$는 Learnable Parameter라고 불리우며, 이 값을 이용해서 평균과 표준편차 값을 다르게 가질 수 있습니다. $\gamma = \sqrt{\sigma^2 + \varepsilon}$와 $\beta = \mu$ 식이 성립한다면 3번의 식을 거꾸로 뒤집은 것과 같은 효과가 나옵니다. $\gamma = \sqrt{\sigma^2 + \varepsilon}$와 $\beta = \mu$이 성립하면 $\tilde{z}^{(i)}$가 $z$같게 됩니다.
 
 그러면 왜 평균과 분산이 0과 1로 고정되면 좋지 않을까? 라고 의문을 가질 수 있습니다. 그 이유는 Sigmoid 함수를 예시로 보겠습니다.
-<img src="/assets/images/sigmoid_mean.jpg">
+<img src="/assets/images/sigmoid_mean.png"><br>
+
 만약에 평균과 분산이 0과 1의 값을 갖게 된다면 빨간색 선과 같이 값이 모이게 됩니다. 한 구간에 모이는 것보다 널리 퍼져 있는 것이 좋습니다.
 
 여기에서 사용하는 $\beta$는 Momtum에서 사용하는 $\beta$와 다릅니다. 물론 RMSProp에서의 $\beta$도 마찬가지로 다릅니다. 또한 $\gamma$와 $\beta$는 Adam, RMSProp, Gradient 등을 이용해 업데이트를 다음과 같이 진행할 수 있습니다. 
