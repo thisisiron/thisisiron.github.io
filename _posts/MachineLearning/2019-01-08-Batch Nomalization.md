@@ -16,7 +16,11 @@ categories: MachineLearning
 그러면 왜 평균과 분산이 0과 1로 고정되면 좋지 않을까? 라고 의문을 가질 수 있습니다. 그 이유는 Sigmoid 함수를 예시로 보겠습니다.
 <img src="/assets/images/sigmoid_mean.png"><br>
 
-만약에 평균과 분산이 0과 1의 값을 갖게 된다면 빨간색 선과 같이 값이 모이게 됩니다. 빨간색 선에 모이게 되면 그 구간은 linear한 구간입니다. 즉 비선형 함수를 적용했지만 비선형적인 결과가 나오지 않는 것을 의미합니다. 그렇기 때문에 한 구간에 모이는 것보다 널리 퍼져 있는 것이 좋습니다.
+만약에 평균과 분산이 0과 1의 값을 갖게 된다면 빨간색 선과 같이 값이 모이게 됩니다. 빨간색 선에 모이게 되면 그 구간은 linear한 구간입니다. 이미지를 통해 확인하겠습니다.
+
+<img src="/assets/images/batch_activation.PNG"><br>
+
+해당 이미지를 보면 비선형 함수를 적용했지만 비선형적인 결과가 나오지 않는 것을 볼 수 있습니다. 그렇기 때문에 한 구간에 모이는 것보다 널리 퍼져 있는 것이 좋습니다.
 
 여기에서 사용하는 $\beta$는 Momtum에서 사용하는 $\beta$와 다릅니다. 물론 RMSProp에서의 $\beta$도 마찬가지로 다릅니다. 또한 $\gamma$와 $\beta$는 Adam, RMSProp, Gradient 등을 이용해 업데이트를 다음과 같이 진행할 수 있습니다. 
 
@@ -53,4 +57,5 @@ Mini-Batch를 사용하는 경우에는 각 해당되는 Mini-Batch의 평균과
 
 
 ### Reference
-Coursera: Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization (Andrew Ng)
+Coursera: Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization (Andrew Ng)<br>
+[Batch Normalization — Speed up Neural Network Training](https://medium.com/@ilango100/batch-normalization-speed-up-neural-network-training-245e39a62f85)

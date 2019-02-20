@@ -20,12 +20,10 @@ Increasing $\lambda$ | Fix high variance |
 ## Model Selection
 ### 여러 모델 중 어떤 모델을 선택해야할까?
 $$
-\begin{align*}&
-d=1, \enspace h_{\theta}(x) = \theta_{0} + \theta_{1}x  \newline &
-d=2, \enspace h_{\theta}(x) = \theta_{0} + \theta_{1}x + \theta_{2}x^2 \newline &
-... \newline &
+d=1, \enspace h_{\theta}(x) = \theta_{0} + \theta_{1}x  \\
+d=2, \enspace h_{\theta}(x) = \theta_{0} + \theta_{1}x + \theta_{2}x^2 \\
+... \newline \\
 d=10, \enspace h_{\theta}(x) = \theta_{0} + \theta_{1}x + ... +  \theta_{10}x^10
-\end{align*}
 $$
 
 위와 같이 각각 Polynomial 식이 존재합니다. 즉 여러 모델이 존재한다고 생각해주시면 됩니다.
@@ -34,6 +32,8 @@ $$
 선택하게 되면 그 모델(d=5)은 단지 Test Set에 좋은 결과를 낸 것입니다.
 
 Cross Validation(=Dev-Set)을 구성하여 여기서 가장 좋게 나온 Model을 선택하면 됩니다.
+
+
 
 ## Tips on Benchmarks or Compettions
 아래의 방법들은 실제 서비스할 때는 거의 사용하지 않습니다. 비용이 많이 들기 때문입니다. 하지만 Benchmark나 Compettion에서
