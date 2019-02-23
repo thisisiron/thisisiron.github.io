@@ -75,6 +75,7 @@ Naver Ai-Vision Hackathon (2019.01 ~ 2019.02)
 <img src="/assets/images/NNandDL.PNG" width="400">
 <img src="/assets/images/Improving_DNN.PNG" width="400">
 <img src="/assets/images/Structuring_ML_Projects.PNG" width="400">
+<img src="/assets/images/coursera_CNN.PNG" width="400">
 
 
 ## Toy Project
