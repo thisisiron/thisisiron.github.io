@@ -44,7 +44,7 @@ $$
 
 $h(y)$는 $f_{i,j}(x)$와 $g_{i}$를 Conv 연산 후 Sum을 합니다.
 $$
-h(y) = \sum_{x=1}^{k}f(x)\cdotg(y\cdot d - x + c)
+h(y) = \sum_{x=1}^{k}f(x)\cdot g(y\cdot d - x + c)
 $$
 
 - $c=k-d+1$: offset constant
@@ -139,3 +139,61 @@ $r$의 확률은 $P[r] ~ p^r$에서 parameter $p$을 가지고 gemetric distribu
 
 이 방식에서 선택된 동의어가 가장 빈번하게 보이는 의미에서 멀어질 때 선택된 동의어 확률이 작아집니다.
 $p=0.5$와 $q=0.5$을 따르는 gemetric distribution을 사용할 것입니다.
+
+## 3 Comparison Models
+
+### 3.1 Traditional Methods
+
+- **Bag-of-words and its TFIDF**:
+- **Bag-of-ngrams and its TFIDF**:
+- **Bag-of-means on word embedding**:
+
+### 3.2 Deep Learning Method
+- **Word-based ConvNet**: 공평한 비교를 위해, Char-CNN과 동일한 구조를 가지기 위해 Layer의 수와 각 Layer의 Output size을 동일하게 함
+- **simple LSTM**: 기존의 LSTM 방식과 동일함
+
+
+## 4 Large-scale Datasets and Results
+데이터에 관련 자세한 설명은 논문을 참고하시길 바랍니다. 
+간단하게 짚고 가야할 점만 명시하고 해당 챕터는 넘어가도록 하겠습니다.
+다음 Table은 논문에서 사용된 데이터 크기에 대한 내용입니다.
+
+<img src="/assets/images/paper2_table3.PNG"><br>
+
+여기서 중요하게 봐야할 것은 각 클래스마다 얼마나 데이터를 갖고 있는지 확인하는 것입니다.
+다음은 해당 Dataset마다 각 클래스마다 보유하고 있는 데이터를 확인하겠습니다.
+
+<img src="/assets/images/paper2_table3_b.PNG"><br>
+
+다음은 이러한 Dataset을 이용하여 각 모델에 대한 성능을 나타내는 표입니다.
+파란 색으로 표현된 것은 Best 결과를 의미하며, 붉은 색으로 표현된 것은 Worse 결과를 의미합니다.
+
+<img src="/assets/images/paper2_table4.PNG"><br>
+
+해당 표에서 Sogou Dataset에서는 -로 표시된 이유는 Sogou가 중국어로 이루어진 Dataset이며 동일어 사전을 이용할 수 없기 때문에 -로 표기되어있습니다.
+
+
+## 5 Discussion
+<img src="/assets/images/paper2_fig3.PNG"><br>
+
+위에 나타낸 그래프는 Char-CNN을 기준으로 각각 모델에 대한 Relative Error을 구한 것입니다. 
+쉽게 생각하면 양수 퍼센티지는 Char-CNN보다 성능이 낮음을 의미(그래프에 나타난 모델이 더 좋음)하며,
+음수 퍼센티지는 Char-CNN가 더 좋은 성능을 보여줌을 의미하며,
+0에 가까울 수록 Char-CNN모델과 비교하는 모델과 큰 차이가 없음을 나타냅니다.
+
+Relative Error 관련 수식은 다음과 같습니다
+$x$에는 비교하는 모델, $x_0$에는 Char-CNN을 대입하면 됩니다.
+$$
+\frac{x-x_{0}}{x} * 100
+$$
+
+- **Character-level ConvNet is an effective method.**: Word가 아닌 Character에서도 잘 작동하며, 언어는 다른 종류(Ex. Image)와 다르지 않게 하나의 signal로 여겨질 수 있음을 보여줌
+- **Dataset size forms a dichotomy between traditional and ConvNets models.**: Dataset이 수백만정도까지 커질수록 ConvNet이 더 좋은 성능을 보여주며, Traditional 모델은 수십만 데이터셋까지 좋은 성능을 보여줌
+- **ConvNets may work well for user-generated data**: 주의깊게 작성된 Yahoo Answer보다 유저가 작성한 데이터(Raw Data, 해당 논문에서는 Amazon Dataset)에서 Char-CNN은 좋은 성능을 보여줌
+- **Choice of alphabet makes a difference.**: 대소문자를 구별하는 것은 대개 더 좋은 결과를 보여주지 않음(정규화 효과가 발생한다고 여겨짐)
+- **Semantics of tasks may not matter.**: Task에 따라 성능이 달라지지 않음(여기서는 sentiment analysis와 topic classification을 다룸)
+- **Bag-of-means is a misuse of word2vec**: 최악의 성능이 낮게 나온 것을 보고 판단할 수 있지만 이와 관련된 논문이 아니므로 자세하게 다루지 않음
+- **There is no free lunch.**: 모든 데이터셋에서 잘 작동하는 모델은 없음
+
+## 6 Conclusion and Outlook
+다른 모델에 비해 Char-CNN이 더 좋은 결과를 얻기 위해서는 Dataset size, text가 정성들여 작성된 것인지에 대한 고려, 대소문자 구별 등 많은 요소를 고려해야합니다.
