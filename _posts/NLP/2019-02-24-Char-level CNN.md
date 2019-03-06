@@ -20,7 +20,9 @@ ConvNets은 언어의 syntactic 또는 semantic 구조에 대한 지식 없이 �
 
 ConvNets 접근법은 단어를 기초로 사용합니다. 이 방식에서 words 또는 word n-gram level 에서 추출된 character-level features가 distributed representation을 형성합니다.
 
-이 논문에서는 매우 큰 데이터 set을 학습할 때 위에서 언급한 ConvNets이 syntactic 또는 semantic 구조에 대한 지식을 요구하지 않는 결론이외에도 words의 지식을 사용하지 않아도 되는 것을 보여줄 것입니다.
+이 논문에서는 매우 큰 데이터 set을 학습할 때 위에서 언급한 ConvNets이 syntactic 또는 semantic 구조에 대한 지식을 요구하지 않는 결론 이외에도 words에 대한 지식을 사용하지 않아도 되는 것을 보여줄 것입니다.
+
+단어로 구분이 가능한지 안 한지 여부와 관계없이 Character는 항상 필요한 요소로 구성되어있기 때문에 여러 언어에서 작동 할 수있는 단일 시스템에서 중요할 수 있습니다.
 
 Characters로만 작동하게 되면 misspelling이나 이모티콘과 같은 비정상적인 character 조합들이 자연스럽게 학습될 수 있는 이점을 갖습니다.
 
