@@ -145,10 +145,16 @@ $p=0.5$와 $q=0.5$을 따르는 gemetric distribution을 사용할 것입니다.
 ## 3 Comparison Models
 
 ### 3.1 Traditional Methods
+비교 모델은 어떠한 모델과 비교하는지만 알아보고 넘어가도록 하겠습니다.
 
-- **Bag-of-words and its TFIDF**:
-- **Bag-of-ngrams and its TFIDF**:
-- **Bag-of-means on word embedding**:
+- **Bag-of-words and its TFIDF**: [Bag-of-words 방법](https://thisisiron.github.io/nlp/word2vec/)은 해당 링크 3.1 세션에 설명을 적어놨습니다.
+  TF-IDF는 자연어처리의 전통적인 모델로 이후에 자세히 다루도록 하겠습니다.
+- **Bag-of-ngrams and its TFIDF**: Bag-of-words와 같은 방법인데 단어를 구성하는 것을 ngrams을 이용하여 하는 것입니다.<br>
+  예를 들어 "I like a dog" 라는 문장이 있다면 Bag: {<start>_I, I_like, like_a, ...}와 같이 구성되게 됩니다.
+  
+- **Bag-of-means on word embedding**: Training dataset으로 만든 Word2Vec을 k-means을 이용한 방법<br>
+  clustered words의 대표를 이용하여 Bag-of-Words 방법을 이용합니다. 예를 들어 바나나, 사과, 포도를 대표하게 되는 것은
+  "과일"이라는 단어가 생성되는 것과 같다고 생각합니다.
 
 ### 3.2 Deep Learning Method
 - **Word-based ConvNet**: 공평한 비교를 위해, Char-CNN과 동일한 구조를 가지기 위해 Layer의 수와 각 Layer의 Output size을 동일하게 함
@@ -191,7 +197,7 @@ $$
 
 - **Character-level ConvNet is an effective method.**: Word가 아닌 Character에서도 잘 작동하며, 언어는 다른 종류(Ex. Image)와 다르지 않게 하나의 signal로 여겨질 수 있음을 보여줌
 - **Dataset size forms a dichotomy between traditional and ConvNets models.**: Dataset이 수백만정도까지 커질수록 ConvNet이 더 좋은 성능을 보여주며, Traditional 모델은 수십만 데이터셋까지 좋은 성능을 보여줌
-- **ConvNets may work well for user-generated data**: 주의깊게 작성된 Yahoo Answer보다 유저가 작성한 데이터(Raw Data, 해당 논문에서는 Amazon Dataset)에서 Char-CNN은 좋은 성능을 보여줌
+- **ConvNets may work well for user-generated data**: 주의깊게 작성된 Yahoo Answer(formal한 데이터)보다 유저가 작성한 데이터(Raw Data, 혹은 unformal한 데이터, 해당 논문에서는 Amazon Dataset)에서 Char-CNN은 좋은 성능을 보여줌
 - **Choice of alphabet makes a difference.**: 대소문자를 구별하는 것은 대개 더 좋은 결과를 보여주지 않음(정규화 효과가 발생한다고 여겨짐)
 - **Semantics of tasks may not matter.**: Task에 따라 성능이 달라지지 않음(여기서는 sentiment analysis와 topic classification을 다룸)
 - **Bag-of-means is a misuse of word2vec**: 최악의 성능이 낮게 나온 것을 보고 판단할 수 있지만 이와 관련된 논문이 아니므로 자세하게 다루지 않음
