@@ -25,7 +25,7 @@ Self-attention 기법은 현재 단어와 이전 문장의 부분의 상관 관�
 
 → machine reading, 요약, 이미지 설명 생성에 좋은 결과를 보여줌
 
-![](https://www.notion.so/8bbbabf0aa5e4f90aea97d11de65f4db#39da8bcdc69d419596bd7b40d58d6f79)
+<img src="https://www.notion.so/8bbbabf0aa5e4f90aea97d11de65f4db#39da8bcdc69d419596bd7b40d58d6f79"><br>
 
 [Long Short-Term Memory-Networks for Machine Reading](https://arxiv.org/pdf/1601.06733.pdf)
 
@@ -33,7 +33,7 @@ Self-attention 기법은 현재 단어와 이전 문장의 부분의 상관 관�
 
 Self-Attention이랑 **Scaled Dot-Product**을 혼용하여 설명한 것 같아서 Scaled Dot-Product은 Attention is all you need에서 제시된 내용입니다.
 
-![](https://www.notion.so/8bbbabf0aa5e4f90aea97d11de65f4db#4c375b1067c542699939173845f5b044)
+<img src="https://www.notion.so/8bbbabf0aa5e4f90aea97d11de65f4db#4c375b1067c542699939173845f5b044"><br>
 
 ## 왜 Q, V, K로 나누는가요?
 
@@ -41,7 +41,7 @@ Self-Attention이랑 **Scaled Dot-Product**을 혼용하여 설명한 것 같아
 
 즉, 해당 단어가 어떤 단어와 연관이 있는지 알아내기 위함?입니다.
 
-![](https://www.notion.so/8bbbabf0aa5e4f90aea97d11de65f4db#cbdc4e091dca430c9c834b5a054bdff9)
+<img src="https://www.notion.so/8bbbabf0aa5e4f90aea97d11de65f4db#cbdc4e091dca430c9c834b5a054bdff9"><br>
 
 위의 예시에서 q1(Thinking)은 k1(Thinking)과 k2(Machines)와 곱해지는데 이 결과 값은 어떤 단어와 해당 단어가 연관이 있는지 알 수 있습니다.
 
@@ -56,7 +56,7 @@ Self-Attention이랑 **Scaled Dot-Product**을 혼용하여 설명한 것 같아
 
 다음과 같은 수식을 통해
 
-![](https://www.notion.so/8bbbabf0aa5e4f90aea97d11de65f4db#cf698cc24a1f470a98c455398c12cd9b)
+<img src="https://www.notion.so/8bbbabf0aa5e4f90aea97d11de65f4db#cf698cc24a1f470a98c455398c12cd9b"><br>
 
 Input Embedding과 같은 크기의 Positional Encdoing을 구하게 됩니다.
 
@@ -64,7 +64,7 @@ Input Embedding과 같은 크기의 Positional Encdoing을 구하게 됩니다.
 
 ## 다음과 같은 수식은 뭔가요?
 
-![](https://www.notion.so/8bbbabf0aa5e4f90aea97d11de65f4db#f4b3735541e24dee9961b1284a61b742)
+<img src="https://www.notion.so/8bbbabf0aa5e4f90aea97d11de65f4db#f4b3735541e24dee9961b1284a61b742"><br>
 
 학습 단계에 따라 학습률을 변하게 해주는 공식인데 warmup_stpe은 4000으로 설정하여 사용
 
@@ -82,7 +82,7 @@ Label smoothing은 [0.9 0.025, 0.025, 0.025, 0.025]로 표현하게 됩니다.
 
 수식을 보면 다음과 같습니다.
 
-![](https://www.notion.so/8bbbabf0aa5e4f90aea97d11de65f4db#dc1d7f991f984cbf8b1bff2c0c9ae075)
+<img src="https://www.notion.so/8bbbabf0aa5e4f90aea97d11de65f4db#dc1d7f991f984cbf8b1bff2c0c9ae075"><br>
 
 [Rethinking the Inception Architecture for Computer Vision](https://arxiv.org/pdf/1512.00567.pdf)
 
