@@ -43,3 +43,10 @@ Server 컴퓨터를 사용할 때 하나의 User로 다수가 git을 이용하�
     user.email=kimiron518@gmail.com
     user.name=Eon Kim
 ```
+
+만약 global로 설정되어 있는 경우 global의 user.name과 user.email을 지우는 방법은 다음과 같습니다.
+
+```
+git config --global --unset user.name
+git config --global --unset user.email
+```

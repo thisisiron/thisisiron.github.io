@@ -61,13 +61,64 @@ $$
 - $c_t$는 context vector을 의미하며, $y_t$을 예측할 수 있도록 도와주는 그에 연관된 원본측(source-side) 정보를 담고있는 벡터입니다.
 
 $h_t$와 $c_t$가 주어지면 간단한 concatenation layer을 통해 attentional hidden state을 다음과 같이 정의할 수 있습니다.
+
 $$
 \widetilde{h} = tanh(W_c [c_t;h_t])
 $$
 
 attentional vector $h_t$는 softmax을 통과하여 다음과 같은 식을 정의할 수 있습니다.
+
 $$
 p(y_t|y{<t},x) = \text{softmax}(W_s\widetilde{h_t})
 $$
 
 ### Global Attention
+Global Attention은 모든 source sentnece을 고려하는 모델입니다.
+
+이 모델의 경우에, variable-length alignment vector $a_t$의 길이는 source side의 time steps의 수와 같습니다.
+즉, 우리가 코드를 작성할 때 설정하는 source side의 MAX length와 같습니다.
+
+이 벡터는 다음과 같은 수식에서 도출됩니다.
+
+$$
+a_t(s) = \text{align}(h_t,\overline{h_s}) \\ \quad 
+= \frac{\text{exp}(score(h_t,\overline{h_s}))}{\sum_{s'}\text{exp}(score(h_t,\overline{h_s}))}
+$$
+
+다음은 *content-based* 함수로 세 가지 타입을 고려할 수 있는 *score*가 존재합니다.
+
+```
+\text{score}(h_t,\bar{h_s}) = 
+\left\{\begin{matrix} h_t^\top \bar{h_s} && dot
+\\ h_t^\top W_a \bar{h_s} && general
+\\ v_a^\top \text{tanh}(W_a[h_t;\bar{h_s}]) && concat
+
+\end{matrix}\right.
+```
+
+<img src="/assets/images/paper3_figure2.PNG"><br>
+
+게다가, 초기에 attention model을 사용할 때는 *location-based*을 사용하였습니다.
+이것은 단순히 alignment scores을 target hidden state $h_t$만 사용한 수식입니다.
+
+$$
+a_t = \text{softmax}(W_ah_t)
+$$
+
+alignment vector가 주어지면 context vector는 모든 source hidden states에 걸친 weighted average을 계산하면 됩니다.
+
+Bahdanau et al. 2015 논문에서 제안한 모델과 global model은 유사합니다.
+몇몇 다른 핵심 부분이 존재합니다. 
+
+첫째로, 이 논문에서는 간단히 encoder와 decoder의 LSTM 가장 상위층의 hidden states을 사용했습니다.
+한편 Bahdanau et al. 2015에서 제안한 모델은 bi-directional encdoer와 uni-directional decoder의 concatenation을 사용했습니다.
+
+둘째로, 계산 과정이 단순합니다. 현 논문이 제안한 계산 과정은 $h_t \ \rightarrow  \ a_t \ \rightarrow \ c_t \ \rightarrow  \ \widetilde{h_t}$이고,
+비교 모델의 계산 과정은 $h_{t-1} \ \rightarrow  \ a_t \ \rightarrow \ c_t \ \rightarrow  \ \widetilde{h_t}$입니다.
+
+비교 모델에서는 concat product만 사용하여 alignment을 구하였지만 이후 이 논문에서는 다른 함수가 더 좋은 결과를 도출하는 것을 보여줄 것입니다.
+
+### 3.2 Local Attention
+
+
+
