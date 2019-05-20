@@ -105,7 +105,7 @@ analytics:
 author:
   name             : "Eon Kim"
   avatar           : "/assets/images/profile_image.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Machine Learning Developer"
+  bio              : "Deep Learning Developer"
   location         : "Seoul, South Korea"
   email            : 
   links:

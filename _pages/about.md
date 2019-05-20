@@ -19,34 +19,7 @@ Computer Engineering, MyongJi Univ.
 <sub>해당 프로젝트 명을 누르면 해당 스토리지로 이동.</sub>
 <br>
 
-[kaggle-toxic-comment](https://github.com/thisisiron/kaggle-toxic-comment) (2018.05 ~ 2018.06)
-- 악성 댓글 분류 (Kaggle 대회)
-- Tensorflow로 구현
-- CNN을 이용한 Classification
-<br><br>
-
-[samsung-ai-challenge-2018](https://github.com/thisisiron/samsung-ai-challenge-2018) (2018.08 ~ 2018.09)
-- Samsung Data Challenge 참가
-- Keras로 구현
-- 빈칸을 파악하여 해당 Output 결과 예측 값에 따른 모델 구현 
-<br><br>
-
-[bigcontest-champion-2018](https://github.com/thisisiron/bigcontest-champion-2018) (2018.09)
-- Bigcontest 챔피언스 리그 참가
-- Keras, Scikit learn로 구현
-- NN, K-means, Random Forest 등 다양한 모델을 사용 후 Output 값 비교
-<br><br>
-
-[naver_nlp_challenge](https://github.com/thisisiron/naver_nlp_challenge) (2018.12)
-- Naver NLP Challenge 참가
-- Tensorflow로 구현
-- CNN embedding 구현
-<br><br>
-
-[naver-ai-vision]() (2019.01 ~ 2019.02)
-- Naver Ai Hackathon
-- Keras로 구현
-
+정리...
 
 ## Experience
 [Data Privacy Seminar 2018 winter](http://hmcl.mju.ac.kr/doku.php?id=lab:labmain) (2018.01 ~ 2018.02)
@@ -55,19 +28,11 @@ Computer Engineering, MyongJi Univ.
 
 K-Hackathon (2018.08)
 
-Samsung Data Challenge (2018.08)
-
-Bigcontest (2018.09)
-
 Naver NLP Challenge (2018.12)
-
-서울대학교 정보의학 해커톤 (2018.12)
 
 우정사업본부 빅데이터 2018 해커톤 (2018.12)
 
 Samsung SDS Algorithm 심화 교육 (2019.01)
-
-Naver Ai-Vision Hackathon (2019.01 ~ 2019.02)
 
 ## Certificate
 <img src="/assets/images/BigdataCertificate.PNG" width="400">
@@ -124,9 +89,10 @@ Coursera-Machine-Learning (2018.11) - Private Storage
 - Otave로 구현
 <br><br>
 
-[Clothes_Category_Classification](https://github.com/thisisiron/Clothes_Category_Classification) (2018.11)
+Clothes_Category_Classification
 - 무신사에서 상품 정보를 크롤링한 데이터 사용
 - 상품명은 CNN Classification 사용 후 Input값으로 넣고 나머지 Feature들은 Encdoing 후 Neural Network에 Input값을 넣고 마지막 Layer에 Concentrate 사용
+- 해당 스토리지 Private으로 변경됨
 <br><br>
 
 [neural-style-transfer-app](https://github.com/thisisiron/neural-style-transfer-app) (2018.11)
