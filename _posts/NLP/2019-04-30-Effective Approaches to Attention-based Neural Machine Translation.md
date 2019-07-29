@@ -87,14 +87,14 @@ $$
 
 다음은 *content-based* 함수로 세 가지 타입을 고려할 수 있는 *score*가 존재합니다.
 
-```
+$$
 \text{score}(h_t,\bar{h_s}) = 
 \left\{\begin{matrix} h_t^\top \bar{h_s} && dot
 \\ h_t^\top W_a \bar{h_s} && general
 \\ v_a^\top \text{tanh}(W_a[h_t;\bar{h_s}]) && concat
 
 \end{matrix}\right.
-```
+$$
 
 <img src="/assets/images/paper3_figure2.PNG"><br>
 
