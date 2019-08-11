@@ -1,5 +1,5 @@
 ---
-title: "Git 관련 Usefule Command"
+title: "Git 관련 Useful Command"
 categories: Command 
 ---
 
