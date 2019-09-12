@@ -8,7 +8,7 @@ toc: true
 <p align="center"><img src="/assets/images/iron_mark.jpg" width="200"></p>
 
 ## Education
-B.E. in Myongji University (2013 ~ 2019)<br>
+B.E. in Myongji University (2013 ~ 2019)
 - Bachelor of Engineering, Computer Engineering<br>
 
 
@@ -21,9 +21,12 @@ B.E. in Myongji University (2013 ~ 2019)<br>
 <sub>해당 프로젝트 명을 누르면 해당 스토리지로 이동.</sub>
 <br>
 
-[Effective Approaches to Attention-based Neural Machine Translation](https://github.com/thisisiron/nmt-attention-tf) :: TF2.0<br>
-[Attention Is All You Need](https://github.com/thisisiron/transformer-tf) :: TF2.0<br>
-[UNSUPERVISED REPRESENTATION LEARNING WITH DEEP CONVOLUTIONAL GENERATIVE ADVERSARIAL NETWORKS](https://github.com/thisisiron/dcgan-tf) :: TF2.0<br>
+[Effective Approaches to Attention-based Neural Machine Translation](https://github.com/thisisiron/nmt-attention-tf) :: TF2.0
+<br><br>
+[Attention Is All You Need](https://github.com/thisisiron/transformer-tf) :: TF2.0
+<br><br>
+[UNSUPERVISED REPRESENTATION LEARNING WITH DEEP CONVOLUTIONAL GENERATIVE ADVERSARIAL NETWORKS](https://github.com/thisisiron/dcgan-tf) :: TF2.0
+<br><br>
 
 
 ## Experience
