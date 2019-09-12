@@ -105,9 +105,9 @@ analytics:
 author:
   name             : "Eon Kim"
   avatar           : "/assets/images/profile_image.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Deep Learning Developer"
+  bio              : "Deep Learning Engineer"
   location         : "Seoul, South Korea"
-  email            : 
+  email            :
   links:
     - label: "kimiron518@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
@@ -127,6 +127,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: #"https://www.instagram.com/iconicorca/"
+    - label: "LinkedIn"
+      icon: "fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/이언-김-16a96415a/"
 
 # Site Footer
 footer:
