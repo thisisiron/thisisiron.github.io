@@ -13,18 +13,17 @@ B.E. in Myongji University (2013 ~ 2019)<br>
 
 
 ## Work Experience
+[Voyager X](https://www.voyagerx.com) (2019.07 ~)<br>
 [Solugate](http://www.solugate.com) (2019.03 ~ 2019.06)
-
-[Voyager X](https://www.voyagerx.com) (2019.07 ~)
 
 
 ## Paper Implementation 
 <sub>해당 프로젝트 명을 누르면 해당 스토리지로 이동.</sub>
 <br>
 
-[Effective Approaches to Attention-based Neural Machine Translation](https://github.com/thisisiron/nmt-attention-tf) :: TF2.0
-[Attention Is All You Need](https://github.com/thisisiron/transformer-tf) :: TF2.0
-[UNSUPERVISED REPRESENTATION LEARNING WITH DEEP CONVOLUTIONAL GENERATIVE ADVERSARIAL NETWORKS](https://github.com/thisisiron/dcgan-tf) :: TF2.0
+[Effective Approaches to Attention-based Neural Machine Translation](https://github.com/thisisiron/nmt-attention-tf) :: TF2.0<br>
+[Attention Is All You Need](https://github.com/thisisiron/transformer-tf) :: TF2.0<br>
+[UNSUPERVISED REPRESENTATION LEARNING WITH DEEP CONVOLUTIONAL GENERATIVE ADVERSARIAL NETWORKS](https://github.com/thisisiron/dcgan-tf) :: TF2.0<br>
 
 
 ## Experience
@@ -34,27 +33,30 @@ B.E. in Myongji University (2013 ~ 2019)<br>
 ## Challenge
 Naver NLP Challenge (2018.12) 
 - 13th / 40 teams
+<br><br>
 
 우정사업본부 빅데이터 2018 해커톤 (2018.12)  
 - 4th / 22 teams
+<br><br>
 
 AI Rush 
 - Elimination round: 29 / 100 teams
 - Final round: 22 / 30 teams
+<br><br>
 
 
 ## Certificate
 빅데이터 실무 기초 교육 수료 (2017.01)
-<img src="/assets/images/BigdataCertificate.PNG" width="400">
+<img src="/assets/images/BigdataCertificate.PNG" width="600">
 
 Coursera, Machine Learning Course (Andrew Ng)
-<img src="/assets/images/MLCertificate.PNG" width="400">
+<img src="/assets/images/MLCertificate.PNG" width="600">
 
 Coursera, Deep Learning Course (Andrew Ng)
-<img src="/assets/images/NNandDL.PNG" width="400">
-<img src="/assets/images/Improving_DNN.PNG" width="400">
-<img src="/assets/images/Structuring_ML_Projects.PNG" width="400">
-<img src="/assets/images/coursera_CNN.PNG" width="400">
+<img src="/assets/images/NNandDL.PNG" width="600">
+<img src="/assets/images/Improving_DNN.PNG" width="600">
+<img src="/assets/images/Structuring_ML_Projects.PNG" width="600">
+<img src="/assets/images/coursera_CNN.PNG" width="600">
 
 Samsung SDS Algorithm 심화 교육 수료 (2019.01)
 
