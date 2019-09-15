@@ -56,7 +56,7 @@ AI Rush (2019.08)
 
 
 ## Certificate
-빅데이터 실무 기초 교육 수료 (2017.01)<br>
+EDUnTECH, 빅데이터 실무 기초 교육 수료 (2017.01)<br>
 <img src="/assets/images/BigdataCertificate.PNG" width="400">
 <br><br>
 
@@ -72,7 +72,7 @@ Coursera, Deep Learning Course (Andrew Ng)<br>
 <img src="/assets/images/coursera_RNN.PNG" width="400">
 <br><br>
 
-Samsung SDS Algorithm 심화 교육 수료 (2019.01)
+Samsung SDS, Algorithm 심화 교육 수료 (2019.01)
 
 
 ## Private Project
