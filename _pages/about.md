@@ -56,16 +56,20 @@ AI Rush (2019.08)
 
 ## Certificate
 빅데이터 실무 기초 교육 수료 (2017.01)
-<img src="/assets/images/BigdataCertificate.PNG" width="600">
+<img src="/assets/images/BigdataCertificate.PNG" width="400">
+<br><br>
 
 Coursera, Machine Learning Course (Andrew Ng)
-<img src="/assets/images/MLCertificate.PNG" width="600">
+<img src="/assets/images/MLCertificate.PNG" width="400">
+<br><br>
 
 Coursera, Deep Learning Course (Andrew Ng)
-<img src="/assets/images/NNandDL.PNG" width="600">
-<img src="/assets/images/Improving_DNN.PNG" width="600">
-<img src="/assets/images/Structuring_ML_Projects.PNG" width="600">
-<img src="/assets/images/coursera_CNN.PNG" width="600">
+<img src="/assets/images/NNandDL.PNG" width="400">
+<img src="/assets/images/Improving_DNN.PNG" width="400">
+<img src="/assets/images/Structuring_ML_Projects.PNG" width="400">
+<img src="/assets/images/coursera_CNN.PNG" width="400">
+<img src="/assets/images/Certificatesequencemodels.PNG" width="400">
+<br><br>
 
 Samsung SDS Algorithm 심화 교육 수료 (2019.01)
 
