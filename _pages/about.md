@@ -16,8 +16,9 @@ B.E. in Myongji University (2013 ~ 2019)
 [Voyager X](https://www.voyagerx.com) (2019.07 ~)
 - Intern
 <br><br>
+
 [Solugate](http://www.solugate.com) (2019.03 ~ 2019.06)
-- Intern
+- Intern, ICT Internship Project
 - 형태소 분석기 개발 및 음성 데이터 전처리
 
 
@@ -55,20 +56,20 @@ AI Rush (2019.08)
 
 
 ## Certificate
-빅데이터 실무 기초 교육 수료 (2017.01)
+빅데이터 실무 기초 교육 수료 (2017.01)<br>
 <img src="/assets/images/BigdataCertificate.PNG" width="400">
 <br><br>
 
-Coursera, Machine Learning Course (Andrew Ng)
+Coursera, Machine Learning Course (Andrew Ng)<br>
 <img src="/assets/images/MLCertificate.PNG" width="400">
 <br><br>
 
-Coursera, Deep Learning Course (Andrew Ng)
+Coursera, Deep Learning Course (Andrew Ng)<br>
 <img src="/assets/images/NNandDL.PNG" width="400">
 <img src="/assets/images/Improving_DNN.PNG" width="400">
 <img src="/assets/images/Structuring_ML_Projects.PNG" width="400">
 <img src="/assets/images/coursera_CNN.PNG" width="400">
-<img src="/assets/images/Certificatesequencemodels.PNG" width="400">
+<img src="/assets/images/coursera_RNN.PNG" width="400">
 <br><br>
 
 Samsung SDS Algorithm 심화 교육 수료 (2019.01)
