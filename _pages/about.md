@@ -15,6 +15,7 @@ B.E. in Myongji University (2013 ~ 2019)
 ## Work Experience
 [Voyager X](https://www.voyagerx.com) (2019.07 ~)
 - Intern
+<br><br>
 [Solugate](http://www.solugate.com) (2019.03 ~ 2019.06)
 - Intern
 - 형태소 분석기 개발 및 음성 데이터 전처리
@@ -32,7 +33,7 @@ B.E. in Myongji University (2013 ~ 2019)
 <br><br>
 
 
-## Experience
+## Additional Activities
 [SOCC](http://socc-io.github.io/home/) (2019.03 ~)<br><br>
 [Modu LAB](http://www.modulabs.co.kr) (2018.12 ~ 2019.06)<br><br>
 [Data Privacy Seminar 2018 winter](http://hmcl.mju.ac.kr/doku.php?id=lab:labmain) (2018.01 ~ 2018.02)
@@ -47,7 +48,7 @@ Naver NLP Challenge (2018.12)
 - 4th / 22 teams
 <br><br>
 
-AI Rush 
+AI Rush (2019.08)
 - Elimination round: 29th / 100 teams
 - Final round: 22nd / 30 teams
 <br><br>
