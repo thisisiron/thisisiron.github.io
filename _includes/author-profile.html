@@ -265,6 +265,14 @@
         </li>
       {% endif %}
 
+      {% if author.notion %}
+        <li>
+          <a href="https://vine.co/u/{{ author.notion }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+              <img title="notion" alt="noiton" src="/asserts/images/notion-logo.png" width="30px"> Notion 
+          </a>
+        </li>
+      {% endif %}
+
       {% include author-profile-custom-links.html %}
     </ul>
   </div>
