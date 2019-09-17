@@ -13,8 +13,13 @@ B.E. in Myongji University (2013 ~ 2019)
 
 
 ## Work Experience
-[Voyager X](https://www.voyagerx.com) (2019.07 ~)<br>
+[Voyager X](https://www.voyagerx.com) (2019.07 ~)
+- Intern
+<br><br>
+
 [Solugate](http://www.solugate.com) (2019.03 ~ 2019.06)
+- Intern, ICT Internship Project
+- 형태소 분석기 개발 및 음성 데이터 전처리
 
 
 ## Paper Implementation 
@@ -29,7 +34,9 @@ B.E. in Myongji University (2013 ~ 2019)
 <br><br>
 
 
-## Experience
+## Additional Activities
+[SOCC](http://socc-io.github.io/home/) (2019.03 ~)<br><br>
+[Modu LAB](http://www.modulabs.co.kr) (2018.12 ~ 2019.06)<br><br>
 [Data Privacy Seminar 2018 winter](http://hmcl.mju.ac.kr/doku.php?id=lab:labmain) (2018.01 ~ 2018.02)
 
 
@@ -42,26 +49,30 @@ Naver NLP Challenge (2018.12)
 - 4th / 22 teams
 <br><br>
 
-AI Rush 
-- Elimination round: 29 / 100 teams
-- Final round: 22 / 30 teams
+AI Rush (2019.08)
+- Elimination round: 29th / 100 teams
+- Final round: 22nd / 30 teams
 <br><br>
 
 
 ## Certificate
-빅데이터 실무 기초 교육 수료 (2017.01)
-<img src="/assets/images/BigdataCertificate.PNG" width="600">
+EDUnTECH, 빅데이터 실무 기초 교육 수료 (2017.01)<br>
+<img src="/assets/images/BigdataCertificate.PNG" width="400">
+<br><br>
 
-Coursera, Machine Learning Course (Andrew Ng)
-<img src="/assets/images/MLCertificate.PNG" width="600">
+Coursera, Machine Learning Course (Andrew Ng)<br>
+<img src="/assets/images/MLCertificate.PNG" width="400">
+<br><br>
 
-Coursera, Deep Learning Course (Andrew Ng)
-<img src="/assets/images/NNandDL.PNG" width="600">
-<img src="/assets/images/Improving_DNN.PNG" width="600">
-<img src="/assets/images/Structuring_ML_Projects.PNG" width="600">
-<img src="/assets/images/coursera_CNN.PNG" width="600">
+Coursera, Deep Learning Course (Andrew Ng)<br>
+<img src="/assets/images/NNandDL.PNG" width="400">
+<img src="/assets/images/Improving_DNN.PNG" width="400">
+<img src="/assets/images/Structuring_ML_Projects.PNG" width="400">
+<img src="/assets/images/coursera_CNN.PNG" width="400">
+<img src="/assets/images/coursera_RNN.PNG" width="400">
+<br><br>
 
-Samsung SDS Algorithm 심화 교육 수료 (2019.01)
+Samsung SDS, Algorithm 심화 교육 수료 (2019.01)
 
 
 ## Private Project
