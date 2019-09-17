@@ -1,6 +1,5 @@
 ---
 permalink: /about/
-permalink: /
 title: "About"
 excerpt: "About Me"
 toc: true
