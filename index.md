@@ -54,8 +54,11 @@ AI Rush (2019.08)
 
 
 ## Certificate
-EDUnTECH, 빅데이터 실무 기초 교육 수료 (2017.01)<br>
+<details>
+<summary>EDUnTECH, 빅데이터 실무 기초 교육 수료 (2017.01)</summary>
+<br>
 <img src="/assets/images/BigdataCertificate.PNG" width="400">
+</details>
 <br><br>
 
 Coursera, Machine Learning Course (Andrew Ng)<br>
