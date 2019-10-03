@@ -41,30 +41,33 @@ B.E. in Myongji University (2013 ~ 2019)
 ## Challenge
 <details>
 <summary>AI Rush (2019.08)</summary>
+<ul>
 <li> Elimination round: 29th / 100 teams </li>
 <li> Final round: 22nd / 30 teams </li>
-<br>
+</ul>
 </details>
 <br>
 
 <details>
 <summary>우정사업본부 빅데이터 2018 해커톤 (2018.12)</summary>
+<ul>
 <li> 4th / 22 teams</li>
-<br>
+</ul>
 </details>
 <br>
 
 <details>
 <summary>Naver NLP Challenge (2018.12)</summary>
+<ul>
 <li> 13th / 40 teams</li>
-<br>
+</ul>
 </details>
 <br>
 
 
 ## Certificate
 Samsung SDS, Algorithm 심화 교육 수료 (2019.01)
-<br><br>
+<br>
 
 <details>
 <summary>Coursera, Deep Learning Course (Andrew Ng)</summary>
@@ -74,7 +77,6 @@ Samsung SDS, Algorithm 심화 교육 수료 (2019.01)
 <img src="/assets/images/Structuring_ML_Projects.PNG" width="400">
 <img src="/assets/images/coursera_CNN.PNG" width="400">
 <img src="/assets/images/coursera_RNN.PNG" width="400">
-<br>
 </details>
 <br>
 
@@ -82,7 +84,6 @@ Samsung SDS, Algorithm 심화 교육 수료 (2019.01)
 <summary>Coursera, Machine Learning Course (Andrew Ng)</summary>
 <br>
 <img src="/assets/images/MLCertificate.PNG" width="400">
-<br>
 </details>
 <br>
 
@@ -90,7 +91,6 @@ Samsung SDS, Algorithm 심화 교육 수료 (2019.01)
 <summary>EDUnTECH, 빅데이터 실무 기초 교육 수료 (2017.01)</summary>
 <br>
 <img src="/assets/images/BigdataCertificate.PNG" width="400">
-<br>
 </details>
 <br>
 
