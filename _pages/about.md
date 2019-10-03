@@ -79,10 +79,6 @@ Samsung SDS, Algorithm 심화 교육 수료 (2019.01)
 <sub>해당 프로젝트 명을 누르면 해당 스토리지로 이동.</sub>
 <br>
 
-[GraphicsEditor](https://github.com/thisisiron/GraphicsEditor) (2017.10 ~ 2017.12)
-- Java Swing을 이용하여 축소형 그림판 (Design Pattern 적용)
-<br><br>
-
 [ionicChat](https://github.com/thisisiron/ionicChat) (2017.11 ~ 2017.12)
 - Ionic 프레임워크를 사용하여 만든 Chatting Hybrid Application
 - Openchatting Room, Online/Offline 확인, 안 읽은 메세지 카운트 등 기능 구현
@@ -103,11 +99,6 @@ Samsung SDS, Algorithm 심화 교육 수료 (2019.01)
 Cafe With (2018.07 ~ 2018.09) - Private Storage
 - React Native로 구현
 - AWS 서버에 Node.js(Express)을 이용하여 구현한 웹 서버 로드하여 사용
-<br><br>
-
-Clothes_Category_Classification
-- 무신사에서 상품 정보를 크롤링한 데이터 사용
-- 상품명은 CNN Classification 사용 후 Input값으로 넣고 나머지 Feature들은 Encdoing 후 Neural Network에 Input값을 넣고 마지막 Layer에 Concentrate 사용
 <br><br>
 
 [neural-style-transfer-app](https://github.com/thisisiron/neural-style-transfer-app) (2018.11)
