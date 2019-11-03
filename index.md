@@ -24,15 +24,33 @@ B.E. in Myongji University (2013 ~ 2019)
 <sub>해당 프로젝트 명을 누르면 해당 스토리지로 이동.</sub>
 <br>
 
-[Effective Approaches to Attention-based Neural Machine Translation](https://github.com/thisisiron/nmt-attention-tf) :: TF2.0
+### NLP
+[Effective Approaches to Attention-based Neural Machine Translation](https://github.com/thisisiron/nmt-attention-tf) :: TF2
 <br><br>
-[Attention Is All You Need](https://github.com/thisisiron/transformer-tf) :: TF2.0
+[Attention Is All You Need](https://github.com/thisisiron/transformer-tf) :: TF2
 <br><br>
-[UNSUPERVISED REPRESENTATION LEARNING WITH DEEP CONVOLUTIONAL GENERATIVE ADVERSARIAL NETWORKS](https://github.com/thisisiron/dcgan-tf) :: TF2.0
+
+### GAN
+[Generative Adversarial Nets](https://github.com/thisisiron/TF2-GAN/tree/master/gan) :: TF2
+<br><br>
+[Conditional Generative Adversarial Nets](https://github.com/thisisiron/TF2-GAN/tree/master/cgan)  :: TF2
+[UNSUPERVISED REPRESENTATION LEARNING WITH DEEP CONVOLUTIONAL GENERATIVE ADVERSARIAL NETWORKS](https://github.com/thisisiron/TF2-GAN/tree/master/dcgan) :: TF2
+<br><br>
+[Least Squares Generative Adversarial Networks](https://github.com/thisisiron/TF2-GAN/tree/master/lsgan) :: TF2
+<br><br>
+[Wasserstein GAN](https://github.com/thisisiron/TF2-GAN/tree/master/wgan) :: TF2
+<br><br>
+[Improved Training of Wasserstein GANs](https://github.com/thisisiron/TF2-GAN/tree/master/wgan-gp) :: TF2
+<br><br>
+
+
+### Normalization
+[Spectral Normalization for Generative Adversarial Networks](https://github.com/thisisiron/spectral_normalization-tf2) :: TF2
 <br><br>
 
 
 ## Additional Activities
+[AI College](http://aic.yangjaehub.com/) (2019.10 ~) Starcraft RL <br><br>
 [SOCC](http://socc-io.github.io/home/) (2019.03 ~)<br><br>
 [Modu LAB](http://www.modulabs.co.kr) (2018.12 ~ 2019.06)<br><br>
 [Data Privacy Seminar 2018 winter](http://hmcl.mju.ac.kr/doku.php?id=lab:labmain) (2018.01 ~ 2018.02)
