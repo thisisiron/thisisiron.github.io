@@ -29,19 +29,25 @@ B.E. in Myongji University (2013 ~ 2019)
 ### NLP
 [Effective Approaches to Attention-based Neural Machine Translation](https://github.com/thisisiron/nmt-attention-tf) :: TF2
 <br><br>
+
 [Attention Is All You Need](https://github.com/thisisiron/transformer-tf) :: TF2
 
 ### GAN
 [Generative Adversarial Nets](https://github.com/thisisiron/TF2-GAN/tree/master/gan) :: TF2
 <br><br>
+
 [Conditional Generative Adversarial Nets](https://github.com/thisisiron/TF2-GAN/tree/master/cgan)  :: TF2
 <br><br>
+
 [UNSUPERVISED REPRESENTATION LEARNING WITH DEEP CONVOLUTIONAL GENERATIVE ADVERSARIAL NETWORKS](https://github.com/thisisiron/TF2-GAN/tree/master/dcgan) :: TF2
 <br><br>
+
 [Least Squares Generative Adversarial Networks](https://github.com/thisisiron/TF2-GAN/tree/master/lsgan) :: TF2
 <br><br>
+
 [Wasserstein GAN](https://github.com/thisisiron/TF2-GAN/tree/master/wgan) :: TF2
 <br><br>
+
 [Improved Training of Wasserstein GANs](https://github.com/thisisiron/TF2-GAN/tree/master/wgan-gp) :: TF2
 
 ### Normalization
@@ -54,12 +60,15 @@ B.E. in Myongji University (2013 ~ 2019)
 - Starcraft RL
 - Support: SAIDA RL(Samsung SDS)
 <br><br>
+
 [SOCC](http://socc-io.github.io/home/) (2019.03 ~)
 - Development Club
 <br><br>
+
 [Modu LAB](http://www.modulabs.co.kr) (2018.12 ~ 2019.06)
 - Conducting a seminar on natural language processing
 <br><br>
+
 [Data Privacy Seminar 2018 winter](http://hmcl.mju.ac.kr/doku.php?id=lab:labmain) (2018.01 ~ 2018.02)
 
 
