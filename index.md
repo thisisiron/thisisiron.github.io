@@ -12,7 +12,7 @@ B.E. in Myongji University (2013 ~ 2019)
 
 ## Work Experience
 [Voyager X](https://www.voyagerx.com) (2019.07 ~ 2019.12)
-    - Intern
+\- Intern
 <br><br>
 
 [Solugate](http://www.solugate.com) (2019.03 ~ 2019.06)
@@ -25,7 +25,6 @@ B.E. in Myongji University (2013 ~ 2019)
 <br>
 
 ### NLP
----
 [Effective Approaches to Attention-based Neural Machine Translation](https://github.com/thisisiron/nmt-attention-tf) :: TF2
 
 [Attention Is All You Need](https://github.com/thisisiron/transformer-tf) :: TF2
