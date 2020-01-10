@@ -100,17 +100,17 @@ Samsung SDS, Algorithm 심화 교육 수료 (2019.01)
 \- Implemented as Android<br>
 
 [neural-style-transfer-app](https://github.com/thisisiron/neural-style-transfer-app) (2018.11)<br>
-- Applications that convert images to specific styles<br>
-- Implemented as Android and Django<br>
+\- Applications that convert images to specific styles<br>
+\- Implemented as Android and Django<br>
 
 Cafe With (2018.07 ~ 2018.09) - Private Storage<br>
-- Implemented as React Native and Node.js(Express)<br>
-- Web server loaded to AWS server <br>
+\- Implemented as React Native and Node.js(Express)<br>
+\- Web server loaded to AWS server <br>
 
 [AR-FUNiture](https://github.com/hyuk22/AR-FUNiture) (2018.04 ~ 2018.06)<br>
-- AR Furniture Rendering<br>
-- Implemented as React, AR.js and Firebase<br>
+\- AR Furniture Rendering<br>
+\- Implemented as React, AR.js and Firebase<br>
 
 [ionicChat](https://github.com/thisisiron/ionicChat) (2017.11 ~ 2017.12)<br>
-- Chatting Hybrid Application implemented as Ionic Framework<br>
-- Features: Openchatting Room, Checking Online/Offline, Counting unread messages<br>
+\- Chatting Hybrid Application implemented as Ionic Framework<br>
+\- Features: Openchatting Room, Checking Online/Offline, Counting unread messages<br>
