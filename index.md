@@ -11,13 +11,13 @@ B.E. in Myongji University (2013 ~ 2019)
 
 
 ## Work Experience
-[Voyager X](https://www.voyagerx.com) (2019.07 ~)
+[Voyager X](https://www.voyagerx.com) (2019.07 ~ 2019.12)
 - Intern
 <br><br>
 
 [Solugate](http://www.solugate.com) (2019.03 ~ 2019.06)
 - Intern, ICT Internship Project
-- 형태소 분석기 개발 및 음성 데이터 전처리
+- 형태소 분석기 개발
 
 
 ## Paper Implementation 
@@ -26,7 +26,6 @@ B.E. in Myongji University (2013 ~ 2019)
 
 ### NLP
 [Effective Approaches to Attention-based Neural Machine Translation](https://github.com/thisisiron/nmt-attention-tf) :: TF2
-<br><br>
 
 [Attention Is All You Need](https://github.com/thisisiron/transformer-tf) :: TF2
 
@@ -64,37 +63,10 @@ B.E. in Myongji University (2013 ~ 2019)
 <br><br>
 
 [Modu LAB](http://www.modulabs.co.kr) (2018.12 ~ 2019.06)
-- Conducting a seminar on natural language processing
+- Seminar on natural language processing
 <br><br>
 
 [Data Privacy Seminar 2018 winter](http://hmcl.mju.ac.kr/doku.php?id=lab:labmain) (2018.01 ~ 2018.02)
-
-
-## Challenge
-<details>
-<summary>AI Rush (2019.08)</summary>
-<ul>
-<li> Elimination round: 29th / 100 teams </li>
-<li> Final round: 22nd / 30 teams </li>
-</ul>
-</details>
-<br>
-
-<details>
-<summary>우정사업본부 빅데이터 2018 해커톤 (2018.12)</summary>
-<ul>
-<li> 4th / 22 teams</li>
-</ul>
-</details>
-<br>
-
-<details>
-<summary>Naver NLP Challenge (2018.12)</summary>
-<ul>
-<li> 13th / 40 teams</li>
-</ul>
-</details>
-<br>
 
 
 ## Certificate
