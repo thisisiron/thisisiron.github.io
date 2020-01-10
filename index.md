@@ -6,18 +6,18 @@ author_profile: true
 <p align="center"><img src="/assets/images/iron_mark.jpg" width="200"></p>
 
 ## Education
-B.E. in Myongji University (2013 ~ 2019)
-- Bachelor of Engineering, Computer Engineering<br>
+B.E. in Myongji University (2013 ~ 2019)<br>
+\- Bachelor of Engineering, Computer Engineering<br>
 
 
 ## Work Experience
-[Voyager X](https://www.voyagerx.com) (2019.07 ~ 2019.12)
+[Voyager X](https://www.voyagerx.com) (2019.07 ~ 2019.12)<br>
 \- Intern
-<br><br>
+<br>
 
-[Solugate](http://www.solugate.com) (2019.03 ~ 2019.06)
-- Intern, ICT Internship Project
-- 형태소 분석기 개발
+[Solugate](http://www.solugate.com) (2019.03 ~ 2019.06)<br>
+\- Intern, ICT Internship Project<br>
+\- 형태소 분석기 개발
 
 
 ## Paper Implementation 
