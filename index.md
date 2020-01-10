@@ -7,17 +7,17 @@ author_profile: true
 
 ## Education
 B.E. in Myongji University (2013 ~ 2019)<br>
-\- Bachelor of Engineering, Computer Engineering<br>
+    \- Bachelor of Engineering, Computer Engineering<br>
 
 
 ## Work Experience
 [Voyager X](https://www.voyagerx.com) (2019.07 ~ 2019.12)<br>
-\- Intern
+\- Intern<br>
 <br>
 
 [Solugate](http://www.solugate.com) (2019.03 ~ 2019.06)<br>
 \- Intern, ICT Internship Project<br>
-\- 형태소 분석기 개발
+\- 형태소 분석기 개발<br>
 
 
 ## Paper Implementation 
@@ -49,18 +49,18 @@ B.E. in Myongji University (2013 ~ 2019)<br>
 
 
 ## Additional Activities
-[AI College](http://aic.yangjaehub.com/) (2019.10 ~) 
-- Starcraft RL
-- Support: SAIDA RL(Samsung SDS)
-<br><br>
+[AI College](http://aic.yangjaehub.com/) (2019.10 ~)<br>
+\- Starcraft RL<br>
+\- Support: SAIDA RL(Samsung SDS)<br>
+<br>
 
-[SOCC](http://socc-io.github.io/home/) (2019.03 ~)
-- Development Club
-<br><br>
+[SOCC](http://socc-io.github.io/home/) (2019.03 ~)<br>
+\- Development Club<br>
+<br>
 
-[Modu LAB](http://www.modulabs.co.kr) (2018.12 ~ 2019.06)
-- Seminar on natural language processing
-<br><br>
+[Modu LAB](http://www.modulabs.co.kr) (2018.12 ~ 2019.06)<br>
+\- Seminar on natural language processing<br>
+<br>
 
 [Data Privacy Seminar 2018 winter](http://hmcl.mju.ac.kr/doku.php?id=lab:labmain) (2018.01 ~ 2018.02)
 
@@ -99,27 +99,27 @@ Samsung SDS, Algorithm 심화 교육 수료 (2019.01)
 <sub>해당 프로젝트 명을 누르면 해당 스토리지로 이동.</sub>
 <br>
 
-[BoostCamp](https://github.com/thisisiron/BoostCamp) (2018.12)
-- Application that retrieves movie information using Naver search API
-- Implemented as Android
-<br><br>
+[BoostCamp](https://github.com/thisisiron/BoostCamp) (2018.12)<br>
+\- Application that retrieves movie information using Naver search API<br>
+\- Implemented as Android<br>
+<br>
 
-[neural-style-transfer-app](https://github.com/thisisiron/neural-style-transfer-app) (2018.11)
-- Applications that convert images to specific styles 
-- Implemented as Android and Django
-<br><br>
+[neural-style-transfer-app](https://github.com/thisisiron/neural-style-transfer-app) (2018.11)<br>
+- Applications that convert images to specific styles<br>
+- Implemented as Android and Django<br>
+<br>
 
-Cafe With (2018.07 ~ 2018.09) - Private Storage
-- Implemented as React Native and Node.js(Express)
-- Web server loaded to AWS server 
-<br><br>
+Cafe With (2018.07 ~ 2018.09) - Private Storage<br>
+- Implemented as React Native and Node.js(Express)<br>
+- Web server loaded to AWS server <br>
+<br>
 
-[AR-FUNiture](https://github.com/hyuk22/AR-FUNiture) (2018.04 ~ 2018.06)
-- AR Furniture Rendering
-- Implemented as React, AR.js and Firebase
-<br><br>
+[AR-FUNiture](https://github.com/hyuk22/AR-FUNiture) (2018.04 ~ 2018.06)<br>
+- AR Furniture Rendering<br>
+- Implemented as React, AR.js and Firebase<br>
+<br>
 
-[ionicChat](https://github.com/thisisiron/ionicChat) (2017.11 ~ 2017.12)
-- Chatting Hybrid Application implemented as Ionic Framework
-- Features: Openchatting Room, Checking Online/Offline, Counting unread messages 
-<br><br>
+[ionicChat](https://github.com/thisisiron/ionicChat) (2017.11 ~ 2017.12)<br>
+- Chatting Hybrid Application implemented as Ionic Framework<br>
+- Features: Openchatting Room, Checking Online/Offline, Counting unread messages<br>
+<br>
