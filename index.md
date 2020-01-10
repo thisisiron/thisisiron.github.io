@@ -7,13 +7,12 @@ author_profile: true
 
 ## Education
 B.E. in Myongji University (2013 ~ 2019)<br>
-    \- Bachelor of Engineering, Computer Engineering<br>
+\- Bachelor of Engineering, Computer Engineering<br>
 
 
 ## Work Experience
 [Voyager X](https://www.voyagerx.com) (2019.07 ~ 2019.12)<br>
 \- Intern<br>
-<br>
 
 [Solugate](http://www.solugate.com) (2019.03 ~ 2019.06)<br>
 \- Intern, ICT Internship Project<br>
@@ -52,15 +51,12 @@ B.E. in Myongji University (2013 ~ 2019)<br>
 [AI College](http://aic.yangjaehub.com/) (2019.10 ~)<br>
 \- Starcraft RL<br>
 \- Support: SAIDA RL(Samsung SDS)<br>
-<br>
 
 [SOCC](http://socc-io.github.io/home/) (2019.03 ~)<br>
 \- Development Club<br>
-<br>
 
 [Modu LAB](http://www.modulabs.co.kr) (2018.12 ~ 2019.06)<br>
 \- Seminar on natural language processing<br>
-<br>
 
 [Data Privacy Seminar 2018 winter](http://hmcl.mju.ac.kr/doku.php?id=lab:labmain) (2018.01 ~ 2018.02)
 
@@ -102,24 +98,19 @@ Samsung SDS, Algorithm 심화 교육 수료 (2019.01)
 [BoostCamp](https://github.com/thisisiron/BoostCamp) (2018.12)<br>
 \- Application that retrieves movie information using Naver search API<br>
 \- Implemented as Android<br>
-<br>
 
 [neural-style-transfer-app](https://github.com/thisisiron/neural-style-transfer-app) (2018.11)<br>
 - Applications that convert images to specific styles<br>
 - Implemented as Android and Django<br>
-<br>
 
 Cafe With (2018.07 ~ 2018.09) - Private Storage<br>
 - Implemented as React Native and Node.js(Express)<br>
 - Web server loaded to AWS server <br>
-<br>
 
 [AR-FUNiture](https://github.com/hyuk22/AR-FUNiture) (2018.04 ~ 2018.06)<br>
 - AR Furniture Rendering<br>
 - Implemented as React, AR.js and Firebase<br>
-<br>
 
 [ionicChat](https://github.com/thisisiron/ionicChat) (2017.11 ~ 2017.12)<br>
 - Chatting Hybrid Application implemented as Ionic Framework<br>
 - Features: Openchatting Room, Checking Online/Offline, Counting unread messages<br>
-<br>
