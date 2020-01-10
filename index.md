@@ -12,7 +12,7 @@ B.E. in Myongji University (2013 ~ 2019)<br>
 
 ## Work Experience
 [Voyager X](https://www.voyagerx.com) (2019.07 ~ 2019.12)<br>
-\- Intern<br>
+\- Intern, Deep Learning Engineer<br>
 
 [Solugate](http://www.solugate.com) (2019.03 ~ 2019.06)<br>
 \- Intern, ICT Internship Project<br>
@@ -74,21 +74,18 @@ Samsung SDS, Algorithm 심화 교육 수료 (2019.01)
 <img src="/assets/images/coursera_CNN.PNG" width="400">
 <img src="/assets/images/coursera_RNN.PNG" width="400">
 </details>
-<br>
 
 <details>
 <summary>Coursera, Machine Learning Course (Andrew Ng)</summary>
 <br>
 <img src="/assets/images/MLCertificate.PNG" width="400">
 </details>
-<br>
 
 <details>
 <summary>EDUnTECH, 빅데이터 실무 기초 교육 수료 (2017.01)</summary>
 <br>
 <img src="/assets/images/BigdataCertificate.PNG" width="400">
 </details>
-<br>
 
 
 ## Private Project
