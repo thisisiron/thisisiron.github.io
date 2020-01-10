@@ -12,7 +12,7 @@ B.E. in Myongji University (2013 ~ 2019)
 
 ## Work Experience
 [Voyager X](https://www.voyagerx.com) (2019.07 ~ 2019.12)
-- Intern
+    - Intern
 <br><br>
 
 [Solugate](http://www.solugate.com) (2019.03 ~ 2019.06)
@@ -25,31 +25,28 @@ B.E. in Myongji University (2013 ~ 2019)
 <br>
 
 ### NLP
+---
 [Effective Approaches to Attention-based Neural Machine Translation](https://github.com/thisisiron/nmt-attention-tf) :: TF2
 
 [Attention Is All You Need](https://github.com/thisisiron/transformer-tf) :: TF2
 
 ### GAN
 [Generative Adversarial Nets](https://github.com/thisisiron/TF2-GAN/tree/master/gan) :: TF2
-<br><br>
 
 [Conditional Generative Adversarial Nets](https://github.com/thisisiron/TF2-GAN/tree/master/cgan)  :: TF2
-<br><br>
 
 [UNSUPERVISED REPRESENTATION LEARNING WITH DEEP CONVOLUTIONAL GENERATIVE ADVERSARIAL NETWORKS](https://github.com/thisisiron/TF2-GAN/tree/master/dcgan) :: TF2
-<br><br>
 
 [Least Squares Generative Adversarial Networks](https://github.com/thisisiron/TF2-GAN/tree/master/lsgan) :: TF2
-<br><br>
 
 [Wasserstein GAN](https://github.com/thisisiron/TF2-GAN/tree/master/wgan) :: TF2
-<br><br>
 
 [Improved Training of Wasserstein GANs](https://github.com/thisisiron/TF2-GAN/tree/master/wgan-gp) :: TF2
 
+[Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks](https://github.com/thisisiron/TF2-GAN/tree/master/cyclegan) :: TF2
+
 ### Normalization
 [Spectral Normalization for Generative Adversarial Networks](https://github.com/thisisiron/spectral_normalization-tf2) :: TF2
-<br><br>
 
 
 ## Additional Activities
