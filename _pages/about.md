@@ -1,8 +1,6 @@
 ---
-permalink: /about/
-title: "About"
-excerpt: "About Me"
-toc: true
+layout: single 
+author_profile: true
 ---
 
 <p align="center"><img src="/assets/images/iron_mark.jpg" width="200"></p>
@@ -50,15 +48,8 @@ B.E. in Myongji University (2013 ~ 2019)<br>
 
 
 ## Additional Activities
-[AI College](http://aic.yangjaehub.com/) (2019.10 ~)<br>
-\- Starcraft RL<br>
-\- Support: SAIDA RL(Samsung SDS)<br>
-
-[SOCC](http://socc-io.github.io/home/) (2019.03 ~)<br>
+[SOCC](http://socc-io.github.io/home/) (2019.03 ~ 2019.11)<br>
 \- Development Club<br>
-
-[Modu LAB](http://www.modulabs.co.kr) (2018.12 ~ 2019.06)<br>
-\- Seminar on natural language processing<br>
 
 [Data Privacy Seminar 2018 winter](http://hmcl.mju.ac.kr/doku.php?id=lab:labmain) (2018.01 ~ 2018.02)
 
