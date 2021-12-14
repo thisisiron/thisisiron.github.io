@@ -142,10 +142,12 @@
             function frame() {
                 if (width >= 100) {
                     clearInterval(id);
-                    // elem.style.width = 0 + "%";
+                    
                     window.location.href = "test.html"
                     // window.location.replace('test.html'); 
                     i = 0;
+                    elem.style.width = 0 + "%";
+                    document.getElementById("myProgress").style.backgroundColor = "white";
                     return
                     
                 } else {
