@@ -141,15 +141,14 @@
 
             function frame() {
                 if (width >= 100) {
-                    i = 0;
-                    clearTimeout(timer);
+                    // i = 0;
+                    clearInterval(id);
                     window.location.href = "test.html"
                     return
-                    // clearInterval(id);
+                    
                 } else {
                     width+=.5;
                     elem.style.width = width + "%";
-                    timer = setTimeout('frame()', -40);
                 }
             }
         }
