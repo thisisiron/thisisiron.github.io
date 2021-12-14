@@ -28,13 +28,13 @@
 
 <script>
     function run(ele) {
-        if(event.key === 'Enter') {
+        if(event.key === 'Enter' || event.keyCode == 13) {
             // alert(ele.value);
             answer = ele.value
             if(answer == ""){
                 // Check 
             }
-            else if(answer == "unzip iron.zip"){
+            else if(answer.toUpperCase() == "UNZIP IRON.ZIP"){
                 move();
                 alert("🛠");
             }
@@ -85,7 +85,7 @@
                 <span style="margin-left: 10%;" class="terminal">user@github:~$</span>
                 <input class="terminal" onkeydown="run(this)" placeholder="type command or click the zip image." size="40" autofocus/>
             </div>
-            <div id="myProgress">
+            <div id="myProgress" style="margin-left: 10%;">
                 <div id="myBar"></div>
             </div>
         </div>
