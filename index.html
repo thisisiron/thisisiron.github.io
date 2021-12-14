@@ -1,13 +1,52 @@
 <style>
     body {
         /* overflow: hidden; */
-        position: relative;
+        /* min-height: 100%;
+        margin: 0px; */
+        position:fixed;
+        top:0px;
+        bottom:0px;
+        left:0px;
+        right:0px;
     }
+    footer {
+        /* position: fixed; */
+    }
+
+    #container{
+        height: 99%; 
+        margin: auto; 
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    #content{
+        margin: auto; 
+        
+        align-items: center;
+    }
+
+    #zip{
+        align-items: center;
+        margin: auto; 
+        display: flex; 
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        justify-content: center;
+        
+    }
+    
     #myProgress {
       width: 100%;
-      /* background-color: #ddd; */
-      background-color: white;
-      position: relative;
+      background-color: #ddd;
+      /* background-color: white; */
+      /* position: relative; */
     }
     
     #myBar {
@@ -124,23 +163,23 @@
 
 <head>
     <link rel="icon" href="images/iron.png">
-    <meta name="viewport" content="initial-scale=0.75, maximum-scale=0.75">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6, maximum-scale=0.6">
     <title>Iron</title>
 </head>
 
 <body>
     
-    <div style="height: 99%; margin: auto; display: flex;">
-        <div class="" style="margin: auto; align-items: center;">
-            <div style="margin: auto; display: flex; justify-content: center;">
+    <div id="container">
+        <div id="content">
+            <div id="zip">
                 <a href="" style="text-decoration: none;">
                     <div>
-                        <img src="images/zip.jpg" width="72">
+                        <img src="images/zip.jpg" width="80">
                     </div>
                     <p style="font-size: 13px; font-family: 'Courier New'; text-align: center; margin-top: 3px">iron.zip</p>
                 </a>
             </div>
-            <div style="display: flex; margin-left: 10%; margin-top: 3%; margin-bottom: 7px;">
+            <div style="display: flex; margin-left: 10%; margin-top: 3%; margin-bottom: 7px; justify-content: center;">
                 <p class="terminal">user@github:~$</p>
                 <input id="input" class="terminal" onkeydown="run(this)" placeholder="type command or click the zip image." size="36" autofocus/>
             </div>
@@ -150,7 +189,9 @@
     </div>
     <!-- The actual snackbar -->
     <div id="snackbar">Type the following command.<br>unzip iron.zip</div>
-    <div id="myProgress">
-        <div id="myBar"></div>
-    </div>
+    <footer>
+        <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
+    </footer>
 </body>
