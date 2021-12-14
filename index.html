@@ -78,7 +78,7 @@
         position: fixed; /* Sit on top of the screen */
         z-index: 1; /* Add a z-index if needed */
         left: 50%; /* Center the snackbar */
-        bottom: 30px; /* 30px from the bottom */
+        top: 30px; /* 30px from the bottom */
         white-space: pre;
     }
 
@@ -93,23 +93,23 @@
 
     /* Animations to fade the snackbar in and out */
     @-webkit-keyframes fadein {
-        from {bottom: 0; opacity: 0;}
-        to {bottom: 30px; opacity: 1;}
+        from {top: 0; opacity: 0;}
+        to {top: 30px; opacity: 1;}
     }
 
     @keyframes fadein {
-        from {bottom: 0; opacity: 0;}
-        to {bottom: 30px; opacity: 1;}
+        from {top: 0; opacity: 0;}
+        to {top: 30px; opacity: 1;}
     }
 
     @-webkit-keyframes fadeout {
-        from {bottom: 30px; opacity: 1;}
-        to {bottom: 0; opacity: 0;}
+        from {top: 30px; opacity: 1;}
+        to {top: 0; opacity: 0;}
     }
 
     @keyframes fadeout {
-        from {bottom: 30px; opacity: 1;}
-        to {bottom: 0; opacity: 0;}
+        from {top: 30px; opacity: 1;}
+        to {top: 0; opacity: 0;}
     }
 </style>
 
@@ -169,7 +169,9 @@
 </head>
 
 <body>
-    
+    <!-- The actual snackbar -->
+    <div id="snackbar">Type the following command.<br>unzip iron.zip</div>
+
     <div id="container">
         <div id="content">
             <div id="zip">
@@ -188,8 +190,7 @@
             
         </div>
     </div>
-    <!-- The actual snackbar -->
-    <div id="snackbar">Type the following command.<br>unzip iron.zip</div>
+    
     <footer>
         <div id="myProgress">
             <div id="myBar"></div>
