@@ -113,14 +113,12 @@
 <script>
     function run(ele) {
         if(event.key === 'Enter' || event.keyCode == 13) {
-            // alert(ele.value);
             answer = ele.value
             if(answer == ""){
                 // Check 
             }
             else if(answer.toUpperCase() == "UNZIP IRON.ZIP"){
                 move();
-                // setInterval(function() {window.location.href = "about.html"}, 1000);
             }
             else{
                 document.getElementById('input').value = "";
@@ -142,14 +140,15 @@
 
             function frame() {
                 if (width >= 100) {
-                    clearTimeout(timer);
-                    window.location.href = "about.html"
-                    // clearInterval(id);
                     i = 0;
+                    clearTimeout(timer);
+                    window.location.href = "test.html"
+                    
+                    // clearInterval(id);
                 } else {
                     width+=.5;
                     elem.style.width = width + "%";
-                    timer = setTimeout('progress()',-40);
+                    timer = setTimeout('progress()', -40);
                 }
             }
         }
