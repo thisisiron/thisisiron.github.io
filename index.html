@@ -119,6 +119,7 @@
             }
             else if(answer.toUpperCase() == "UNZIP IRON.ZIP"){
                 move();
+                document.getElementById('input').value = "";
             }
             else{
                 document.getElementById('input').value = "";
@@ -142,9 +143,7 @@
             function frame() {
                 if (width >= 100) {
                     clearInterval(id);
-                    
                     window.location.href = "test.html"
-                    // window.location.replace('test.html'); 
                     i = 0;
                     elem.style.width = 0 + "%";
                     document.getElementById("myProgress").style.backgroundColor = "white";
