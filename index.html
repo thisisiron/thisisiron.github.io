@@ -112,6 +112,8 @@
     }
 </style>
 
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
 <script>
     function run(ele) {
         if(event.key === 'Enter' || event.keyCode == 13) {
@@ -145,7 +147,11 @@
             function frame() {
                 if (width >= 100) {
                     clearInterval(id);
-                    window.location.href = "cv.md"
+                    fetch('cv.md')
+                        .then(response => response.text())
+                        .then(text => {
+                            document.getElementById('cv-content').innerHTML = marked(text);
+                        });
                     i = 0;
                     elem.style.width = 0 + "%";
                     document.getElementById("myProgress").style.backgroundColor = "white";
@@ -198,5 +204,6 @@
                 <input id="input" class="terminal" onkeydown="run(this)" placeholder=" type command or click the zip image." size="42" autofocus/>
             </div>
         </div>
+        <div id="cv-content"></div>
     </div>
 </body>
