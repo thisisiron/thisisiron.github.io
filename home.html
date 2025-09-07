@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron - Personal Portfolio</title>
+    <link rel="icon" href="images/iron.png">
+    <link rel="apple-touch-icon" href="images/iron.png">
+    <!-- Inter Font - Similar to Physical Intelligence website -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #111111;
+            background-color: #f4f3ef;
+        }
+
+        /* Header - Physical Intelligence Style (non-sticky) */
+        .header {
+            position: static;
+            background-color: #f4f3ef;
+            padding: 0.25rem 0;
+            margin-top: 2.5rem;
+        }
+
+        .nav-container {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1.2rem;
+        }
+
+        .logo {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #111111;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 1.2rem;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #111111;
+            font-weight: 400;
+            font-size: 0.85rem;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            opacity: 0.6;
+        }
+
+        /* Main Content */
+        .main {
+            margin-top: 0;
+        }
+
+        /* Hero Section - Physical Intelligence Style */
+        .hero {
+            padding: 4rem 1.5rem 1.5rem;
+            text-align: center;
+            background-color: #f4f3ef;
+        }
+
+        .hero-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-family: 'EB Garamond', 'Inter', serif;
+            font-size: 2.1rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            color: #111111;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            color: #111111;
+            margin-bottom: 0;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        /* Hero description markdown container */
+        #hero-description {
+            font-size: 1rem;
+            color: #111111;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+        #hero-description p {
+            margin-bottom: 0;
+        }
+
+        /* Research Section - Physical Intelligence Timeline Style */
+        .projects {
+            padding: 1.5rem 1.5rem;
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .projects::before {
+            content: '';
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background-color: #e6e5e1; /* lighter line like blog */
+            z-index: 0;
+        }
+
+        .project-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            position: relative; /* for gradient caps */
+        }
+
+        .project-item {
+            position: relative;
+            padding-left: 56px;
+            /* control vertical padding and bullet alignment */
+            --vpad: 8px; /* matches .project-inner top/bottom padding */
+            --bullet-offset: 6px; /* vertical shift to align with title line */
+        }
+
+        .project-item::before {
+            content: '';
+            position: absolute;
+            left: 24px; /* center on the line */
+            transform: translateX(-50%);
+            top: calc(var(--vpad) + var(--bullet-offset) - 3.5px);
+            width: 7px;
+            height: 7px;
+            background-color: #111111;
+            border-radius: 2px; /* rounded-sm style */
+            outline: 2px solid #f4f3ef; /* match page background for ring effect */
+            z-index: 2;
+        }
+
+        /* gradient caps (top/bottom fade) */
+        .project-list::before {
+            content: '';
+            position: absolute;
+            left: 24px;
+            top: 0;
+            width: 1px;
+            height: 24px; /* h-6 */
+            background: linear-gradient(to top, transparent, #f4f3ef);
+            z-index: 1;
+        }
+
+        .project-list::after {
+            content: '';
+            position: absolute;
+            left: 24px;
+            bottom: 0;
+            width: 1px;
+            height: 24px; /* h-6 */
+            background: linear-gradient(to bottom, transparent, #f4f3ef);
+            z-index: 1;
+        }
+
+        .project-inner {
+            display: block;
+            /* subtle card feel for hover */
+            border-radius: 0;
+            padding: 8px;
+            transition: background-color 0.2s ease;
+        }
+
+        /* Slight darken on hover, inspired by Physical Intelligence blog list hover */
+        .project-item:hover .project-inner {
+            background-color: rgba(17, 17, 17, 0.05);
+        }
+
+        .project-header {
+            display: flex;
+            align-items: baseline;
+            gap: 1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .project-date {
+            color: #6b6b6b;
+            font-size: 0.73rem;
+            white-space: nowrap;
+            margin-left: auto;
+        }
+
+        .project-title {
+            font-family: 'EB Garamond', 'Inter', serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #111111;
+            line-height: 1.3;
+        }
+
+        .project-description {
+            color: #353535;
+            line-height: 1.6;
+            font-size: 0.78rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .project-tech {
+            font-size: 0.73rem;
+            color: #6b6b6b;
+            font-style: italic;
+        }
+
+        /* Work items styling - inspired by Physical Intelligence */
+        .project-item.work-item .project-inner {
+            background-color: rgba(17, 17, 17, 0.02);
+            border: 1px solid #e6e5e1;
+            border-radius: 0;
+            padding: 8px;
+            margin-bottom: 0.2rem;
+        }
+
+        .project-item.work-item:hover .project-inner {
+            background-color: rgba(17, 17, 17, 0.05);
+            border-color: #d6d5d1;
+        }
+
+        .project-item.work-item::before {
+            background-color: #111111;
+            border-radius: 50%;
+            outline: 3px solid #f4f3ef;
+        }
+
+        
+
+
+        /* Footer - Physical Intelligence Style */
+        .footer {
+            padding: 2rem;
+            text-align: center;
+            background-color: #f4f3ef;
+            color: #111111;
+            border-top: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                padding: 0.2rem 0;
+                margin-top: 1.8rem;
+            }
+
+            .nav-container {
+                padding: 0 0.8rem;
+            }
+
+            .nav-menu {
+                gap: 0.8rem;
+            }
+
+            .hero {
+                padding: 3rem 1rem 1rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p, #hero-description {
+                font-size: 0.9rem;
+            }
+
+            .projects {
+                padding: 1rem 1rem;
+            }
+
+            .projects::before { left: 20px; }
+            .project-item { padding-left: 44px; }
+            .project-item::before { left: 20px; transform: translateX(-50%); }
+            .project-list::before { left: 20px; }
+            .project-list::after { left: 20px; }
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">Iron</a>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div id="hero-description"></div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="projects" class="projects">
+            <div class="project-list" id="timeline-container">
+                <!-- Timeline items will be loaded dynamically from timeline.md -->
+            </div>
+        </section>
+
+        
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Iron. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // No sticky header effects (match reference site's simple header)
+
+        // Load and parse timeline.md
+        // Load and render hero description from iron.md
+        async function loadHeroDescription() {
+            try {
+                const response = await fetch('iron.md');
+                const text = await response.text();
+                const container = document.getElementById('hero-description');
+                if (window.marked) {
+                    // Render markdown to HTML using marked
+                    container.innerHTML = marked.parse(text);
+                } else {
+                    // Fallback: plain text
+                    container.textContent = text;
+                }
+            } catch (error) {
+                console.error('Error loading hero description:', error);
+                // Fallback content if iron.md cannot be loaded
+                document.getElementById('hero-description').textContent = 'I am bringing innovative technology solutions into the real world. I am a developer, researcher, and technology enthusiast developing cutting-edge applications and learning algorithms to power the digital solutions of today and the intelligent systems of the future.';
+            }
+        }
+
+        // Load and parse timeline.md
+        async function loadTimeline() {
+            try {
+                const response = await fetch('timeline.md');
+                const text = await response.text();
+                const timelineData = parseTimeline(text);
+                renderTimeline(timelineData);
+            } catch (error) {
+                console.error('Error loading timeline:', error);
+                // Fallback to default content if timeline.md cannot be loaded
+                document.getElementById('timeline-container').innerHTML = '<p>Timeline data could not be loaded.</p>';
+            }
+        }
+
+        function parseTimeline(markdown) {
+            const lines = markdown.split('\n');
+            const timeline = [];
+            let currentYear = null;
+            let currentItem = null;
+
+            for (let line of lines) {
+                // Parse year (## 2024)
+                if (line.startsWith('## ')) {
+                    currentYear = line.replace('## ', '').trim();
+                }
+                // Parse item title (### Project: Title or ### Achievement: Title)
+                else if (line.startsWith('### ')) {
+                    if (currentItem) {
+                        timeline.push(currentItem);
+                    }
+                    const titleLine = line.replace('### ', '').trim();
+                    const [type, ...titleParts] = titleLine.split(':');
+                    currentItem = {
+                        year: currentYear,
+                        type: type.trim(),
+                        title: titleParts.join(':').trim(),
+                        details: {}
+                    };
+                }
+                // Parse item details (- **Key**: Value)
+                else if (line.startsWith('- **') && currentItem) {
+                    const match = line.match(/- \*\*(.+?)\*\*: (.+)/);
+                    if (match) {
+                        const key = match[1].toLowerCase();
+                        const value = match[2];
+                        currentItem.details[key] = value;
+                    }
+                }
+            }
+            
+            // Add the last item
+            if (currentItem) {
+                timeline.push(currentItem);
+            }
+
+            return timeline;
+        }
+
+        function renderTimeline(timeline) {
+            const container = document.getElementById('timeline-container');
+            let html = '';
+
+            timeline.forEach((item, index) => {
+                // Format the date
+                const period = item.details.period || item.year;
+                
+                // Add special class for Work items
+                const workClass = item.type === 'Work' ? ' work-item' : '';
+                
+                // Create the HTML for each item
+                html += `
+                    <div class="project-item${workClass}">
+                        <div class="project-inner">
+                            <div class="project-header">
+                                <h3 class="project-title">${item.title}</h3>
+                                <div class="project-date">${period}</div>
+                            </div>`;
+                
+                // Add description
+                if (item.details.description) {
+                    html += `<p class="project-description">${item.details.description}</p>`;
+                }
+                
+                // Add tech as a separate line with italic style
+                if (item.details.tech) {
+                    html += `<p class="project-tech">Tech: ${item.details.tech}</p>`;
+                }
+                
+                // Add task as a separate line with italic style
+                if (item.details.task) {
+                    html += `<p class="project-tech">Task: ${item.details.task}</p>`;
+                }
+                
+                // Add other details if present
+                if (item.details.details) {
+                    html += `<p class="project-tech">${item.details.details}</p>`;
+                }
+                
+                html += `
+                        </div>
+                    </div>`;
+            });
+
+            container.innerHTML = html;
+        }
+
+        // Load timeline when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            loadHeroDescription();
+            loadTimeline();
+        });
+    </script>
+</body>
+</html>

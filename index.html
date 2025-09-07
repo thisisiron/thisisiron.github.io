@@ -147,11 +147,10 @@
             function frame() {
                 if (width >= 100) {
                     clearInterval(id);
-                    fetch('cv.md')
-                        .then(response => response.text())
-                        .then(text => {
-                            document.getElementById('cv-content').innerHTML = marked(text);
-                        });
+                    // Redirect to personal portfolio after progress bar completes
+                    setTimeout(() => {
+                        window.location.href = 'home.html';
+                    }, 500);
                     i = 0;
                     elem.style.width = 0 + "%";
                     document.getElementById("myProgress").style.backgroundColor = "white";
