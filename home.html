@@ -75,7 +75,7 @@
 
         /* Hero Section - Physical Intelligence Style */
         .hero {
-            padding: 4rem 1.5rem 1.5rem;
+            padding: 4rem 1.5rem 3rem;
             text-align: center;
             background-color: #f4f3ef;
         }
@@ -122,14 +122,7 @@
         }
 
         .projects::before {
-            content: '';
-            position: absolute;
-            left: 24px;
-            top: 0;
-            bottom: 0;
-            width: 1px;
-            background-color: #e6e5e1; /* lighter line like blog */
-            z-index: 0;
+            content: none;
         }
 
         .project-list {
@@ -141,54 +134,23 @@
 
         .project-item {
             position: relative;
-            padding-left: 56px;
+            padding-left: 24px;
             /* control vertical padding and bullet alignment */
-            --vpad: 8px; /* matches .project-inner top/bottom padding */
+            --vpad: 6px; /* matches .project-inner top/bottom padding */
             --bullet-offset: 6px; /* vertical shift to align with title line */
         }
 
         .project-item::before {
-            content: '';
-            position: absolute;
-            left: 24px; /* center on the line */
-            transform: translateX(-50%);
-            top: calc(var(--vpad) + var(--bullet-offset) - 3.5px);
-            width: 7px;
-            height: 7px;
-            background-color: #111111;
-            border-radius: 2px; /* rounded-sm style */
-            outline: 2px solid #f4f3ef; /* match page background for ring effect */
-            z-index: 2;
+            content: none;
         }
 
-        /* gradient caps (top/bottom fade) */
-        .project-list::before {
-            content: '';
-            position: absolute;
-            left: 24px;
-            top: 0;
-            width: 1px;
-            height: 24px; /* h-6 */
-            background: linear-gradient(to top, transparent, #f4f3ef);
-            z-index: 1;
-        }
-
-        .project-list::after {
-            content: '';
-            position: absolute;
-            left: 24px;
-            bottom: 0;
-            width: 1px;
-            height: 24px; /* h-6 */
-            background: linear-gradient(to bottom, transparent, #f4f3ef);
-            z-index: 1;
-        }
+        /* remove gradient caps to match simple timeline */
 
         .project-inner {
             display: block;
             /* subtle card feel for hover */
             border-radius: 0;
-            padding: 8px;
+            padding: var(--vpad) 8px;
             transition: background-color 0.2s ease;
         }
 
@@ -237,7 +199,7 @@
             background-color: rgba(17, 17, 17, 0.02);
             border: 1px solid #e6e5e1;
             border-radius: 0;
-            padding: 8px;
+            padding: 0.5rem;
             margin-bottom: 0.2rem;
         }
 
@@ -247,9 +209,19 @@
         }
 
         .project-item.work-item::before {
-            background-color: #111111;
+            background-color: #ccc; /* same as default dot */
             border-radius: 50%;
-            outline: 3px solid #f4f3ef;
+        }
+
+        /* Dots placed on the vertical line for each timeline item */
+        .timeline-dot {
+            position: absolute;
+            left: 3.5px; /* center a 7px square over 2px line center at x=7px */
+            width: 7px;
+            height: 7px;
+            background: #000;
+            border-radius: 2px; /* slightly squared */
+            pointer-events: none;
         }
 
         
@@ -280,7 +252,7 @@
             }
 
             .hero {
-                padding: 3rem 1rem 1rem;
+                padding: 3rem 1rem 2rem;
             }
 
             .hero h1 {
@@ -296,7 +268,7 @@
             }
 
             .projects::before { left: 20px; }
-            .project-item { padding-left: 44px; }
+            .project-item { padding-left: 0; }
             .project-item::before { left: 20px; transform: translateX(-50%); }
             .project-list::before { left: 20px; }
             .project-list::after { left: 20px; }
@@ -326,6 +298,9 @@
 
         <!-- Research Section -->
         <section id="projects" class="projects">
+            <div aria-hidden="true" class="timeline-static-art" style="position: absolute; left: 8px; top: 0; bottom: 0; width: 24px; background:
+                linear-gradient(#ddd, #ddd) 6px 0/2px 100% no-repeat;
+            "></div>
             <div class="project-list" id="timeline-container">
                 <!-- Timeline items will be loaded dynamically from timeline.md -->
             </div>
@@ -482,12 +457,46 @@
             });
 
             container.innerHTML = html;
+
+            // After items render, place dots aligned to the left vertical line
+            renderTimelineDots();
+        }
+
+        // Place a dot on the left vertical line aligned with each item's title
+        function renderTimelineDots() {
+            const projectsSection = document.getElementById('projects');
+            const lineLayer = projectsSection.querySelector('.timeline-static-art');
+            if (!projectsSection || !lineLayer) return;
+
+            // Clear previous dots
+            lineLayer.querySelectorAll('.timeline-dot').forEach(el => el.remove());
+
+            const titles = projectsSection.querySelectorAll('#timeline-container .project-title');
+            if (!titles.length) return;
+
+            const sectionRect = projectsSection.getBoundingClientRect();
+            const scrollY = window.scrollY || document.documentElement.scrollTop || 0;
+
+            titles.forEach(title => {
+                const rect = title.getBoundingClientRect();
+                const titleTopInSection = (rect.top + scrollY) - (sectionRect.top + scrollY);
+                const dotTop = titleTopInSection + (rect.height * 0.5) - 4; // center with 8px dot
+
+                const dot = document.createElement('div');
+                dot.className = 'timeline-dot';
+                dot.style.top = `${dotTop}px`;
+                lineLayer.appendChild(dot);
+            });
         }
 
         // Load timeline when page loads
         document.addEventListener('DOMContentLoaded', function() {
             loadHeroDescription();
             loadTimeline();
+            // Recalculate dots on resize
+            window.addEventListener('resize', () => {
+                renderTimelineDots();
+            });
         });
     </script>
 </body>
