@@ -115,20 +115,19 @@
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 <script>
-    function run(ele) {
-        if(event.key === 'Enter' || event.keyCode == 13) {
-            answer = ele.value
-            if(answer == ""){
-                // Check 
-            }
-            else if(answer.toUpperCase() == "UNZIP IRON.ZIP"){
+    function run(event, ele) {
+        const key = event.key || '';
+        if (key === 'Enter' || event.keyCode === 13) {
+            const answer = ele.value;
+            if (answer === "") {
+                // No-op
+            } else if (answer.toUpperCase() === "UNZIP IRON.ZIP") {
                 move();
                 document.getElementById('input').value = "";
-            }
-            else{
+            } else {
                 document.getElementById('input').value = "";
-                myFunction()
-            }    
+                myFunction();
+            }
         }
     }
 
@@ -140,7 +139,6 @@
             document.getElementById("myProgress").style.backgroundColor = "#ddd";
             
             var width = 1;
-            var timer;
             var id = setInterval(frame, 10);
             
 
@@ -150,11 +148,11 @@
                     // Redirect to personal portfolio after progress bar completes
                     setTimeout(() => {
                         window.location.href = 'home.html';
-                    }, 500);
+                    }, 100);
                     i = 0;
                     elem.style.width = 0 + "%";
                     document.getElementById("myProgress").style.backgroundColor = "white";
-                    return
+                    return;
                     
                 } else {
                     width+=.5;
@@ -186,9 +184,9 @@
     <div id="container">
         <div id="content">
             <div id="zip">
-                <a onclick="move()" style="text-decoration: none;">
+                <a href="#" onclick="move(); return false;" style="text-decoration: none;">
                     <div>
-                        <img src="images/zip.jpg" width="80">
+                        <img src="images/zip.jpg" width="80" alt="iron.zip">
                     </div>
                     <p style="font-size: 13px; font-family: 'Courier New'; text-align: center; margin-top: 3px">iron.zip</p>
                 </a>
@@ -200,7 +198,7 @@
 
             <div style="display: flex; margin-left: 10%; justify-content: center;">
                 <p class="terminal">user@github:~$</p>
-                <input id="input" class="terminal" onkeydown="run(this)" placeholder=" type command or click the zip image." size="42" autofocus/>
+                <input id="input" class="terminal" onkeydown="run(event, this)" placeholder=" type command or click the zip image." size="42" autofocus/>
             </div>
         </div>
         <div id="cv-content"></div>
