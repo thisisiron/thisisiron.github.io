@@ -53,6 +53,11 @@
         outline: none;
     }
 
+    #terminal-area {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
     #terminal-output .line {
         font-family: Ubuntu, Arial, sans-serif;
         font-size: 16px;
@@ -189,6 +194,18 @@
         updateCursorPosition();
     });
 
+    window.addEventListener('pageshow', function() {
+        document.body.classList.remove('fade-out');
+        isAnimating = false;
+        var input = document.getElementById('input');
+        input.disabled = false;
+        input.value = "";
+        input.focus();
+        document.getElementById('cursor').style.display = '';
+        document.getElementById('terminal-output').innerHTML = '';
+        updateCursorPosition();
+    });
+
 </script>
 
 <head>
@@ -210,14 +227,15 @@
                 </a>
             </div>
 
-            <div id="terminal-output"></div>
-
-            <div style="display: flex; margin-left: 10%; justify-content: center;">
-                <p class="terminal">user@github:~$</p>
-                <span class="input-wrap">
-                    <input id="input" class="terminal" onkeydown="run(event, this)" size="42" autofocus/>
-                    <span id="cursor" class="block-cursor">&#9608;</span>
-                </span>
+            <div id="terminal-area">
+                <div id="terminal-output"></div>
+                <div style="display: flex;">
+                    <p class="terminal">user@github:~$</p>
+                    <span class="input-wrap">
+                        <input id="input" class="terminal" onkeydown="run(event, this)" size="42" autofocus/>
+                        <span id="cursor" class="block-cursor">&#9608;</span>
+                    </span>
+                </div>
             </div>
         </div>
     </div>
