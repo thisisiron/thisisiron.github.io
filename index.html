@@ -55,11 +55,12 @@
     }
 
     .terminal {
-        background-color: white;
+        background-color: transparent;
         color: black;
         font-size: 16px;
         font-family: Ubuntu;
         border: none;
+        caret-color: transparent;
     }
     .terminal:focus {
         outline: none;
@@ -110,6 +111,32 @@
         from {top: 30px; opacity: 1;}
         to {top: 0; opacity: 0;}
     }
+
+    .input-wrap {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .block-cursor {
+        position: absolute;
+        pointer-events: none;
+        font-family: Ubuntu, Arial, sans-serif;
+        font-size: 16px;
+        color: black;
+        display: none;
+        z-index: 1;
+        animation: blink-cursor 1s step-end infinite;
+    }
+
+    .input-wrap:focus-within .block-cursor {
+        display: block;
+    }
+
+    @keyframes blink-cursor {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+    }
 </style>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -124,8 +151,10 @@
             } else if (answer.toUpperCase() === "UNZIP IRON.ZIP") {
                 move();
                 document.getElementById('input').value = "";
+                updateCursorPosition();
             } else {
                 document.getElementById('input').value = "";
+                updateCursorPosition();
                 myFunction();
             }
         }
@@ -163,6 +192,25 @@
         
     }
 
+    function updateCursorPosition() {
+        var input = document.getElementById('input');
+        var cursor = document.getElementById('cursor');
+        if (!input || !cursor) return;
+        var canvas = document.createElement('canvas');
+        var ctx = canvas.getContext('2d');
+        ctx.font = getComputedStyle(input).font;
+        var textWidth = ctx.measureText(input.value).width;
+        var paddingLeft = parseFloat(getComputedStyle(input).paddingLeft) || 0;
+        cursor.style.left = (paddingLeft + textWidth) + 'px';
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var input = document.getElementById('input');
+        input.addEventListener('input', updateCursorPosition);
+        input.addEventListener('focus', updateCursorPosition);
+        updateCursorPosition();
+    });
+
     function myFunction() {
         var x = document.getElementById("snackbar");
         x.className = "show";
@@ -198,7 +246,10 @@
 
             <div style="display: flex; margin-left: 10%; justify-content: center;">
                 <p class="terminal">user@github:~$</p>
-                <input id="input" class="terminal" onkeydown="run(event, this)" placeholder=" type command or click the zip image." size="42" autofocus/>
+                <span class="input-wrap">
+                    <input id="input" class="terminal" onkeydown="run(event, this)" size="42" autofocus/>
+                    <span id="cursor" class="block-cursor">&#9608;</span>
+                </span>
             </div>
         </div>
         <div id="cv-content"></div>
