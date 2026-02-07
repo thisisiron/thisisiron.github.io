@@ -41,19 +41,6 @@
         
     }
     
-    #myProgress {
-      width: 30%;
-      margin: auto;
-      align-items: center;
-      background-color: white;
-    }
-    
-    #myBar {
-      width: 0%;
-      height: 10px;
-      background-color: #525252;
-    }
-
     .terminal {
         background-color: transparent;
         color: black;
@@ -65,51 +52,22 @@
     .terminal:focus {
         outline: none;
     }
-    /* The snackbar - position it at the bottom and in the middle of the screen */
-    #snackbar {
-        visibility: hidden; /* Hidden by default. Visible on click */
-        min-width: 250px; /* Set a default minimum width */
-        margin-left: -125px; /* Divide value of min-width by 2 */
-        background-color: #333; /* Black background color */
-        color: #fff; /* White text color */
-        text-align: center; /* Centered text */
-        border-radius: 2px; /* Rounded borders */
-        padding: 16px; /* Padding */
-        position: fixed; /* Sit on top of the screen */
-        z-index: 1; /* Add a z-index if needed */
-        left: 50%; /* Center the snackbar */
-        top: 30px; /* 30px from the bottom */
+
+    #terminal-output .line {
+        font-family: Ubuntu, Arial, sans-serif;
+        font-size: 16px;
+        color: black;
         white-space: pre;
+        line-height: 1.6;
     }
 
-    /* Show the snackbar when clicking on a button (class added with JavaScript) */
-    #snackbar.show {
-        visibility: visible; /* Show the snackbar */
-        /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
-        However, delay the fade out process for 2.5 seconds */
-        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    .fade-out {
+        animation: fadeOut 0.3s ease forwards;
     }
 
-    /* Animations to fade the snackbar in and out */
-    @-webkit-keyframes fadein {
-        from {top: 0; opacity: 0;}
-        to {top: 30px; opacity: 1;}
-    }
-
-    @keyframes fadein {
-        from {top: 0; opacity: 0;}
-        to {top: 30px; opacity: 1;}
-    }
-
-    @-webkit-keyframes fadeout {
-        from {top: 30px; opacity: 1;}
-        to {top: 0; opacity: 0;}
-    }
-
-    @keyframes fadeout {
-        from {top: 30px; opacity: 1;}
-        to {top: 0; opacity: 0;}
+    @keyframes fadeOut {
+        from { opacity: 1; }
+        to { opacity: 0; }
     }
 
     .input-wrap {
@@ -142,54 +100,74 @@
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 <script>
+    var isAnimating = false;
+
     function run(event, ele) {
-        const key = event.key || '';
+        var key = event.key || '';
         if (key === 'Enter' || event.keyCode === 13) {
-            const answer = ele.value;
+            if (isAnimating) return;
+            var answer = ele.value.trim();
             if (answer === "") {
                 // No-op
             } else if (answer.toUpperCase() === "UNZIP IRON.ZIP") {
-                move();
-                document.getElementById('input').value = "";
+                ele.value = "";
                 updateCursorPosition();
+                runUnzipSequence();
             } else {
-                document.getElementById('input').value = "";
+                showError(answer);
+                ele.value = "";
                 updateCursorPosition();
-                myFunction();
             }
         }
     }
 
-    var i = 0;
-    function move() {
-        if (i == 0) {
-            i = 1;
-            var elem = document.getElementById("myBar");
-            document.getElementById("myProgress").style.backgroundColor = "#ddd";
-            
-            var width = 1;
-            var id = setInterval(frame, 10);
-            
+    function showError(command) {
+        var output = document.getElementById('terminal-output');
+        var cmdLine = document.createElement('div');
+        cmdLine.className = 'line';
+        cmdLine.textContent = 'user@github:~$ ' + command;
+        output.appendChild(cmdLine);
 
-            function frame() {
-                if (width >= 100) {
-                    clearInterval(id);
-                    // Redirect to personal portfolio after progress bar completes
-                    setTimeout(() => {
-                        window.location.href = 'home.html';
-                    }, 100);
-                    i = 0;
-                    elem.style.width = 0 + "%";
-                    document.getElementById("myProgress").style.backgroundColor = "white";
-                    return;
-                    
-                } else {
-                    width+=.5;
-                    elem.style.width = width + "%";
+        var errorLine = document.createElement('div');
+        errorLine.className = 'line';
+        errorLine.textContent = 'zsh: command not found: ' + command + '. Did you mean "unzip iron.zip"?';
+        output.appendChild(errorLine);
+    }
+
+    function runUnzipSequence() {
+        isAnimating = true;
+        var input = document.getElementById('input');
+        input.disabled = true;
+        document.getElementById('cursor').style.display = 'none';
+
+        var output = document.getElementById('terminal-output');
+        var cmdLine = document.createElement('div');
+        cmdLine.className = 'line';
+        cmdLine.textContent = 'user@github:~$ unzip iron.zip';
+        output.appendChild(cmdLine);
+
+        var lines = [
+            'Archive:  iron.zip',
+            '  inflating: index.html'
+        ];
+
+        lines.forEach(function(text, index) {
+            setTimeout(function() {
+                var line = document.createElement('div');
+                line.className = 'line';
+                line.textContent = text;
+                output.appendChild(line);
+
+                if (index === lines.length - 1) {
+                    setTimeout(function() {
+                        document.body.classList.add('fade-out');
+                        setTimeout(function() {
+                            window.location.href = 'home.html';
+                        }, 300);
+                    }, 500);
                 }
-            }
-        }
-        
+            }, 200 * (index + 1));
+        });
     }
 
     function updateCursorPosition() {
@@ -211,11 +189,6 @@
         updateCursorPosition();
     });
 
-    function myFunction() {
-        var x = document.getElementById("snackbar");
-        x.className = "show";
-        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-    }
 </script>
 
 <head>
@@ -226,13 +199,10 @@
 </head>
 
 <body>
-    <!-- The actual snackbar -->
-    <div id="snackbar">Type the following command.<br>unzip iron.zip</div>
-
     <div id="container">
         <div id="content">
             <div id="zip">
-                <a href="#" onclick="move(); return false;" style="text-decoration: none;">
+                <a href="#" onclick="runUnzipSequence(); return false;" style="text-decoration: none;">
                     <div>
                         <img src="images/zip.jpg" width="80" alt="iron.zip">
                     </div>
@@ -240,9 +210,7 @@
                 </a>
             </div>
 
-            <div id="myProgress">
-                <div id="myBar"></div>
-            </div>
+            <div id="terminal-output"></div>
 
             <div style="display: flex; margin-left: 10%; justify-content: center;">
                 <p class="terminal">user@github:~$</p>
@@ -252,6 +220,5 @@
                 </span>
             </div>
         </div>
-        <div id="cv-content"></div>
     </div>
 </body>
