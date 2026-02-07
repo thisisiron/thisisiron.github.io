@@ -152,7 +152,7 @@
 
         var errorLine = document.createElement('div');
         errorLine.className = 'line';
-        errorLine.textContent = 'zsh: command not found: ' + command + '. Did you mean "unzip iron.zip"?';
+        errorLine.textContent = 'bash: ' + command + ': command not found. Did you mean "unzip iron.zip"?';
         output.appendChild(errorLine);
     }
 
@@ -169,15 +169,22 @@
         output.appendChild(cmdLine);
 
         var lines = [
-            'Archive:  iron.zip',
-            '  inflating: index.html'
+            { text: 'Archive:  iron.zip',        delay: 200 },
+            { text: '  inflating: index.html',    delay: 300 },
+            { text: '  inflating: home.html',     delay: 250 },
+            { text: '  inflating: iron.md',       delay: 150 },
+            { text: '  inflating: timeline.md',   delay: 200 },
+            { text: '  inflating: images/iron.png', delay: 350 },
+            { text: '  inflating: images/zip.jpg',  delay: 300 }
         ];
 
-        lines.forEach(function(text, index) {
+        var cumulative = 0;
+        lines.forEach(function(item, index) {
+            cumulative += item.delay;
             setTimeout(function() {
                 var line = document.createElement('div');
                 line.className = 'line';
-                line.textContent = text;
+                line.textContent = item.text;
                 output.appendChild(line);
 
                 if (index === lines.length - 1) {
@@ -188,7 +195,7 @@
                         }, 300);
                     }, 500);
                 }
-            }, 200 * (index + 1));
+            }, cumulative);
         });
     }
 
