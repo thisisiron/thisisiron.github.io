@@ -118,12 +118,29 @@
                 ele.value = "";
                 updateCursorPosition();
                 runUnzipSequence();
+            } else if (answer.toUpperCase() === "LS") {
+                showCommand(answer, 'iron.zip');
+                ele.value = "";
+                updateCursorPosition();
             } else {
                 showError(answer);
                 ele.value = "";
                 updateCursorPosition();
             }
         }
+    }
+
+    function showCommand(command, result) {
+        var output = document.getElementById('terminal-output');
+        var cmdLine = document.createElement('div');
+        cmdLine.className = 'line';
+        cmdLine.textContent = 'user@github:~$ ' + command;
+        output.appendChild(cmdLine);
+
+        var resultLine = document.createElement('div');
+        resultLine.className = 'line';
+        resultLine.textContent = result;
+        output.appendChild(resultLine);
     }
 
     function showError(command) {
