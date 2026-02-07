@@ -240,11 +240,11 @@
         @media (max-width: 768px) {
             .header {
                 padding: 0.2rem 0;
-                margin-top: 1.8rem;
+                margin-top: 1.2rem;
             }
 
             .nav-container {
-                padding: 0 0.8rem;
+                padding: 0 1rem;
             }
 
             .nav-menu {
@@ -252,26 +252,58 @@
             }
 
             .hero {
-                padding: 3rem 1rem 2rem;
+                padding: 2.5rem 1.2rem 1.5rem;
             }
 
             .hero h1 {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
             }
 
             .hero p, #hero-description {
                 font-size: 0.9rem;
             }
 
+            /* Timeline: hide line and dots on mobile */
             .projects {
-                padding: 1rem 1rem;
+                padding: 1.5rem 1.2rem;
             }
 
-            .projects::before { left: 20px; }
-            .project-item { padding-left: 0; }
-            .project-item::before { left: 20px; transform: translateX(-50%); }
-            .project-list::before { left: 20px; }
-            .project-list::after { left: 20px; }
+            .timeline-static-art {
+                display: none;
+            }
+
+            .project-item {
+                padding-left: 0;
+            }
+
+            .project-list {
+                gap: 1.5rem;
+            }
+
+            /* Stack title and date vertically */
+            .project-header {
+                flex-direction: column;
+                gap: 0.15rem;
+            }
+
+            .project-date {
+                margin-left: 0;
+                font-size: 0.7rem;
+            }
+
+            .project-title {
+                font-size: 0.9rem;
+            }
+
+            .project-description {
+                font-size: 0.75rem;
+            }
+
+            /* Work items: lighter borders, more padding */
+            .project-item.work-item .project-inner {
+                padding: 0.6rem 0.5rem;
+                border-color: #eae9e5;
+            }
 
         }
     </style>
