@@ -1,20 +1,17 @@
 <style>
     body {
-        position:fixed;
-        top:0px;
-        bottom:0px;
-        left:0px;
-        right:0px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         font-family: Arial, sans-serif;
         background-color: #ffffff;
     }
-    footer {
-        position: relative;
-    }
 
-    #container{
-        height: 99%; 
-        margin: auto; 
+    #container {
+        height: 99%;
+        margin: auto;
         display: flex;
         flex-direction: column;
         flex-grow: 1;
@@ -24,46 +21,33 @@
         min-height: 0;
     }
 
-    #content{
-        margin: auto; 
-        
+    #content {
+        margin: auto;
         align-items: center;
     }
 
-    #zip{
+    #zip {
         align-items: center;
-        margin: auto; 
-        display: flex; 
+        margin: auto;
+        display: flex;
         flex-grow: 1;
         flex-shrink: 1;
         flex-basis: 0%;
         justify-content: center;
-        
-    }
-    
-    .terminal {
-        background-color: transparent;
-        color: black;
-        font-size: 16px;
-        font-family: Ubuntu;
-        border: none;
-        caret-color: transparent;
-    }
-    .terminal:focus {
-        outline: none;
     }
 
-    #terminal-area {
-        width: fit-content;
-        margin: 0 auto;
+    #myProgress {
+        width: 200px;
+        margin: 12px auto 0;
+        background-color: white;
+        height: 3px;
     }
 
-    #terminal-output .line {
-        font-family: Ubuntu, Arial, sans-serif;
-        font-size: 16px;
-        color: black;
-        white-space: pre;
-        line-height: 1.6;
+    #myBar {
+        width: 0%;
+        height: 100%;
+        background-color: #525252;
+        transition: none;
     }
 
     .fade-out {
@@ -74,168 +58,12 @@
         from { opacity: 1; }
         to { opacity: 0; }
     }
-
-    .input-wrap {
-        position: relative;
-        display: inline-flex;
-        align-items: center;
-    }
-
-    .block-cursor {
-        position: absolute;
-        pointer-events: none;
-        font-family: Ubuntu, Arial, sans-serif;
-        font-size: 16px;
-        color: black;
-        display: none;
-        z-index: 1;
-        animation: blink-cursor 1s step-end infinite;
-    }
-
-    .input-wrap:focus-within .block-cursor {
-        display: block;
-    }
-
-    @keyframes blink-cursor {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0; }
-    }
 </style>
-
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
-<script>
-    var isAnimating = false;
-
-    function run(event, ele) {
-        var key = event.key || '';
-        if (key === 'Enter' || event.keyCode === 13) {
-            if (isAnimating) return;
-            var answer = ele.value.trim();
-            if (answer === "") {
-                // No-op
-            } else if (answer.toUpperCase() === "UNZIP IRON.ZIP") {
-                ele.value = "";
-                updateCursorPosition();
-                runUnzipSequence();
-            } else if (answer.toUpperCase() === "LS") {
-                showCommand(answer, 'iron.zip');
-                ele.value = "";
-                updateCursorPosition();
-            } else {
-                showError(answer);
-                ele.value = "";
-                updateCursorPosition();
-            }
-        }
-    }
-
-    function showCommand(command, result) {
-        var output = document.getElementById('terminal-output');
-        var cmdLine = document.createElement('div');
-        cmdLine.className = 'line';
-        cmdLine.textContent = 'user@github:~$ ' + command;
-        output.appendChild(cmdLine);
-
-        var resultLine = document.createElement('div');
-        resultLine.className = 'line';
-        resultLine.textContent = result;
-        output.appendChild(resultLine);
-    }
-
-    function showError(command) {
-        var output = document.getElementById('terminal-output');
-        var cmdLine = document.createElement('div');
-        cmdLine.className = 'line';
-        cmdLine.textContent = 'user@github:~$ ' + command;
-        output.appendChild(cmdLine);
-
-        var errorLine = document.createElement('div');
-        errorLine.className = 'line';
-        errorLine.textContent = 'bash: ' + command + ': command not found. Did you mean "unzip iron.zip"?';
-        output.appendChild(errorLine);
-    }
-
-    function runUnzipSequence() {
-        isAnimating = true;
-        var input = document.getElementById('input');
-        input.disabled = true;
-        document.getElementById('cursor').style.display = 'none';
-
-        var output = document.getElementById('terminal-output');
-        var cmdLine = document.createElement('div');
-        cmdLine.className = 'line';
-        cmdLine.textContent = 'user@github:~$ unzip iron.zip';
-        output.appendChild(cmdLine);
-
-        var lines = [
-            { text: 'Archive:  iron.zip',        delay: 200 },
-            { text: '  inflating: index.html',    delay: 300 },
-            { text: '  inflating: home.html',     delay: 250 },
-            { text: '  inflating: iron.md',       delay: 150 },
-            { text: '  inflating: timeline.md',   delay: 200 },
-            { text: '  inflating: images/iron.png', delay: 350 },
-            { text: '  inflating: images/zip.jpg',  delay: 300 }
-        ];
-
-        var cumulative = 0;
-        lines.forEach(function(item, index) {
-            cumulative += item.delay;
-            setTimeout(function() {
-                var line = document.createElement('div');
-                line.className = 'line';
-                line.textContent = item.text;
-                output.appendChild(line);
-
-                if (index === lines.length - 1) {
-                    setTimeout(function() {
-                        document.body.classList.add('fade-out');
-                        setTimeout(function() {
-                            window.location.href = 'home.html';
-                        }, 300);
-                    }, 500);
-                }
-            }, cumulative);
-        });
-    }
-
-    function updateCursorPosition() {
-        var input = document.getElementById('input');
-        var cursor = document.getElementById('cursor');
-        if (!input || !cursor) return;
-        var canvas = document.createElement('canvas');
-        var ctx = canvas.getContext('2d');
-        ctx.font = getComputedStyle(input).font;
-        var textWidth = ctx.measureText(input.value).width;
-        var paddingLeft = parseFloat(getComputedStyle(input).paddingLeft) || 0;
-        cursor.style.left = (paddingLeft + textWidth) + 'px';
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-        var input = document.getElementById('input');
-        input.addEventListener('input', updateCursorPosition);
-        input.addEventListener('focus', updateCursorPosition);
-        updateCursorPosition();
-    });
-
-    window.addEventListener('pageshow', function() {
-        document.body.classList.remove('fade-out');
-        isAnimating = false;
-        var input = document.getElementById('input');
-        input.disabled = false;
-        input.value = "";
-        input.focus();
-        document.getElementById('cursor').style.display = '';
-        document.getElementById('terminal-output').innerHTML = '';
-        updateCursorPosition();
-    });
-
-</script>
 
 <head>
     <link rel="icon" href="images/iron.png">
     <link rel="apple-touch-icon" href="images/iron.png">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.6, maximum-scale=0.6 target-densityDpi=device-dpi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iron</title>
 </head>
 
@@ -243,7 +71,7 @@
     <div id="container">
         <div id="content">
             <div id="zip">
-                <a href="#" onclick="runUnzipSequence(); return false;" style="text-decoration: none;">
+                <a href="#" onclick="move(); return false;" style="text-decoration: none;">
                     <div>
                         <img src="images/zip.jpg" width="80" alt="iron.zip">
                     </div>
@@ -251,16 +79,41 @@
                 </a>
             </div>
 
-            <div id="terminal-area">
-                <div id="terminal-output"></div>
-                <div style="display: flex;">
-                    <p class="terminal">user@github:~$</p>
-                    <span class="input-wrap">
-                        <input id="input" class="terminal" onkeydown="run(event, this)" size="42" autofocus/>
-                        <span id="cursor" class="block-cursor">&#9608;</span>
-                    </span>
-                </div>
+            <div id="myProgress">
+                <div id="myBar"></div>
             </div>
         </div>
     </div>
+
+<script>
+    var isAnimating = false;
+
+    function move() {
+        if (isAnimating) return;
+        isAnimating = true;
+
+        var bar = document.getElementById('myBar');
+        var width = 0;
+        var id = setInterval(function() {
+            if (width >= 100) {
+                clearInterval(id);
+                setTimeout(function() {
+                    document.body.classList.add('fade-out');
+                    setTimeout(function() {
+                        window.location.href = 'home.html';
+                    }, 300);
+                }, 200);
+            } else {
+                width += 0.5;
+                bar.style.width = width + '%';
+            }
+        }, 10);
+    }
+
+    window.addEventListener('pageshow', function() {
+        document.body.classList.remove('fade-out');
+        isAnimating = false;
+        document.getElementById('myBar').style.width = '0%';
+    });
+</script>
 </body>
