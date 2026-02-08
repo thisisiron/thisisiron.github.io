@@ -50,6 +50,17 @@
         transition: none;
     }
 
+    #myPercent {
+        font-family: 'Courier New', monospace;
+        font-size: 11px;
+        color: #525252;
+        text-align: center;
+        margin-top: 6px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .fade-out {
         animation: fadeOut 0.3s ease forwards;
     }
@@ -82,38 +93,56 @@
             <div id="myProgress">
                 <div id="myBar"></div>
             </div>
+            <p id="myPercent"></p>
         </div>
     </div>
 
 <script>
     var isAnimating = false;
 
+    function easeInOut(t) {
+        return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+    }
+
     function move() {
         if (isAnimating) return;
         isAnimating = true;
 
         var bar = document.getElementById('myBar');
-        var width = 0;
-        var id = setInterval(function() {
-            if (width >= 100) {
-                clearInterval(id);
+        var percent = document.getElementById('myPercent');
+        var duration = 2000;
+        var start = null;
+
+        function step(timestamp) {
+            if (!start) start = timestamp;
+            var elapsed = timestamp - start;
+            var t = Math.min(elapsed / duration, 1);
+            var progress = easeInOut(t) * 100;
+
+            bar.style.width = progress + '%';
+            percent.textContent = Math.floor(progress) + '%';
+
+            if (t < 1) {
+                requestAnimationFrame(step);
+            } else {
+                percent.textContent = '100%';
                 setTimeout(function() {
                     document.body.classList.add('fade-out');
                     setTimeout(function() {
                         window.location.href = 'home.html';
                     }, 300);
                 }, 200);
-            } else {
-                width += 0.5;
-                bar.style.width = width + '%';
             }
-        }, 10);
+        }
+
+        requestAnimationFrame(step);
     }
 
     window.addEventListener('pageshow', function() {
         document.body.classList.remove('fade-out');
         isAnimating = false;
         document.getElementById('myBar').style.width = '0%';
+        document.getElementById('myPercent').textContent = '';
     });
 </script>
 </body>
