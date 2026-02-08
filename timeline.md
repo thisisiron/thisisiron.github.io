@@ -34,15 +34,15 @@
 - **Description**: 3rd Prize (우수상) <br>Task: Object detection <br>Sponsor: Korea Transportation Safety Authority, People & Forest
 
 
-### Work: Lotte Innovate — AI Engineer, Vision AI
+### Work: Lotte Innovate — AI Engineer
 - **Period**: May 03, 2021 ~ Present
 
 
 ## 2020
-### Work: Naver Webtoon — AI Research Intern
+### Work: Naver Webtoon — AI Researcher, Intern
 - **Period**: Jan 06, 2020 ~ Jun 30, 2020
 
 
 ## 2019
-### Work: Voyager X — Machine Learning Intern
+### Work: Voyager X — Machine Learning Engineer, Intern
 - **Period**: Jul 08, 2019 ~ Dec 27, 2019
